@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; outline: none; }
+
+*:not(input, textarea) { -webkit-touch-callout: inherit; -webkit-user-select: auto; }
+
+body { width: 100%; font-family: Hiragino Sans GB, Arial, Helvetica, sans-serif; font-size: 14px; color: #878787; -webkit-touch-callout: inherit; -webkit-user-select: auto; background-color: #fff; }
+
+a { color: #878787; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+
+a:hover { text-decoration: none; }
+
+button, input, select, textarea { font-size: 100%; margin: 0; padding: 0; outline: none; }
+
+dt, dd { display: inline-block; }
+
+textarea, input { resize: none; outline: none; }
+
+textarea { resize: none; -webkit-appearance: none; }
+
+ul, ol, li { list-style: none; }
+
+em { font-style: normal; }
+
+.st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8 { background-size: cover; width: 100%; height: 100%; background-position: top right; background-repeat: no-repeat; overflow: hidden; }
+
+.st1 { background-image: url("../images/1.png"); }
+
+.st2 { background-image: url("../images/2.png"); }
+
+.st3 { background-image: url("../images/3.png"); }
+
+.st4 { background-image: url("../images/4.png"); }
+
+.st5 { background-image: url("../images/5.png"); }
+
+.st6 { background-image: url("../images/6.png"); }
+
+.st7 { background-image: url("../images/7.png"); }
+
+.st8 { background-image: url("../images/8.png"); }
+
+.arrow-up { height: auto; width: 25px; position: absolute; left: 50%; top: 92%; margin-left: -12px; z-index: 99; }

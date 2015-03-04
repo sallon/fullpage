@@ -1,0 +1,141 @@
+@import "reset";
+@import "animations";
+@import "rem-calc";
+$img:"../images/";
+$mediaArray: "only screen and (max-width: 359px)",
+"only screen and (min-width:360px) and (max-width:399px)",
+"only screen and (min-width:400px) and (max-width:479px)",
+"only screen and (min-width:480px)";
+$rem-base: 32px;
+$ratioFor320:640/320;
+$ratioFor360:640/360;
+$ratioFor400:640/400;
+$ratioFor480:640/480;
+$ratioFor640:640/640;
+$htmSizeArray:  floor($rem-base/$ratioFor320),
+                floor($rem-base/$ratioFor360),
+                floor($rem-base/$ratioFor400),
+                floor($rem-base/$ratioFor480),
+                floor($rem-base/$ratioFor640);
+
+.content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FFFFFF;
+}
+body{
+  overflow:hidden;
+}
+
+.page{
+  width:100%;
+  height:100%;
+  position:absolute;
+  text-align:center;
+}
+
+.page-current{
+  z-index:1;
+}
+
+.hide{ display:none;}
+
+.arrow-up{
+  height:auto;
+  width:25px;
+  position:absolute;
+  left:50%;
+  top:92%;
+  margin-left:-12px;
+  z-index:99;
+}
+.page {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-0 {
+  background-image: url("#{$img}homebg.jpg");
+  .text1{
+    height: rem-calc(46px);
+    top: 7%;
+    left: 36%;
+    position: absolute;
+    z-index: 12;
+  }
+  .input{
+    display: block;
+    height: rem-calc(55px);
+    width: rem-calc(260px);
+    position: absolute;
+    overflow: hidden;
+    background-color: #ffe9e3;
+    position: absolute;
+    top: 14%;
+    left: 25%;
+    z-index: 12;
+    input{
+      height: rem-calc(55px);
+      line-height: rem-calc(55px);
+      color: #e8819e;
+      border: 0 none;
+      font-size: rem-calc(32px);
+      text-align: center;
+      width: 100%;
+    }
+
+  }
+  .text2{
+    position: absolute;
+    right: 18%;
+    top: 14%;
+    height: rem-calc(55px);
+    z-index: 12;
+  }
+  .sanba{
+    width: rem-calc(400px);
+    top: rem-calc(206px);
+    position: absolute;
+    left: 18%;
+    z-index: 10;
+  }
+  .girl{
+    width: rem-calc(307px);
+    height: rem-calc(499px);
+    top: 36%;
+    left: 28%;
+    position: absolute;
+  }
+  .ceyice{
+    width: rem-calc(164px);
+    position: absolute;
+    top: rem-calc(691px);
+    left: 18%;
+  }
+  .starBtn{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    img{
+      width: rem-calc(290px);
+      height: rem-calc(65px);
+    }
+  }
+}
+
+// set responsive
+@for $mediaIndex from 1 to length($mediaArray) + 1 {
+  $media: nth($mediaArray, $mediaIndex);
+  $htmlFz: nth($htmSizeArray, $mediaIndex);
+  @media #{$media}
+  {
+    html {
+      font-size: $htmlFz;
+    }
+  }
+}

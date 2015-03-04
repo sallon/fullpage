@@ -1,0 +1,31 @@
+@import "mixin-reset";
+@import "mixin-css3";
+@import "rem-calc";
+
+
+$version: "20141215";
+$mediaArray: "only screen and (max-width: 359px)",
+"only screen and (min-width:360px) and (max-width:399px)",
+"only screen and (min-width:400px) and (max-width:479px)",
+"only screen and (min-width:480px)";
+$rem-base: 18px;
+$ratioFor320:480/320;
+$ratioFor360:480/360;
+$ratioFor400:480/400;
+$ratioFor480:480/480;
+$htmSizeArray: floor($rem-base/$ratioFor320),
+              floor($rem-base/$ratioFor360),
+              floor($rem-base/$ratioFor400),
+              floor($rem-base/$ratioFor480);
+
+// set responsive
+@for $mediaIndex from 1 to length($mediaArray) + 1 {
+  $media: nth($mediaArray, $mediaIndex);
+  $htmlFz: nth($htmSizeArray, $mediaIndex);
+  @media #{$media}
+  {
+    html {
+      font-size: $htmlFz;
+    }
+  }
+}
