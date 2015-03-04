@@ -1,5 +1,4 @@
 @import "reset";
-@import "animations";
 @import "rem-calc";
 $img:"../images/";
 $mediaArray: "only screen and (max-width: 359px)",
@@ -113,7 +112,7 @@ body{
   .ceyice{
     width: rem-calc(164px);
     position: absolute;
-    top: rem-calc(691px);
+    top: rem-calc(661px);
     left: 18%;
   }
   .starBtn{
