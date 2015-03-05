@@ -23,10 +23,11 @@ $htmSizeArray:  floor($rem-base/$ratioFor320),
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: #FFFFFF;
+  background-color: #e85c87;
 }
 body{
   overflow:hidden;
+  background-color: #e85c87;
 }
 
 .page{
@@ -126,6 +127,33 @@ body{
     }
   }
 }
+.page-1{
+}
+.footer{
+  z-index: 100;
+  .advimg{
+    width: 100%;
+    bottom: rem-calc(70px);
+    position: absolute;
+  }
+  .logo{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    $height: rem-calc(70px);
+    height: $height;
+    line-height: $height;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    background-color: #ffffff;
+    img{
+      height: rem-calc(68px);
+    }
+  }
+}
+
 
 // set responsive
 @for $mediaIndex from 1 to length($mediaArray) + 1 {

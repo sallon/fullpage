@@ -9,31 +9,45 @@
 </head>
 <body>
 	<div class="content">
-		<div class="page page-0 page-current">
-			<img src="images/home/zainiyanzhong.png" id="text1" class="text1">
-			<div id="input" class="input">
+		<div class="page page-0 hide">
+			<img src="images/home/zainiyanzhong.png" id="text1" class="text1 hide">
+			<div id="input" class="input hide">
 				<input id="inputIn" type="text" value="输入TA的姓名">
 			</div>
-			<img src="images/home/youduo.png" id="text2" class="text2">
-			<img src="images/home/sanba.png" class="sanba" id="sanba">
+			<img src="images/home/youduo.png" id="text2" class="text2 hide">
+			<img src="images/home/sanba.png" class="sanba hide" id="sanba">
 			<img src="images/home/girl.png" class="girl">
 			<img src="images/home/text.png" class="ceyice">
 			<div class="starBtn">
 				<img id="starBtn" src="images/home/starBtn.png">
 			</div>
 		</div>
-		<div class="page page-1 hide">
+		<div class="page page-1">
 
+		</div>
+		<div class="footer">
+			<img id="advimg" class="advimg animated" data-imgNum = "1" src="images/1.png">
+			<div class="logo">
+				<img src="images/logo.jpg">
+			</div>
 		</div>
 	</div>
     <script type="text/javascript" src="js/zepto.min.js"></script>
     <script type="text/javascript" src="js/touch.js"></script>
     <script type="text/javascript">
         $(function(){
-            $("#text1").addClass("animated fadeInDown");
-            $("#input").addClass("animated fadeInLeft");
-            $("#text2").addClass("animated fadeInRight");
-            $("#sanba").addClass("animated rotateIn");
+	        setTimeout(function(){
+		        $("#text1").removeClass("hide").addClass("animated fadeInDown");
+	        },100);
+	        setTimeout(function(){
+		        $("#input").removeClass("hide").addClass("animated fadeInLeft");
+	        },200);
+	        setTimeout(function(){
+		        $("#text2").removeClass("hide").addClass("animated fadeInRight");
+	        },300);
+	        setTimeout(function(){
+		        $("#sanba").removeClass("hide").addClass("animated rotateIn");
+	        },400);
             $("#inputIn").on("focus",function(){
                 var val = $(this).val();
                 if(val == "输入TA的姓名"){
@@ -45,9 +59,13 @@
                     $(this).val("输入TA的姓名");
                 }
             })
+	        changeFooterImg();
         })
+        function changeFooterImg(){
+			$("#advimg").addClass("roteOutUpRight");
+	        var num = $("#advimg").attr("data-imgNum");
+        }
         $("#starBtn").on("tap",function(){
-//            $("#input").removeClass("shake");
             if($("#inputIn").val()=="" || $("#inputIn").val() == "输入TA的姓名"){
                 $("#input").removeClass("fadeInLeft").addClass("shake");
                 setTimeout(function(){
@@ -55,6 +73,7 @@
                 },1000)
             }
         })
+
     </script>
 </body>
 </html>
