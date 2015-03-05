@@ -22,11 +22,68 @@
 				<img id="starBtn" src="images/home/starBtn.png">
 			</div>
 		</div>
-		<div class="page page-1">
-
+		<div class="page page-1 hide">
+            <div class="question">
+                1.初次见面时，你对我的第一印象?
+            </div>
+            <img id="q1a" src="images/q1a.png" class="answer">
+            <img id="q1b" src="images/q1b.png" class="answer">
 		</div>
-		<div class="footer">
-			<img id="advimg" class="advimg animated" data-imgNum = "1" src="images/1.png">
+        <div class="page page-2 hide">
+            <div class="question">
+                2.你觉得我的声音属于哪一种?
+            </div>
+            <img id="q2a" src="images/q2a.png" class="answer">
+            <img id="q2b" src="images/q2b.png" class="answer">
+        </div>
+        <div class="page page-3 hide">
+            <div class="question">
+                3.我是如何用洗手液的?
+            </div>
+            <img id="q3a" src="images/q3a.png" class="answer">
+            <img id="q3b" src="images/q3b.png" class="answer">
+        </div>
+        <div class="page page-4 hide">
+            <div class="question">
+                4.心水的异性迎面走来，我会做出什么反应？
+            </div>
+            <img id="q4a" src="images/q4a.png" class="answer">
+            <img id="q4b" src="images/q4b.png" class="answer">
+        </div>
+        <div class="page page-5 hide">
+            <div class="question">
+                5.服务生不小心把咖啡泼在我
+                的裙子上，我会怎么做？
+            </div>
+            <img id="q5a" src="images/q5a.png" class="answer">
+            <img id="q5b" src="images/q5b.png" class="answer">
+        </div>
+        <div class="page page-6 hide">
+            <div class="question">
+                6.上班要迟到了，昨晚加班又
+                没洗澡，你觉得我会怎么做？
+            </div>
+            <img id="q6a" src="images/q6a.png" class="answer">
+            <img id="q6b" src="images/q6b.png" class="answer">
+        </div>
+        <div class="page page-7 hide">
+            <div class="question">
+                7.“三八国际妇女节”我会怎
+                么庆祝？
+            </div>
+            <img id="q7a" src="images/q7a.png" class="answer">
+            <img id="q7b" src="images/q7b.png" class="answer">
+        </div>
+        <div class="page page-8 hide">
+            <div class="question">
+                8.如果买“三八节”礼物犒劳
+                自己，我肯定会买?
+            </div>
+            <img id="q8a" src="images/q8a.png" class="answer">
+            <img id="q8b" src="images/q8b.png" class="answer">
+        </div>
+		<div class="footer hide">
+			<img id="advimg" class="advimg" data-imgNum = "1" src="images/1.png">
 			<div class="logo">
 				<img src="images/logo.jpg">
 			</div>
@@ -35,7 +92,11 @@
     <script type="text/javascript" src="js/zepto.min.js"></script>
     <script type="text/javascript" src="js/touch.js"></script>
     <script type="text/javascript">
+        var core = 0;
         $(function(){
+            setTimeout(function(){
+                $(".page-0").removeClass("hide");
+            },50)
 	        setTimeout(function(){
 		        $("#text1").removeClass("hide").addClass("animated fadeInDown");
 	        },100);
@@ -59,11 +120,93 @@
                     $(this).val("输入TA的姓名");
                 }
             })
-	        changeFooterImg();
+            $("#q1a").on("tap",function(){
+                changePage(1,2);
+                changeFooterImg(2);
+                core = core + 5;
+            });
+            $("#q1b").on("tap",function(){
+                changePage(1,2);
+                changeFooterImg(2);
+                core = core + 12;
+            });
+            $("#q2a").on("tap",function(){
+                changePage(2,3);
+                changeFooterImg(3);
+                core = core + 5;
+            });
+            $("#q2b").on("tap",function(){
+                changePage(2,3);
+                changeFooterImg(3);
+                core = core + 12;
+            });
+
+            $("#q3a").on("tap",function(){
+                changePage(3,4);
+                changeFooterImg(4);
+                core = core + 5;
+            });
+            $("#q3b").on("tap",function(){
+                changePage(3,4);
+                changeFooterImg(4);
+                core = core + 12;
+            });
+
+            $("#q4a").on("tap",function(){
+                changePage(4,5);
+                changeFooterImg(5);
+                core = core + 5;
+            });
+            $("#q4b").on("tap",function(){
+                changePage(4,5);
+                changeFooterImg(5);
+                core = core + 12;
+            });
+
+            $("#q5a").on("tap",function(){
+                changePage(5,6);
+                changeFooterImg(6);
+                core = core + 5;
+            });
+            $("#q5b").on("tap",function(){
+                changePage(5,6);
+                changeFooterImg(6);
+                core = core + 12;
+            });
+
+            $("#q6a").on("tap",function(){
+                changePage(6,7);
+                changeFooterImg(7);
+                core = core + 5;
+            });
+            $("#q6b").on("tap",function(){
+                changePage(6,7);
+                changeFooterImg(7);
+                core = core + 12;
+            });
+
+            $("#q7a").on("tap",function(){
+                changePage(7,8);
+                changeFooterImg(8);
+                core = core + 5;
+            });
+            $("#q7b").on("tap",function(){
+                changePage(7,8);
+                changeFooterImg(8);
+                core = core + 12;
+            });
+
         })
-        function changeFooterImg(){
-			$("#advimg").addClass("roteOutUpRight");
-	        var num = $("#advimg").attr("data-imgNum");
+        function changePage(num,num1){
+            $(".page-"+num).addClass("animated slideOutUp");
+            $(".page-"+num1).removeClass("hide").addClass("animated slideInDown");
+        }
+        function changeFooterImg(num){
+			$("#advimg").addClass("animated rotateOutUpRight");
+            $("#advimg").removeClass("animated rotateOutUpRight");
+            $("#advimg").attr("src","images/"+num+".png")
+            $("#advimg").addClass("animated rotateInDownLeft");
+            $("#advimg").removeClass("animated rotateInDownLeft");
         }
         $("#starBtn").on("tap",function(){
             if($("#inputIn").val()=="" || $("#inputIn").val() == "输入TA的姓名"){
@@ -71,6 +214,10 @@
                 setTimeout(function(){
                     $("#input").removeClass("shake");
                 },1000)
+            }else{
+                $(".page-0").addClass("animated slideOutUp");
+                $(".page-1").removeClass("hide").addClass("animated slideInDown");
+                $(".footer").removeClass("hide").addClass("animated rotateInDownLeft");
             }
         })
 

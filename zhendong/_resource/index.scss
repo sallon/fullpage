@@ -127,10 +127,25 @@ body{
     }
   }
 }
-.page-1{
-}
+  .question{
+    color: #ffffff;
+    font-size: rem-calc(36px);
+    width: 70%;
+    margin: 20% auto 0px;
+    text-align: left;
+    line-height: rem-calc(60px);
+  }
+  .answer{
+    margin: 5% auto;
+    width: 70%;
+
+  }
 .footer{
   z-index: 100;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
   .advimg{
     width: 100%;
     bottom: rem-calc(70px);
