@@ -3,7 +3,11 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title></title>
-	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/index.css?v=1">
 </head>
@@ -59,7 +63,7 @@
             <img id="q5b" src="images/q5b.png" class="answer">
         </div>
         <div class="page page-6 hide">
-            <div class="question">
+            <div class="question" style="width: 80%;">
                 6.上班要迟到了，昨晚加班又
                 没洗澡，你觉得我会怎么做？
             </div>
@@ -82,151 +86,27 @@
             <img id="q8a" src="images/q8a.png" class="answer">
             <img id="q8b" src="images/q8b.png" class="answer">
         </div>
-        <div class="page page-score">
-            <img src="images/scoretit.png">
-            <div class="scoreNum"></div>
-            <img src="images/share.png">
-            <img src="images/again.png">
+        <div id="page-score" class="page page-score hide">
+            <img class="scoretit" src="images/scoretit.png">
+            <div class="scoreNum">
+	            <img src="images/star.png">
+	            <span id = "score">86</span><span class="fsmail">%</span>
+            </div>
+            <img class="share" id="shareBtn" src="images/share.png">
+            <img class="again" id="againBtn" src="images/again.png">
         </div>
-		<div class="footer ">
-			<img id="advimg" class="advimg" data-imgNum = "1" src="images/9.png">
+		<div class="footer hide">
+			<img id="advimg" class="advimg" data-imgNum = "1" src="images/1.png">
 			<div class="logo">
 				<img src="images/logo.jpg">
 			</div>
 		</div>
+		<div class="sharePop hide">
+			<img src="images/sharebg.png">
+		</div>
 	</div>
     <script type="text/javascript" src="js/zepto.min.js"></script>
     <script type="text/javascript" src="js/touch.js"></script>
-    <script type="text/javascript">
-        var core = 0;
-        $(function(){
-//            setTimeout(function(){
-//                $(".page-0").removeClass("hide");
-//            },50)
-	        setTimeout(function(){
-		        $("#text1").removeClass("hide").addClass("animated fadeInDown");
-	        },100);
-	        setTimeout(function(){
-		        $("#input").removeClass("hide").addClass("animated fadeInLeft");
-	        },200);
-	        setTimeout(function(){
-		        $("#text2").removeClass("hide").addClass("animated fadeInRight");
-	        },300);
-	        setTimeout(function(){
-		        $("#sanba").removeClass("hide").addClass("animated rotateIn");
-	        },400);
-            $("#inputIn").on("focus",function(){
-                var val = $(this).val();
-                if(val == "输入TA的姓名"){
-                    $(this).val("");
-                }
-            }).on("blur",function(){
-                var val = $(this).val();
-                if(val == ""){
-                    $(this).val("输入TA的姓名");
-                }
-            })
-            $("#q1a").on("tap",function(){
-                changePage(1,2);
-                changeFooterImg(2);
-                core = core + 5;
-            });
-            $("#q1b").on("tap",function(){
-                changePage(1,2);
-                changeFooterImg(2);
-                core = core + 12;
-            });
-            $("#q2a").on("tap",function(){
-                changePage(2,3);
-                changeFooterImg(3);
-                core = core + 5;
-            });
-            $("#q2b").on("tap",function(){
-                changePage(2,3);
-                changeFooterImg(3);
-                core = core + 12;
-            });
-
-            $("#q3a").on("tap",function(){
-                changePage(3,4);
-                changeFooterImg(4);
-                core = core + 5;
-            });
-            $("#q3b").on("tap",function(){
-                changePage(3,4);
-                changeFooterImg(4);
-                core = core + 12;
-            });
-
-            $("#q4a").on("tap",function(){
-                changePage(4,5);
-                changeFooterImg(5);
-                core = core + 5;
-            });
-            $("#q4b").on("tap",function(){
-                changePage(4,5);
-                changeFooterImg(5);
-                core = core + 12;
-            });
-
-            $("#q5a").on("tap",function(){
-                changePage(5,6);
-                changeFooterImg(6);
-                core = core + 5;
-            });
-            $("#q5b").on("tap",function(){
-                changePage(5,6);
-                changeFooterImg(6);
-                core = core + 12;
-            });
-
-            $("#q6a").on("tap",function(){
-                changePage(6,7);
-                changeFooterImg(7);
-                core = core + 5;
-            });
-            $("#q6b").on("tap",function(){
-                changePage(6,7);
-                changeFooterImg(7);
-                core = core + 12;
-            });
-
-            $("#q7a").on("tap",function(){
-                changePage(7,8);
-                changeFooterImg(8);
-                core = core + 5;
-            });
-            $("#q7b").on("tap",function(){
-                changePage(7,8);
-                changeFooterImg(8);
-                core = core + 12;
-            });
-
-        })
-        function changePage(num,num1){
-            $(".page-"+num).addClass("animated slideOutUp");
-            $(".page-"+num1).removeClass("hide").addClass("animated slideInDown");
-        }
-        function changeFooterImg(num){
-			$("#advimg").addClass("animated rotateOutUpRight");
-            $("#advimg").removeClass("animated rotateOutUpRight");
-            $("#advimg").attr("src","images/"+num+".png")
-            $("#advimg").addClass("animated rotateInDownLeft");
-            $("#advimg").removeClass("animated rotateInDownLeft");
-        }
-        $("#starBtn").on("tap",function(){
-            if($("#inputIn").val()=="" || $("#inputIn").val() == "输入TA的姓名"){
-                $("#input").removeClass("fadeInLeft").addClass("shake");
-                setTimeout(function(){
-                    $("#input").removeClass("shake");
-                },1000)
-            }else{
-                $(".page-0").addClass("animated slideOutUp");
-                $(".page-1").removeClass("hide").addClass("animated slideInDown");
-                $(".footer").removeClass("hide").addClass("animated rotateInDownLeft");
-            }
-        })
-
-    </script>
+	<script type="text/javascript" src="js/index.js" charset="utf-8"></script>
 </body>
 </html>
