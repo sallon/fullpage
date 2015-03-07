@@ -69,8 +69,9 @@ body{
   }
   .input{
     display: block;
-    height: rem-calc(55px);
-    width: rem-calc(260px);
+    height: 5%;
+    min-height: rem-calc(55px);
+    width: 40%;
     position: absolute;
     overflow: hidden;
     background-color: #ffe9e3;
@@ -121,8 +122,7 @@ body{
     position: absolute;
     bottom: 10%;
     img{
-      width: rem-calc(290px);
-      height: rem-calc(65px);
+      width: 60%;
     }
   }
 }
