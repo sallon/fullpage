@@ -3,6 +3,7 @@
  */
 var core = 0;
 var userName = "";
+var title='';
 $(function(){
     showPage0();
     $("#inputIn").on("focus",function(){
@@ -94,10 +95,12 @@ $(function(){
         core = core + 12;
     });
     $("#q8a").on("tap",function(){
+        changeFooterImg("9");
         core = core + 5;
         showScore();
     });
     $("#q8b").on("tap",function(){
+        changeFooterImg("9");
         core = core + 12;
         showScore();
     });
@@ -110,7 +113,7 @@ $(function(){
     $("#againBtn").on("tap",function(){
         window.location.reload();
     });
-
+    autoPlay();
 })
 function showPage0(){
     setTimeout(function(){
@@ -144,7 +147,7 @@ function showScore(){
     $("#advimg").attr("src","images/9.png")
     $("title").text("#"+$("#inputIn").val()+"#的三(chun)八(meng)指数竟然高达"+core+"%");
     setTimeout(function(){
-        ("#inputIn").val("");
+        $("#inputIn").val("");
     },1000);
 
 }
@@ -159,11 +162,63 @@ function changePage(num,num1){
 
 }
 function changeFooterImg(num){
-    $("#advimg").addClass("animated tada");
-    setTimeout(function(){
-        $("#advimg").removeClass("animated tada");
-    },500);
-    $("#advimg").attr("src","images/"+num+".png?v=1");
+    if(num!="9"){
+        $(".advimg img").remove();
+        $(".advimg").html('<img src="images/newpage/'+num+'.png" class="advimg_img im'+num+'">');
+        setTimeout(function(){
+            if(num=="1"){
+                $(".advimg .advimg_img").addClass("animated wobble");
+                setTimeout(function(){
+                    $(".advimg .advimg_img").removeClass("animated wobble");
+                },300);
+            }else if(num=="2"){
+                $(".advimg .advimg_img").addClass("animated flip");
+                $(".advimg .advimg_img").removeClass("im1");
+                setTimeout(function(){
+                    $(".advimg .advimg_img").removeClass("animated flip");
+                },300);
+            }else if(num=="3"){
+                $(".advimg .advimg_img").addClass("animated wobble");
+                $(".advimg .advimg_img").removeClass("im2");
+                setTimeout(function(){
+                    $(".advimg .advimg_img").removeClass("animated wobble");
+                },300);
+            }else if(num=="4"){
+                $(".advimg .advimg_img").addClass("animated bounceIn");
+                $(".advimg .advimg_img").removeClass("im3");
+                setTimeout(function(){
+                    $(".advimg .advimg_img").removeClass("animated bounceIn");
+                },300);
+            }else if(num=="5"){
+                $(".advimg .advimg_img").addClass("animated flip");
+                $(".advimg .advimg_img").removeClass("im4");
+                setTimeout(function(){
+                    $(".advimg .advimg_img").removeClass("animated flip");
+                },300);
+            }else if(num=="6"){
+                $(".advimg .advimg_img").addClass("animated wobble");
+                $(".advimg .advimg_img").removeClass("im5");
+                setTimeout(function(){
+                    $(".advimg .advimg_img").removeClass("animated wobble");
+                },300);
+            }else if(num=="7"){
+                $(".advimg .advimg_img").addClass("animated bounceIn");
+                $(".advimg .advimg_img").removeClass("im6");
+                setTimeout(function(){
+                    $(".advimg .advimg_img").removeClass("animated bounceIn");
+                },300);
+            }else if(num=="8"){
+                $(".advimg .advimg_img").addClass("animated rubberBand");
+                $(".advimg .advimg_img").removeClass("im7");
+                setTimeout(function(){
+                    $(".advimg .advimg_img").removeClass("animated rubberBand");
+                },300);
+            }
+        },100);
+    }else if(num == "9"){
+        $(".advimg").addClass("hide");
+        $(".lastBg").removeClass("hide");
+    }
     //setTimeout(function(){
     //    $("#advimg").removeClass("hide").addClass("animated wobble");
     //    setTimeout(function(){

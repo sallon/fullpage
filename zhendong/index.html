@@ -2,14 +2,14 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>测试你眼中大TA又多三（chun）八（meng）？</title>
+	<title>测试你眼中的TA有多三（chun）八（meng）？</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 	<meta name="format-detection" content="telephone=no, email=no">
 	<meta name="apple-touch-fullscreen" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/index.css?v=1">
+    <link rel="stylesheet" href="css/index.css?v=1.1.1">
     <img src="images/logo.jpg">
 
 </head>
@@ -95,29 +95,57 @@
             <img class="again" id="againBtn" src="images/again.png">
         </div>
 		<div class="footer hide">
-			<img id="advimg" class="advimg" data-imgNum = "1" src="images/1.png">
+			<div class="imgBg advimg">
+                <img id="img1" src="images/newpage/1.png" class="advimg_img im1">
+                <!--<img id="img2" src="images/newpage/2.png" class="advimg_img im2 hide">-->
+                <!--<img id="img3" src="images/newpage/3.png" class="advimg_img im3 hide">-->
+                <!--<img id="img4" src="images/newpage/4.png" class="advimg_img im4 hide">-->
+                <!--<img id="img5" src="images/newpage/5.png" class="advimg_img im5 hide">-->
+                <!--<img id="img6" src="images/newpage/6.png" class="advimg_img im6 hide">-->
+                <!--<img id="img7" src="images/newpage/7.png" class="advimg_img im7 hide">-->
+                <!--<img id="img8" src="images/newpage/8.png" class="advimg_img im8 hide">-->
+            </div>
+            <img src="images/9.png" class="lastBg hide">
 			<div class="logo">
 				<img src="images/logo.jpg">
 			</div>
 		</div>
 		<div class="sharePop hide">
-			<img src="images/sharebg.png">
+			<img src="images/shareimg.png">
 		</div>
 	</div>
+    <div class="u-audio">
+        <span class="audio-icon"></span>
+    </div>
     <script type="text/javascript" src="js/zepto.min.js"></script>
     <script type="text/javascript" src="js/touch.js"></script>
-	<script type="text/javascript" src="js/index.js" charset="utf-8"></script>
-    <div class="preLoadImg hide" >
-        <img class="hide" src="images/1.png">
-        <img class="hide" src="images/2.png">
-        <img class="hide" src="images/3.png">
-        <img class="hide" src="images/4.png">
-        <img class="hide" src="images/5.png">
-        <img class="hide" src="images/6.png">
-        <img class="hide" src="images/7.png">
-        <img class="hide" src="images/8.png">
-        <img class="hide" src="images/9.png">
-    </div>
-
+	<script type="text/javascript" src="js/index.js?v=1.1.1" charset="utf-8"></script>
+    <script type="text/javascript">
+        function playSound(soundfile) {
+            if (window.mp3) {
+                if (window.mp3.paused) {
+                    window.mp3.loop = true;
+                    window.mp3.play();
+                }
+                else window.mp3.pause();
+            } else {
+                window.mp3 = new Audio(soundfile);
+                window.mp3.loop = true;
+                window.mp3.play();
+            }
+        }
+        $('.audio-icon').on("tap",function () {
+            if ($(this).is('.audio-xuan')) {
+                $(this).removeClass('audio-xuan');
+            } else {
+                $(this).addClass('audio-xuan');
+            }
+            playSound('images/mps.mp3');
+        });
+        function autoPlay(){
+            $('.audio-icon').addClass('audio-xuan');
+            playSound('images/mps.mp3?v=1');
+        }
+    </script>
 </body>
 </html>

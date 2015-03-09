@@ -181,6 +181,60 @@ body{
     bottom: rem-calc(70px);
     position: absolute;
     z-index: 100;
+    background-image: url("#{$img}newpage/bg.png");
+    height: rem-calc(290px);
+    background-size: 100% 100%;
+    text-align: center;
+    .advimg_img{
+      position: absolute;
+
+      &.im1{
+        left: 30%;
+        width: 40%;
+        bottom: rem-calc(10px);
+      }
+      &.im2{
+        left: 32%;
+        width: 35%;
+        bottom: rem-calc(20px);
+      }
+      &.im3{
+        left: 32%;
+        width: 43%;
+        bottom: rem-calc(50px);
+      }
+      &.im4{
+        left: 32%;
+        width: 40%;
+        bottom: rem-calc(30px);
+      }
+      &.im5{
+        left: 34%;
+        width: 42%;
+        bottom: rem-calc(30px);
+      }
+      &.im6{
+        left: 34%;
+        width: 38%;
+        bottom: rem-calc(30px);
+      }
+      &.im7{
+        left: 12%;
+        width: 73%;
+        bottom: rem-calc(30px);
+      }
+      &.im8{
+        left: 12%;
+        width: 78%;
+        bottom: rem-calc(30px);
+      }
+    }
+  }
+  .lastBg{
+    width: 100%;
+    bottom: rem-calc(70px);
+    position: absolute;
+    z-index: 100;
   }
   .logo{
     display: block;
@@ -207,9 +261,44 @@ body{
   width: 100%;
   height: 100%;
   z-index: 9999;
-  img{width: 100%;position: absolute;top: 0px; left: 0px;}
+  text-align: center;
+  img{width: 80%;margin-top: 20%;}
 }
 
+.u-audio {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  width: 26px;
+  height: 26px;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.audio-icon {
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  background-image: url("#{$img}/music.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.audio-xuan {
+  -webkit-animation-name: x-loading-spinner-rotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes x-loading-spinner-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 
 // set responsive
 @for $mediaIndex from 1 to length($mediaArray) + 1 {
