@@ -1,0 +1,29 @@
+/*animation by sallon start time 2015/3/9 */
+/*first page change*/
+/*slide animation*/
+.slideOutUp {//向上滚动消失
+  animation-name: slideOutUp;
+}
+@keyframes slideOutUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+}
+.slideInUp {//向上滚动消失
+  animation-name: slideInUp;
+}
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
