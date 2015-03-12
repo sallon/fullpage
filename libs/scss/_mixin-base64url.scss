@@ -1,0 +1,10 @@
+@mixin inlineImage($picName, $path: '', $suffix: png){
+  .#{$picName}{
+    background-image: inline-image($path+$picName+'.'+$suffix);
+  }
+}
+// example 缺省png
+// @include inlineImage('图片名','图片路径','图片类型');
+// @include inlineImage('name');
+// @include inlineImage('name','gif');
+// @include inlineImage('name','icon/','gif');

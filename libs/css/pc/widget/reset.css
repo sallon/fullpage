@@ -1,0 +1,28 @@
+/*reset*/
+body { font: 12px/1.5 SimSun, Arial, Tahoma, sans-serif; background-color: #ffffff; color: #666666; }
+
+html, body, p, dl, dt, dd, table, td, th, input, img, form, div, span, ul, ol, li, h1, h2, h3, h4, h5, h6, select, fieldset, button, sub, sup, textarea { margin: 0; padding: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+
+img { border: 0 none; }
+
+em, i { font-style: normal; }
+
+ul, ol { list-style: none outside none; }
+
+.clearfix:after { content: ""; display: block; clear: both; }
+
+.clearfix { *zoom: 1; }
+
+a { color: #333333; text-decoration: none; }
+
+a:hover { color: #ff3300; text-decoration: underline; }
+
+:focus { outline: 0; }
+
+.clear { clear: both; overflow: hidden; font-size: 0; height: 0; line-height: 0; }
+
+input, textarea, select { background-color: #ffffff; }

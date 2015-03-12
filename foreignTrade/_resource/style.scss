@@ -1,0 +1,7 @@
+@import "../../libs/scss/pc/global";
+@include global_reset("12px/1.5 Arial,SimSun,Tahoma",#333333,#fff,#000000,#ff4400);
+$img:"../images/";
+$version:"20150312";
+@import "header";
+@import "login";
+@import "sign";

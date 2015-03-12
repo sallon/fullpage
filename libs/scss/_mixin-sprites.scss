@@ -1,0 +1,27 @@
+//ºÏ²¢Ñ¡ÔñÆ÷
+@mixin spritesSize ($param...){
+  $left: 0 !default;
+  $top: 0 !default;
+  $extend: Csprites !default;
+  @if length($param) == 1{
+    $extend: nth($param, 1);
+  }
+  @if length($param) == 2{
+    $left: nth($param, 1);
+    $top:  nth($param, 2);
+  }
+  @if length($param) == 3{
+    $left: nth($param, 1);
+    $top:  nth($param, 2);
+    $extend: nth($param, 3);
+  }
+  @extend %#{$extend};
+
+  background-position: $left $top;
+}
+
+//icon
+@mixin iconImage($name, $dir){
+  @extend %icon#{$dir};
+  background-image: url(#{$img}icon/#{$dir}/#{$name});
+}
