@@ -4,4 +4,135 @@
   .bigimg{
     float: left;
   }
+  .loginForm{
+    width: 490px;
+    float: right;
+    background-image: url("#{$img}/loginSign/loginMiddle.jpg");
+    background-repeat: repeat-y;
+    overflow: hidden;
+    min-height: 474px;
+    margin-top: 30px;
+    position: relative;
+    .borderTop{
+      width: 490px;
+      height: 14px;
+      margin: 0px;
+      background-image: url("#{$img}/loginSign/loginTop.jpg");
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+    .borderBottom{
+      width: 490px;
+      height: 26px;
+      background-image: url("#{$img}/loginSign/loginBottom.jpg");
+      background-repeat: no-repeat;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+    .formInner{
+      padding: 0px 39px;
+      clear: both;
+      overflow: hidden;
+    }
+    .formTop{
+      clear: both;
+      overflow: hidden;
+      height: 40px;
+      line-height: 40px;
+      font-size: 28px;
+      padding-bottom: 10px;
+      .forg{
+        color: #ff5501;
+        vertical-align: middle;
+      }
+      .flightColor{
+        color: #d9e9ee;
+        margin: 0px 10px;
+        vertical-align: middle;
+      }
+      .fblue{
+        color: #4394d7;
+        font-size: 14px;
+        vertical-align: middle;
+        &:hover{
+          color: #ff4400;
+        }
+      }
+    }
+    .formItem{
+      height: 56px;
+      clear: both;
+      margin-top: 10px;
+      position: relative;
+      &.nameInput{
+        background-image: url("#{$img}/loginSign/name.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+      &.pwdInput{
+        background-image: url("#{$img}/loginSign/pwd.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+      input{
+        font-size: 18px;
+        line-height: 18px;
+        height: 18px;
+        padding: 14px 0px;
+        margin-top: 5px;
+        margin-left: 56px;
+        border: 0 none;
+        width: 344px;
+      }
+    }
+    .btns{
+      height: 56px;
+      line-height: 56px;
+      clear: both;
+      overflow: hidden;
+      margin-top: 33px;
+      .forget{
+        height: 20px;
+        line-height: 20px;
+        display: block;
+        padding-left: 25px;
+        background-image: url("#{$img}/loginSign/info.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        color: #f5741f;
+        text-decoration: underline;
+        float: left;
+        margin-top: 24px;
+      }
+      .submitBtn{
+        display: block;
+        float: right;
+        width: 160px;
+        height: 57px;
+        background-image: url("#{$img}/loginSign/subBtn.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+    }
+    .spide{
+      height: 13px;
+      width: 419px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      clear: both;
+      background-image: url("#{$img}/loginSign/spide.jpg");
+      margin-top: 35px;
+    }
+    .registBtn{
+      clear: both;
+      display: block;
+      height: 55px;
+      width: 412px;
+      background-image: url("#{$img}/loginSign/registBtn.jpg");
+      background-repeat: no-repeat;
+      margin-top: 17px;
+    }
+  }
 }
