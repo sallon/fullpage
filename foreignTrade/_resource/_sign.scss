@@ -1,0 +1,74 @@
+.signBox{
+  width: 1240px;
+  margin: 0px auto;
+  clear: both;
+  overflow: hidden;
+  .signTitle{
+    text-align: center;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #ff7110;
+    margin: 50px 0px;
+  }
+  .signFormItem{
+    clear: both;
+    overflow: hidden;
+    height: 57px;
+    margin-bottom: 42px;
+    font-family: "свт╡";
+    .signFormItemLeft{
+      float: left;
+      width: 410px;
+      height: 57px;
+      position: relative;
+      background-image: url("#{$img}/loginSign/inputbg.jpg");
+      margin-left: 220px;
+      input{
+        font-size: 20px;
+        color: #333333;
+        width: 390px;
+        margin: 0px 10px;
+        height: 20px;
+        line-height: 20px;
+        padding:14px 0px;
+        position: relative;
+        top: 5px;
+        border: 0 none;
+        _border: none;
+        font-weight: bold;
+      }
+    }
+    .signFormItemRight{
+      min-width: 300px;
+      float: left;
+      margin-left: 23px;
+      font-size: 20px;
+      line-height: 57px;
+      font-weight: bold;
+      color: #008adf;
+    }
+    .submitBtn{
+      clear: both;
+      display: block;
+      height: 55px;
+      width: 412px;
+      background-image: url("#{$img}/loginSign/registBtn.jpg");
+      background-repeat: no-repeat;
+      margin: 0 auto;
+    }
+  }
+  .toLogin{
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+    font-family: "свт╡";
+    font-weight: bold;
+    a{
+      text-decoration:underline;
+      color: #ff4f01;
+      margin-left: 10px;
+    }
+  }
+}
