@@ -5,4 +5,59 @@ $version:"20150312";
 @import "header";
 @import "login";
 @import "sign";
+.container{
+  min-width: 1240px;
+  margin-top: -10px;
+  clear: both;
+  .menuInner{
+    height: 48px;
+    width: 100%;
+    min-width: 1240px;
+    background-image: url("#{$img}/menu/menuBg.jpg");
+    line-height: 48px;
+    background-repeat:repeat-x;
+    .menuBox{
+      width: 1240px;
+      margin: 0 auto;
+      clear: both;
+      ul{
+        float: left;
+        li{
+          float: left;
+          text-align: center;
+          border-left: 1px solid #a5a5a5;
+          border-right: 1px solid #ffffff;
+          &.borderRight{
+            border-right: 1px solid #a5a5a5;
+          }
+          a{
+            height: 45px;
+            display: block;
+            width: 155px;
+            line-height: 45px;
+            font-size: 18px;
+            &:hover{
+              background-color: #ffffff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .rightOnly{
+        float: right;
+        width: 306px;
+        height: 48px;
+        line-height: 48px;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        background-color: #ffffff;
+        border-right: 1px solid #a5a5a5;
+        border-left: 1px solid #a5a5a5;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
 @import "index";
