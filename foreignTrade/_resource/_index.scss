@@ -120,10 +120,12 @@
   /*右边导航*/
   .rightContent{
     width: 306px;
-    border-left: 1px solid #7a7a7b;
-    border-right: 1px solid #7a7a7b;
-    border-bottom: 1px solid #7a7a7b;
     float: right;
+    .navbar{
+      border-left: 1px solid #7a7a7b;
+      border-right: 1px solid #7a7a7b;
+      border-bottom: 1px solid #7a7a7b;
+    }
     li{
       height: 47px;
       line-height: 47px;
@@ -343,5 +345,100 @@
     -webkit-transform: rotate(360deg);	/* Safari and Chrome */
     -o-transform: rotate(360deg);		/* Opera */
     -moz-transform: rotate(360deg);
+  }
+}
+.contactUs{
+  margin-top: 15px;
+  clear: both;
+  overflow: hidden;
+  img{
+    width: 306px;
+  }
+}
+/*user center*/
+.userInfo{
+  clear: both;
+  overflow: hidden;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  margin-top: 28px;
+  padding: 12px 20px;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  .changePhoto{
+    width: 115px;
+    float: left;
+    text-align: center;
+    img{
+      width: 115px;
+      height: 115px;
+    }
+    a{
+      color: #8e8e8e;
+      font-size: 22px;
+      &:hover{
+        color: #ff4400;
+        cursor: pointer;
+      }
+    }
+  }
+  .infoList{
+    float: left;
+    margin-left: 50px;
+    font-size: 18px;
+    color: #2e2e2e;
+    font-weight: bold;
+    line-height: 38px;
+    .item input{
+      padding: 3px 10px;
+      color: #008adf;
+      width: 95px;
+      border-radius: 3px;
+      border: 1px solid #e6e5e5;
+    }
+  }
+  .changeInfoBtn{
+    display: block;
+    position: absolute;
+    width: 87px;
+    height: 28px;
+    top: 12px;
+    right: 114px;
+    background-image: url("#{$img}/user/changeBtn.jpg");
+  }
+}
+.otherInfo{
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  font-size: 24px;
+  margin-top: 24px;
+  .line1{
+    text-align: center;
+    color: #fe5e22;
+    font-weight: bold;
+    border-bottom: 1px solid #c6c6c6;
+    line-height: 48px;
+    height: 48px;
+    padding-bottom: 10px;
+    a{
+      color: #016adf;
+      text-decoration: underline;
+      &:hover{
+        color: #f40;
+        text-decoration: underline;
+      }
+    }
+  }
+  .lineOther{
+    @extend .line1;
+    color: #000;
+    text-align: left;
+    a{text-decoration: none;}
+  }
+  .lineLast{
+    @extend .lineOther;
+    border-bottom: none;
   }
 }
