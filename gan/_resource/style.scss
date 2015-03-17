@@ -160,6 +160,66 @@ floor($rem-base/$ratioFor640);
     display: none;
   }
 }
+.page7_1{
+  @extend %page;
+  background-image: url("#{$img}bg7_1.jpg");
+  .point{
+    position: absolute;
+    width: 100%;
+    top: rem-calc(355px);
+    display: none;
+  }
+  .leaf{
+    width: 100%;
+    top: 30%;
+    position: absolute;
+    height: rem-calc(295px);
+    line-height: rem-calc(295px);
+    background-image: url("#{$img}inputLeaf.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    input{
+      background: none;
+      border: 0 none;
+      text-align: center;
+      width: 100%;
+      font-size: rem-calc(80px);
+      font-weight: bold;
+      color: #ffffff;
+    }
+  }
+  .countOfUser{
+    width: 100%;
+    height: rem-calc(200px);
+    font-size: rem-calc(45px);
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    line-height: rem-calc(60px);
+    .num{
+      width: rem-calc(57px);
+      height: rem-calc(78px);
+      display: inline-block;
+      color: #f30;
+      font-weight: bold;
+      font-size: rem-calc(60px);
+      line-height: rem-calc(78px);
+      background-image: url("#{$img}numbg.png");
+      background-size: cover;
+      text-align: center;
+      margin: 0px rem-calc(7px);
+    }
+  }
+}
+.page7_2{
+  @extend %page;
+  background-image: url("#{$img}bg7_2.png");
+}
+.page7_3{
+  @extend %page;
+  background-image: url("#{$img}bg7_3.png");
+}
 
 
 
