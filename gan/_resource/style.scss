@@ -124,6 +124,43 @@ floor($rem-base/$ratioFor640);
     display: none;
   }
 }
+.page5{
+  @extend %page;
+  background-image: url("#{$img}/bg5.jpg");
+  .text5{
+    width: 100%;
+    position: absolute;
+    top: rem-calc(60px);
+    left: 0;
+    display: none;
+  }
+}
+.page6{
+  @extend %page;
+  background-image: url("#{$img}/bg6.jpg");
+  .xin{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+  }
+  .text6{
+    width: 100%;
+    position: absolute;
+    top: rem-calc(542px);
+    left: 0;
+    display: none;
+  }
+  .bottomImg{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: none;
+  }
+}
+
 
 
 
