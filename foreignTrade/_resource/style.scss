@@ -5,4 +5,85 @@ $version:"20150312";
 @import "header";
 @import "login";
 @import "sign";
+.container{
+  min-width: 1240px;
+  margin-top: -10px;
+  clear: both;
+  .menuInner{
+    height: 48px;
+    width: 100%;
+    min-width: 1240px;
+    background-image: url("#{$img}/menu/menuBg.jpg");
+    line-height: 48px;
+    background-repeat:repeat-x;
+    .menuBox{
+      width: 1240px;
+      margin: 0 auto;
+      clear: both;
+      ul{
+        float: left;
+        li{
+          float: left;
+          text-align: center;
+          border-left: 1px solid #a5a5a5;
+          border-right: 1px solid #ffffff;
+          &.borderRight{
+            border-right: 1px solid #a5a5a5;
+          }
+          a{
+            height: 45px;
+            display: block;
+            width: 155px;
+            line-height: 45px;
+            font-size: 18px;
+            position: relative;
+            &.active,&:hover{
+              background-color: #ffffff;
+              text-decoration: none;
+              color: #ff4400;
+            }
+            .iconMoney{
+              display: inline-block;
+              width: 27px;
+              height: 24px;
+              background-image: url("#{$img}/icons.png");
+              background-position: 0 0;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              position: relative;
+              top: 7px;
+              left: 4px;
+            }
+            .iconContact{
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              background-image: url("#{$img}/icons.png");
+              background-position: -28px 0;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              position: relative;
+              top: 6px;
+              left: 4px;
+            }
+          }
+        }
+      }
+      .rightOnly{
+        float: right;
+        width: 306px;
+        height: 48px;
+        line-height: 48px;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        background-color: #ffffff;
+        border-right: 1px solid #a5a5a5;
+        border-left: 1px solid #a5a5a5;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
 @import "index";
