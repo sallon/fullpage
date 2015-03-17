@@ -6,18 +6,6 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2014 Daniel Eden
 */
 
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-.animated.infinite {
-  animation-iteration-count: infinite;
-}
-
-.animated.hinge {
-  animation-duration: 2s;
-}
 //attention_seekers
 @import "attention_seekers/bounce";
 @import "attention_seekers/flash";
@@ -106,3 +94,17 @@ Copyright (c) 2014 Daniel Eden
 @import "zooming_entrances/zoomInRight";
 @import "zooming_entrances/zoomInDown";
 @import "zooming_entrances/zoomInUp";
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
