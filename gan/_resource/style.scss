@@ -100,16 +100,16 @@ floor($rem-base/$ratioFor640);
   @extend %page;
   background-image: url("#{$img}/bg3.jpg");
   .gan{
-    width: 80%;
+    height: 60%;
     top: 0px;
-    left: rem-calc(64px);
+    left: 18%;
     position: absolute;
     display: none;
   }
   .text3{
-    width: 100%;
+    height: 20%;
     position: absolute;
-    bottom: rem-calc(90px);
+    bottom: 10%;
     display: none;
   }
 }
@@ -139,16 +139,16 @@ floor($rem-base/$ratioFor640);
   @extend %page;
   background-image: url("#{$img}/bg6.jpg");
   .xin{
-    width: 100%;
+    height: 45%;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 10%;
     display: none;
   }
   .text6{
     width: 100%;
     position: absolute;
-    top: rem-calc(542px);
+    top: 48%;
     left: 0;
     display: none;
   }
@@ -257,7 +257,7 @@ floor($rem-base/$ratioFor640);
     height: 100%;
     background: rgba(0,0,0,0.9);
     img{
-      width: 100%;
+      height: 90%;
     }
   }
 }
