@@ -21,16 +21,27 @@ $(function(){
     $("#page4").swipeUp(function(){
         showPageFive();
     });
-    $("#page4").swipeUp(function(){//第四页向上滑上去显示第三页
+    $("#page4").swipeDown(function(){//第四页向上滑上去显示第三页
         showPageThreeAgain();
     });
 
     $("#page5").swipeUp(function(){
         showPageSix();
     });
+    $("#page5").swipeDown(function(){//第五页向上滑上去显示第三页
+        showPageFourAgain();
+    });
+
     $("#page6").swipeUp(function(){
         showPageSeven();
     });
+    $("#page6").swipeDown(function(){
+        showPageFiveAgain();
+    });
+    $("#page7").swipeDown(function(){
+        showPageSixAgain();
+    });
+
 });
 /*显示第一页*/
 function showPageOne(){
@@ -42,13 +53,15 @@ function showPageOneAgain(){
     $("#page1").css("display","block").removeClass("animated fadeOutUp").addClass("animated fadeIn");
     $("#text1").css("display","block").addClass("animated fadeInLeft");
     //清楚第二页上面的动画
-    $("#page2").css("display","none").removeClass("animated fadeInUp fadeOutDown");
-    $("#text2").css("display","none").removeClass("animated fadeInDown");
-    $(".map").css("display","none").removeClass("animated zoomIn");
-    $(".yuan1").css("display","none").removeClass("animated zoomIn");
-    $(".yuan2").css("display","none").removeClass("animated zoomIn");
-    $(".yuan3").css("display","none").removeClass("animated zoomIn");
-    $(".yuan3").css("display","none").removeClass("animated zoomIn");
+    setTimeout(function(){
+        $("#page2").css("display","none").removeClass("animated fadeInUp fadeOutDown");
+        $("#text2").css("display","none").removeClass("animated fadeInDown");
+        $(".map").css("display","none").removeClass("animated zoomIn");
+        $(".yuan1").css("display","none").removeClass("animated zoomIn");
+        $(".yuan2").css("display","none").removeClass("animated zoomIn");
+        $(".yuan3").css("display","none").removeClass("animated zoomIn");
+        $(".yuan3").css("display","none").removeClass("animated zoomIn");
+    },1000)
 }
 /*显示第二页*/
 function showPgaeTwo(){
@@ -72,9 +85,11 @@ function showPgaeTwo(){
     setTimeout(function(){
         $(".yuan3").css("display","block").addClass("animated zoomIn");
     },3500)
-    //清除第一页上面的动画class
-    $("#page1").css("display","none").removeClass("animated fadeIn fadeOutUp");
-    $("#text1").css("display","none").removeClass("animated fadeInLeft");
+    setTimeout(function(){
+        //清除第一页上面的动画class
+        $("#page1").css("display","none").removeClass("animated fadeIn fadeOutUp");
+        $("#text1").css("display","none").removeClass("animated fadeInLeft");
+    },1000)
 }
 
 function showPgaeTwoAgain(){
@@ -99,9 +114,11 @@ function showPgaeTwoAgain(){
         $(".yuan3").css("display","block").addClass("animated zoomIn");
     },3500)
     //清楚第三页上面的动画
-    $("#page3").css("display","none").removeClass("animated fadeInUp fadeOutDown");
-    $(".gan").css("display","none").removeClass("animated fadeInDown");
-    $("#text3").css("display","none").removeClass("animated fadeInUp");
+    setTimeout(function(){
+        $("#page3").css("display","none").removeClass("animated fadeInUp fadeOutDown");
+        $(".gan").css("display","none").removeClass("animated fadeInDown");
+        $("#text3").css("display","none").removeClass("animated fadeInUp");
+    },1000)
 }
 
 /*显示第三页*/
@@ -115,18 +132,20 @@ function showPageThree(){
         $("#text3").css("display","block").addClass("animated fadeInUp");
     },2000)
     //清楚第二页上面的动画
-    $("#page2").css("display","none").removeClass("animated fadeInUp fadeOutUp");
-    $("#text2").css("display","none").removeClass("animated fadeInDown");
-    $(".map").css("display","none").removeClass("animated zoomIn");
-    $(".yuan1").css("display","none").removeClass("animated zoomIn");
-    $(".yuan2").css("display","none").removeClass("animated zoomIn");
-    $(".yuan3").css("display","none").removeClass("animated zoomIn");
-    $(".yuan3").css("display","none").removeClass("animated zoomIn");
+    setTimeout(function(){
+        $("#page2").css("display","none").removeClass("animated fadeInUp fadeOutUp");
+        $("#text2").css("display","none").removeClass("animated fadeInDown");
+        $(".map").css("display","none").removeClass("animated zoomIn");
+        $(".yuan1").css("display","none").removeClass("animated zoomIn");
+        $(".yuan2").css("display","none").removeClass("animated zoomIn");
+        $(".yuan3").css("display","none").removeClass("animated zoomIn");
+        $(".yuan3").css("display","none").removeClass("animated zoomIn");
+    },1000)
 }
 
 function showPageThreeAgain(){
     $("#page4").addClass("animated fadeOutDown");
-    $("#page3").css("display","block").addClass("animated fadeInUp");
+    $("#page3").css("display","block").addClass("animated fadeInDown");
     setTimeout(function(){
         $(".gan").css("display","block").addClass("animated fadeInDown");
     },1000)
@@ -134,8 +153,10 @@ function showPageThreeAgain(){
         $("#text3").css("display","block").addClass("animated fadeInUp");
     },2000)
     //清楚第四页上面的动画
-    $("#page4").css("display","none").removeClass("animated fadeInUp fadeOutDown");
-    $("#text4").css("display","none").removeClass("animated fadeInDown");
+    setTimeout(function(){
+        $("#page4").css("display","none").removeClass("animated fadeInUp fadeOutDown");
+        $("#text4").css("display","none").removeClass("animated fadeInDown");
+    },1000)
 }
 
 /*显示第四页*/
@@ -146,9 +167,23 @@ function showPageFour(){
         $("#text4").css("display","block").addClass("animated fadeInDown");
     },1000)
     //清楚第三页上面的动画
-    $("#page3").css("display","none").removeClass("animated fadeInUp fadeOutUp");
-    $(".gan").css("display","none").removeClass("animated fadeInDown");
-    $("#text3").css("display","none").removeClass("animated fadeInUp");
+    setTimeout(function(){
+        $("#page3").css("display","none").removeClass("animated fadeInUp fadeOutUp");
+        $(".gan").css("display","none").removeClass("animated fadeInDown");
+        $("#text3").css("display","none").removeClass("animated fadeInUp");
+    },1000)
+}
+function showPageFourAgain(){
+    $("#page5").addClass("animated fadeOutDown");
+    $("#page4").css("display","block").addClass("animated fadeInDown");
+    setTimeout(function(){
+        $("#text4").css("display","block").addClass("animated fadeInDown");
+    },1000)
+    //清楚第五页上面的动画
+    setTimeout(function(){
+        $("#page5").css("display","none").removeClass("animated fadeInUp fadeOutDown");
+        $("#text5").css("display","none").removeClass("animated fadeInDown");
+    },2000)
 }
 
 /*显示第五页*/
@@ -159,9 +194,27 @@ function showPageFive(){
         $("#text5").css("display","block").addClass("animated fadeInDown");
     },1000)
     //清楚第四页上面的动画
-    $("#page4").css("display","none").removeClass("animated fadeInUp fadeOutUp");
-    $("#text4").css("display","none").removeClass("animated fadeInDown");
+    setTimeout(function(){
+        $("#page4").css("display","none").removeClass("animated fadeInUp fadeOutUp");
+        $("#text4").css("display","none").removeClass("animated fadeInDown");
+    },1000)
 }
+
+function showPageFiveAgain(){
+    $("#page6").addClass("animated fadeOutDown");
+    $("#page5").css("display","block").addClass("animated fadeInDown");
+    setTimeout(function(){
+        $("#text5").css("display","block").addClass("animated fadeInDown");
+    },1000)
+    //清楚第四页上面的动画
+    setTimeout(function(){
+        $("#page6").css("display","none").removeClass("animated fadeInUp fadeOutDown");
+            $(".xin").css("display","none").removeClass("animated zoomIn");
+            $("#text6").css("display","none").removeClass("animated fadeInDown");
+            $(".bottomImg").css("display","none").removeClass("animated fadeInUp");
+    },1000)
+}
+
 /*显示第六页*/
 function showPageSix(){
     $("#page5").addClass("animated fadeOutUp");
@@ -176,13 +229,78 @@ function showPageSix(){
         $(".bottomImg").css("display","block").addClass("animated fadeInUp");
     },2500)
     //清楚第五页上面的动画
-    $("#page5").css("display","none").removeClass("animated fadeInUp fadeOutUp");
-    $("#text5").css("display","none").removeClass("animated fadeInDown");
+    setTimeout(function(){
+        $("#page5").css("display","none").removeClass("animated fadeInUp fadeOutUp");
+        $("#text5").css("display","none").removeClass("animated fadeInDown");
+    },1000)
+}
+
+function showPageSixAgain(){
+    $("#page7").addClass("animated fadeOutDown");
+    $("#page6").css("display","block").addClass("animated zoomIn");
+    setTimeout(function(){
+        $(".xin").css("display","block").addClass("animated zoomIn");
+    },1000)
+    setTimeout(function(){
+        $("#text6").css("display","block").addClass("animated fadeInDown");
+    },2000)
+    setTimeout(function(){
+        $(".bottomImg").css("display","block").addClass("animated fadeInUp");
+    },2500)
+    //清楚第七页上面的动画
+    setTimeout(function(){
+        $("#page7").css("display","none").removeClass("animated fadeInUp fadeOutDown");
+        $(".countOfUser").hide();
+        $(".qipao").css("display","none").removeClass("animated fadeInUp");
+        $(".point").css("display","none").removeClass("animated fadeInRight");
+        $(".countOfUser").hide();
+        $(".leaf").css("display","none").removeClass("animated zoomIn");
+        $(".makeSure").hide();
+        $(".lastImg").hide();
+        $(".makeSure").hide();
+        $(".leaf").hide();
+        $(".inputResult").css("display","none").removeClass("animated zoomIn");
+        $(".invite").css("display","none").removeClass("animated fadeInDown");
+    },1000)
 }
 /*显示第七页*/
 function showPageSeven(){
     $("#page6").addClass("animated fadeOutUp");
     $(".swipeImg").css("display","none");
     $("#page7").css("display","block").addClass("animated fadeInUp");
-
+    setTimeout(function(){
+        $(".countOfUser").show();
+    },1000)
+    setTimeout(function(){
+        $(".qipao").css("display","block").addClass("animated fadeInUp");
+    },1300)
+    setTimeout(function(){
+        $(".point").css("display","block").addClass("animated fadeInRight");
+    },2000)
+    /*清除第六页上面的动画*/
+    setTimeout(function(){
+        $("#page6").css("display","none").removeClass("animated zoomIn");
+        $(".xin").css("display","none").removeClass("animated zoomIn");
+        $("#text6").css("display","none").removeClass("animated fadeInDown");
+        $(".bottomImg").css("display","none").removeClass("animated fadeInUp");
+    },1000)
 }
+/*点击叶子显示输入框*/
+$(".point").tap(function(){
+    $(".point").hide();
+    $(".countOfUser").hide();
+    $(".leaf").css("display","block").addClass("animated zoomIn");
+    $(".makeSure").show();
+})
+$(".makeSure").tap(function(){
+    $(".makeSure").hide();
+    $(".leaf").hide();
+    $(".inputResult").css("display","block").addClass("animated zoomIn");
+    $(".invite").css("display","block").addClass("animated fadeInDown");
+});
+$(".invite").tap(function(){
+    $(".lastImg").show();
+});
+$(".lastImg").tap(function(){
+    $(".lastImg").hide();
+});

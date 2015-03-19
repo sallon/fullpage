@@ -100,16 +100,16 @@ floor($rem-base/$ratioFor640);
   @extend %page;
   background-image: url("#{$img}/bg3.jpg");
   .gan{
-    width: 80%;
+    height: 60%;
     top: 0px;
-    left: rem-calc(64px);
+    left: 18%;
     position: absolute;
     display: none;
   }
   .text3{
-    width: 100%;
+    height: 20%;
     position: absolute;
-    bottom: rem-calc(90px);
+    bottom: 10%;
     display: none;
   }
 }
@@ -139,16 +139,16 @@ floor($rem-base/$ratioFor640);
   @extend %page;
   background-image: url("#{$img}/bg6.jpg");
   .xin{
-    width: 100%;
+    height: 45%;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 10%;
     display: none;
   }
   .text6{
     width: 100%;
     position: absolute;
-    top: rem-calc(542px);
+    top: 48%;
     left: 0;
     display: none;
   }
@@ -172,6 +172,7 @@ floor($rem-base/$ratioFor640);
   .leaf{
     width: 100%;
     top: 30%;
+    display: none;
     position: absolute;
     height: rem-calc(295px);
     line-height: rem-calc(295px);
@@ -209,6 +210,54 @@ floor($rem-base/$ratioFor640);
       background-size: cover;
       text-align: center;
       margin: 0px rem-calc(7px);
+    }
+  }
+  .qipao{
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    display: none;
+  }
+  .invite{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: none;
+  }
+  .makeSure{height: rem-calc(88px);position: absolute;bottom: rem-calc(160px);left: 23%;display: none}
+  .inputResult {
+    height: rem-calc(154px);
+    position: absolute;
+    right: 0px;
+    background-image: url("#{$img}/smalLeaf.png");
+    background-size: cover;
+    font-size: rem-calc(50px);
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    top: 40%;
+    display: none;
+    span{
+      position: absolute;
+      right: rem-calc(20px);
+      right: 18%;
+      top: rem-calc(50px);
+    }
+  }
+  .lastImg{
+    width: 100%;
+    zoom: 1;
+    z-index: 999;
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    img{
+      height: 90%;
     }
   }
 }
