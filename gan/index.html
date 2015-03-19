@@ -32,30 +32,33 @@
     <div class = "page4" id="page4">
         <img class="text4" id="text4" src="images/text4.png">
     </div>
-	<div class = "page5" id="page5">
-		<img class="text5" id="text5" src="images/text5.png">
-	</div>
-	<div class = "page6" id="page6">
-		<img class="xin" src="images/xin.png">
-		<img class="text6" id="text6" src="images/text6.png">
-		<img class="bottomImg" src="images/bottomtext.png">
-	</div>
+    <div class = "page5" id="page5">
+        <img class="text5" id="text5" src="images/text5.png">
+    </div>
+    <div class = "page6" id="page6">
+        <img class="xin" src="images/xin.png">
+        <img class="text6" id="text6" src="images/text6.png">
+        <img class="bottomImg" src="images/bottomtext.png">
+    </div>
     <div class = "page7_1" id="page7">
         <div class="page7_2"></div>
         <div class="page7_3"></div>
         <img src="images/qipao.png" class="qipao">
         <img class="point" src="images/point.png">
-        <div class="leaf">
-            <input type="text" id="name" value="姓名/昵称">
+        <div class="leaf" style="display:none;" >
+            <input type="text" value="姓名/昵称" id="sname">
+            <input type="hidden" value="" id="ip">
         </div>
         <div class="inputResult">
-            <span>用户名</span>
+            <span id="username">用户名</span>
         </div>
-        <img src="images/invite.png" class="invite">
+        <div class="invite">
+            <img src="images/invite.png">
+        </div>
         <!--<img class="leaf" src="images/inputLeaf.png">-->
         <img src="images/makesure.png" class="makeSure">
         <div class="countOfUser">
-            目前已有<span class="num">4</span><span class="num">7</span><span class="num">6</span>人点亮了<br>
+            目前已有<span class="num" id="num1">0</span><span class="num" id="num2">0</span><span class="num" id="num3">0</span>人点亮了<br>
             生命之树！
         </div>
         <div class="lastImg">
@@ -69,10 +72,71 @@
 </div>
 <script type="text/javascript" src="js/zepto.min.js"></script>
 <script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript" src="http://www.coding123.net/getip.ashx?js=1"></script>
 <script type="text/javascript">
-	document.addEventListener('touchmove', function (event) {
-		event.preventDefault();
-	}, false);
+    $(function(){
+        $("#ip").val(ip.substring(1,ip.length));
+        getNum();
+    });
+    document.addEventListener('touchmove', function (event) {
+        event.preventDefault();
+    }, false);
+
+
+    $("#sname").on("focus",function(){
+        var val = $(this).val();
+        if(val == "姓名/昵称"){
+            $(this).val("");
+        }
+    }).on("blur",function(){
+        var val = $(this).val();
+        if(val == ""){
+            $(this).val("姓名/昵称");
+        }
+    })
+
+
+    $(".makeSure").tap(function(){
+        var name=$("#sname").val();
+        var ip=$("#ip").val();
+        if(name==null || name==""){
+            alert("姓名/昵称 不能为空");
+        }
+        $.ajax({
+            type:"post",
+            url:"deal.php",
+            data:"name="+name+"&ip="+ip,
+            success:function(data){
+                if(data=="success"){
+                    $("#username").text(name);
+                }
+            }
+        });
+    });
+
+    function getNum(){
+        $.ajax({
+            type:"post",
+            url:"deal2.php",
+            success:function(data){
+                if(data<10){
+                    $("#num3").text(data);
+                }else if(data>=10 && data<100){
+                    $("#num2").text(data.substring(0,data.length-1));
+                    $("#num3").text(data%10);
+                }else if(data>=100 && data<1000){
+                    $("#num1").text(data.substring(0,data.length-2));
+                    $("#num2").text(data.substring(1,data.length-1));
+                    $("#num3").text(data%10);
+                }
+            }
+        });
+
+
+    }
+
+
+
 </script>
 <script type="text/javascript" src="js/index.js"></script>
 </body>

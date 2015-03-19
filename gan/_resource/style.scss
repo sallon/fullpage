@@ -220,25 +220,39 @@ floor($rem-base/$ratioFor640);
     display: none;
   }
   .invite{
-    width: 100%;
     position: absolute;
     bottom: 0px;
     left: 0px;
+    width: 100%;
+    height: 30%;
+    background: rgba(0,0,0,0.9);
     display: none;
+    img{
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
   }
-  .makeSure{height: rem-calc(88px);position: absolute;bottom: rem-calc(160px);left: 23%;display: none}
-  .inputResult {
-    height: rem-calc(154px);
+  .makeSure {
+    height: rem-calc(88px);
     position: absolute;
-    right: 0px;
+    bottom: 15%;
+    left: 23%;
+    display: none
+  }
+  .inputResult {
+    height: rem-calc(145px);
+    position: absolute;
+    right: rem-calc(30px);
     background-image: url("#{$img}/smalLeaf.png");
     background-size: cover;
     font-size: rem-calc(50px);
     color: #ffffff;
     font-weight: bold;
-    width: 100%;
+    width: rem-calc(310px);
     top: 40%;
     display: none;
+    text-align: center;
     span{
       position: absolute;
       right: rem-calc(20px);
@@ -258,6 +272,8 @@ floor($rem-base/$ratioFor640);
     background: rgba(0,0,0,0.9);
     img{
       height: 90%;
+      margin: 0 auto;
+      display: block;
     }
   }
 }
