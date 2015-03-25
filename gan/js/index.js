@@ -2,6 +2,7 @@
  * Created by sallon on 2015/3/17.
  */
 $(function(){
+    autoPlay();
     $("#page1").swipeUp(function(){
         showPgaeTwo();
     });
@@ -60,7 +61,6 @@ function showPageOneAgain(){
         $(".yuan1").css("display","none").removeClass("animated zoomIn");
         $(".yuan2").css("display","none").removeClass("animated zoomIn");
         $(".yuan3").css("display","none").removeClass("animated zoomIn");
-        $(".yuan3").css("display","none").removeClass("animated zoomIn");
     },1000)
 }
 /*显示第二页*/
@@ -116,8 +116,9 @@ function showPgaeTwoAgain(){
     //清楚第三页上面的动画
     setTimeout(function(){
         $("#page3").css("display","none").removeClass("animated fadeInUp fadeOutDown");
-        $(".gan").css("display","none").removeClass("animated fadeInDown");
-        $("#text3").css("display","none").removeClass("animated fadeInUp");
+        $(".gan1,.gan2,.gan3,.gan4").css("display","none").removeClass("animated fadeInDown");
+        $(".jian1,.jian2,.jian3").css("display","none").removeClass("animated fadeIn");
+        $("#text3").css("display","block").addClass("animated fadeInUp");
     },1000)
 }
 
@@ -126,11 +127,23 @@ function showPageThree(){
     $("#page2").addClass("animated fadeOutUp");
     $("#page3").css("display","block").addClass("animated fadeInUp");
     setTimeout(function(){
-        $(".gan").css("display","block").addClass("animated fadeInDown");
+        $(".gan1").css("display","block").addClass("animated fadeInDown");
     },1000)
     setTimeout(function(){
+        $(".gan2").css("display","block").addClass("animated fadeInDown");
+    },1700)
+    setTimeout(function(){
+        $(".gan3").css("display","block").addClass("animated fadeInDown");
+    },2500)
+    setTimeout(function(){
+        $(".gan4").css("display","block").addClass("animated fadeInDown");
+    },3200)
+    setTimeout(function(){
+        $(".jian1,.jian2,.jian3").css("display","block").addClass("animated fadeIn");
+    },3700)
+    setTimeout(function(){
         $("#text3").css("display","block").addClass("animated fadeInUp");
-    },2000)
+    },4500)
     //清楚第二页上面的动画
     setTimeout(function(){
         $("#page2").css("display","none").removeClass("animated fadeInUp fadeOutUp");
@@ -147,11 +160,23 @@ function showPageThreeAgain(){
     $("#page4").addClass("animated fadeOutDown");
     $("#page3").css("display","block").addClass("animated fadeInDown");
     setTimeout(function(){
-        $(".gan").css("display","block").addClass("animated fadeInDown");
+        $(".gan1").css("display","block").addClass("animated fadeInDown");
     },1000)
     setTimeout(function(){
+        $(".gan2").css("display","block").addClass("animated fadeInDown");
+    },1700)
+    setTimeout(function(){
+        $(".gan3").css("display","block").addClass("animated fadeInDown");
+    },2500)
+    setTimeout(function(){
+        $(".gan4").css("display","block").addClass("animated fadeInDown");
+    },3200)
+    setTimeout(function(){
+        $(".jian1,.jian2,.jian3").css("display","block").addClass("animated fadeIn");
+    },3700)
+    setTimeout(function(){
         $("#text3").css("display","block").addClass("animated fadeInUp");
-    },2000)
+    },4500)
     //清楚第四页上面的动画
     setTimeout(function(){
         $("#page4").css("display","none").removeClass("animated fadeInUp fadeOutDown");
@@ -168,8 +193,9 @@ function showPageFour(){
     },1000)
     //清楚第三页上面的动画
     setTimeout(function(){
-        $("#page3").css("display","none").removeClass("animated fadeInUp fadeOutUp");
-        $(".gan").css("display","none").removeClass("animated fadeInDown");
+        $("#page3").css("display","none").removeClass("animated fadeInDown fadeOutUp");
+        $(".gan1,.gan2,.gan3,.gan4").css("display","none").removeClass("animated fadeInDown");
+        $(".jian1,.jian2,.jian3").css("display","none").removeClass("animated fadeIn");
         $("#text3").css("display","none").removeClass("animated fadeInUp");
     },1000)
 }
@@ -182,7 +208,7 @@ function showPageFourAgain(){
     //清楚第五页上面的动画
     setTimeout(function(){
         $("#page5").css("display","none").removeClass("animated fadeInUp fadeOutDown");
-        $("#text5").css("display","none").removeClass("animated fadeInDown");
+        $("#text5").css("display","none").removeClass("animated fadeInRight");
     },2000)
 }
 
@@ -191,7 +217,7 @@ function showPageFive(){
     $("#page4").addClass("animated fadeOutUp");
     $("#page5").css("display","block").addClass("animated fadeInUp");
     setTimeout(function(){
-        $("#text5").css("display","block").addClass("animated fadeInDown");
+        $("#text5").css("display","block").addClass("animated fadeInRight");
     },1000)
     //清楚第四页上面的动画
     setTimeout(function(){
@@ -204,7 +230,7 @@ function showPageFiveAgain(){
     $("#page6").addClass("animated fadeOutDown");
     $("#page5").css("display","block").addClass("animated fadeInDown");
     setTimeout(function(){
-        $("#text5").css("display","block").addClass("animated fadeInDown");
+        $("#text5").css("display","block").addClass("animated fadeInRight");
     },1000)
     //清楚第四页上面的动画
     setTimeout(function(){
@@ -252,7 +278,7 @@ function showPageSixAgain(){
         $("#page7").css("display","none").removeClass("animated fadeInUp fadeOutDown");
         $(".countOfUser").hide();
         $(".qipao").css("display","none").removeClass("animated fadeInUp");
-        $(".point").css("display","none").removeClass("animated fadeInRight");
+        $(".point").css("display","none").removeClass("animated flash");
         $(".countOfUser").hide();
         $(".leaf").css("display","none").removeClass("animated zoomIn");
         $(".makeSure").hide();
@@ -261,6 +287,9 @@ function showPageSixAgain(){
         $(".leaf").hide();
         $(".inputResult").css("display","none").removeClass("animated zoomIn");
         $(".invite").css("display","none").removeClass("animated fadeInDown");
+        $(".countOfUserAgain").css("display","none").removeClass("animated zoomIn");
+        $(".page7_2").css("display","none").removeClass("animated fadeIn");
+        $(".page7_3").css("display","none").removeClass("animated fadeIn");
     },1000)
 }
 /*显示第七页*/
@@ -276,6 +305,13 @@ function showPageSeven(){
     },1300)
     setTimeout(function(){
         $(".point").css("display","block").addClass("animated fadeInRight");
+        setTimeout(function(){
+            $(".point").removeClass("animated fadeInRight").addClass("animated flash");
+            setTimeout(function(){
+                $(".point").css("display","none").removeClass("animated flash");
+                $(".page7_2").css("display","block").addClass("animated fadeIn");
+            },3000)
+        },3000)
     },2000)
     /*清除第六页上面的动画*/
     setTimeout(function(){
@@ -286,19 +322,32 @@ function showPageSeven(){
     },1000)
 }
 /*点击叶子显示输入框*/
+$(".page7_2").tap(function(){
+    //$(".point").hide();
+
+    $(".countOfUser").hide();
+    $(".leaf").css("display","block").addClass("animated zoomIn");
+    $(".page7_3").css("display","block").addClass("animated fadeIn");
+    $(".makeSure").show();
+})
 $(".point").tap(function(){
     $(".point").hide();
     $(".countOfUser").hide();
     $(".leaf").css("display","block").addClass("animated zoomIn");
+    $(".page7_3").css("display","block").addClass("animated fadeIn");
     $(".makeSure").show();
 })
 $(".makeSure").tap(function(){
     $(".makeSure").hide();
     $(".leaf").hide();
+    $(".qipao").hide();
+    $(".countOfUserAgain").css("display","block").addClass("animated zoomIn");
     $(".inputResult").css("display","block").addClass("animated zoomIn");
     $(".invite").css("display","block").addClass("animated fadeInDown");
+
 });
 $(".invite").tap(function(){
+    $("title").text($("#sname").val()+"邀你一起为肝病患者加油！")
     $(".lastImg").show();
 });
 $(".lastImg").tap(function(){
