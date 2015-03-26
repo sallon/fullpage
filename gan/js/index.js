@@ -9,35 +9,45 @@ $(function(){
     $("#page2").swipeUp(function(){
         showPageThree();
     });
-    $("#page2").swipeDown(function(){
-        showPageOneAgain();
-    });
+
     $("#page3").swipeUp(function(){
         showPageFour();
-    });
-    $("#page3").swipeDown(function(){//第三页向上滑上去显示第二页
-        showPgaeTwoAgain();
     });
 
     $("#page4").swipeUp(function(){
         showPageFive();
     });
-    $("#page4").swipeDown(function(){//第四页向上滑上去显示第三页
-        showPageThreeAgain();
+
+    $("#pageAdd").swipeUp(function(){
+        showPageSix();
     });
 
     $("#page5").swipeUp(function(){
-        showPageSix();
-    });
-    $("#page5").swipeDown(function(){//第五页向上滑上去显示第三页
-        showPageFourAgain();
+        showPageAdd();
     });
 
     $("#page6").swipeUp(function(){
         showPageSeven();
     });
-    $("#page6").swipeDown(function(){
+
+
+    $("#page2").swipeDown(function(){
+        showPageOneAgain();
+    });
+    $("#page3").swipeDown(function(){//第三页向上滑上去显示第二页
+        showPgaeTwoAgain();
+    });
+    $("#page4").swipeDown(function(){//第四页向上滑上去显示第三页
+        showPageThreeAgain();
+    });
+    $("#pageAdd").swipeDown(function(){//第四页向上滑上去显示第三页
         showPageFiveAgain();
+    });
+    $("#page5").swipeDown(function(){//第五页向上滑上去显示第三页
+        showPageFourAgain();
+    });
+    $("#page6").swipeDown(function(){
+        showPageAddAgain();
     });
     $("#page7").swipeDown(function(){
         showPageSixAgain();
@@ -227,23 +237,65 @@ function showPageFive(){
 }
 
 function showPageFiveAgain(){
-    $("#page6").addClass("animated fadeOutDown");
+    $("#pageAdd").addClass("animated fadeOutDown");
     $("#page5").css("display","block").addClass("animated fadeInDown");
     setTimeout(function(){
         $("#text5").css("display","block").addClass("animated fadeInRight");
     },1000)
     //清楚第四页上面的动画
     setTimeout(function(){
-        $("#page6").css("display","none").removeClass("animated fadeInUp fadeOutDown");
-            $(".xin").css("display","none").removeClass("animated zoomIn");
-            $("#text6").css("display","none").removeClass("animated fadeInDown");
-            $(".bottomImg").css("display","none").removeClass("animated fadeInUp");
+        $("#page5").css("display","block").removeClass("animated fadeInDown");
+        $("#pageAdd").css("display","none").removeClass("animated fadeInDown fadeOutDown");
+        $("#yaopian").css("display","none").removeClass("animated zoomIn");
+        $("#yezi").css("display","none").removeClass("animated zoomIn2s");
+        $("#textAdd").css("display","none").removeClass("animated fadeInDown")
     },1000)
 }
 
+/*中间加了一页 start*/
+function showPageAdd(){
+    $("#page5").addClass("animated fadeOutUp");
+    $("#pageAdd").css("display","block").addClass("animated fadeInUp");
+    setTimeout(function(){
+        $("#yaopian").css("display","block").addClass("animated zoomIn");
+    },1000)
+    setTimeout(function(){
+        $("#yezi").css("display","block").addClass("animated zoomIn2s");
+    },2000)
+    setTimeout(function(){
+        $("#textAdd").css("display","block").addClass("animated fadeInDown")
+    },4000)
+    setTimeout(function(){
+        $("#page5").css("display","none").removeClass("animated fadeInUp fadeOutUp");
+        $("#text5").css("display","none").removeClass("animated fadeInRight");
+    },5000)
+}
+
+function showPageAddAgain(){
+    $("#page6").removeClass("animated zoomIn");
+    $("#page6").addClass("animated fadeOutDown");
+    $("#pageAdd").css("display","block").addClass("animated fadeInDown");
+    setTimeout(function(){
+        $("#yaopian").css("display","block").addClass("animated zoomIn");
+    },1000)
+    setTimeout(function(){
+        $("#yezi").css("display","block").addClass("animated zoomIn2s");
+    },2000)
+    setTimeout(function(){
+        $("#textAdd").css("display","block").addClass("animated fadeInDown")
+    },4000)
+    setTimeout(function(){
+        $("#page6").css("display","none").removeClass("animated fadeOutDown zoomIn");
+        $(".xin").css("display","none").removeClass("animated zoomIn");
+        $("#text6").css("display","none").removeClass("animated fadeInDown");
+        $(".bottomImg").css("display","none").removeClass("animated fadeInUp");
+    },2000)
+}
+/*中间加了一页 end*/
+
 /*显示第六页*/
 function showPageSix(){
-    $("#page5").addClass("animated fadeOutUp");
+    $("#pageAdd").addClass("animated fadeOutUp")
     $("#page6").css("display","block").addClass("animated zoomIn");
     setTimeout(function(){
         $(".xin").css("display","block").addClass("animated zoomIn");
@@ -254,10 +306,12 @@ function showPageSix(){
     setTimeout(function(){
         $(".bottomImg").css("display","block").addClass("animated fadeInUp");
     },2500)
-    //清楚第五页上面的动画
+    //清楚add页面上面的动画
     setTimeout(function(){
-        $("#page5").css("display","none").removeClass("animated fadeInUp fadeOutUp");
-        $("#text5").css("display","none").removeClass("animated fadeInDown");
+        $("#pageAdd").css("display","none").removeClass("animated fadeInUp fadeOutUp");
+        $("#yaopian").css("display","none").removeClass("animated zoomIn");
+        $("#yezi").css("display","none").removeClass("animated zoomIn2s");
+        $("#textAdd").css("display","none").removeClass("animated fadeInDown")
     },1000)
 }
 
@@ -315,7 +369,7 @@ function showPageSeven(){
     },2000)
     /*清除第六页上面的动画*/
     setTimeout(function(){
-        $("#page6").css("display","none").removeClass("animated zoomIn");
+        $("#page6").css("display","none").removeClass("animated zoomIn fadeOutUp");
         $(".xin").css("display","none").removeClass("animated zoomIn");
         $("#text6").css("display","none").removeClass("animated fadeInDown");
         $(".bottomImg").css("display","none").removeClass("animated fadeInUp");
@@ -346,10 +400,10 @@ $(".makeSure").tap(function(){
     $(".invite").css("display","block").addClass("animated fadeInDown");
 
 });
-$(".invite").tap(function(){
-    $("title").text($("#sname").val()+"邀你一起为肝病患者加油！")
-    $(".lastImg").show();
-});
-$(".lastImg").tap(function(){
-    $(".lastImg").hide();
-});
+//$(".invite").tap(function(){
+//    $("title").text($("#sname").val()+"邀你一起为肝病患者加油！")
+//    $(".lastImg").show();
+//});
+//$(".lastImg").tap(function(){
+//    $(".lastImg").hide();
+//});

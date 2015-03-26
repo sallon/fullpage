@@ -179,6 +179,42 @@ floor($rem-base/$ratioFor640);
     display: none;
   }
 }
+.pageAdd{
+  @extend %page;
+  background-image: url("#{$img}/bgadd.jpg");
+  .textAdd{
+    width: 100%;
+    position: absolute;
+    top: rem-calc(60px);
+    height: 40%;
+    text-align: center;
+    left: 0;
+    display: none;
+    img{
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .yezi{
+    display: none;
+    overflow: hidden;
+    height: 49%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 100;
+    position: absolute;
+    img{
+      display: block;
+      margin: 0 auto;
+      height: 100%;
+    }
+  }
+  .yaopian{
+    @extend .yezi;
+    z-index: 120;
+  }
+}
 .page6{
   @extend %page;
   background-image: url("#{$img}/bg6.jpg");
