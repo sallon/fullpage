@@ -1,0 +1,11 @@
+@import "../../libs/scss/pc/global";
+@import "font";
+
+@include global_reset("12px/1.5 Arial,SimSun,Tahoma",#333333,#fff,#000000,#ff4400);
+$img:"../images/";
+$version:"20150329";
+$baseWidth:960px;
+.warp{clear: both;width: 100%;min-width: $baseWidth;}
+@import "header";
+@import "login";
+@import "sign";

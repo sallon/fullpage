@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@font-face { font-family: 'ARIALN'; src: url("../font//ARIALN.TTF"); font-style: normal; font-weight: normal; }
+@font-face { font-family: 'ARLRDBD'; src: url("../font//ARLRDBD.TTF"); font-style: normal; font-weight: normal; }
+/*reset*/
+body { font: 12px/1.5 Arial,SimSun,Tahoma; background-color: #fff; color: #333333; }
+
+html, body, p, dl, dt, dd, table, td, th, input, img, form, div, span, ul, ol, li, h1, h2, h3, h4, h5, h6, select, fieldset, button, sub, sup, textarea { margin: 0; padding: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+
+img { border: 0 none; }
+
+em, i { font-style: normal; }
+
+ul, ol { list-style: none outside none; }
+
+.clearfix:after { content: ""; display: block; clear: both; }
+
+.clearfix { *zoom: 1; }
+
+a { color: #000000; text-decoration: none; }
+
+a:hover { color: #ff4400; text-decoration: underline; }
+
+:focus { outline: 0; }
+
+.clear { clear: both; overflow: hidden; font-size: 0; height: 0; line-height: 0; }
+
+input, textarea, select { background-color: #ffffff; }
+
+.warp { clear: both; width: 100%; min-width: 960px; }
+
+.header { width: 100%; display: block; margin: 0px; padding: 0px; overflow: hidden; z-index: 2; zoom: 1; height: 117px; background-image: url("../images//common/headerbg.png?v=20150329"); min-width: 960px; }
+.header .headerInner { width: 960px; margin: 0px auto; height: 105px; position: relative; }
+.header .headerInner .logo { margin-top: 34px; width: 247px; height: 67px; }
+.header .headerInner .loginSign { position: absolute; height: 24px; line-height: 24px; width: 146px; padding-left: 26px; top: 12px; right: 10px; background-image: url("../images//common/loginIcon.png?v=20150329"); background-repeat: no-repeat; background-position: 0 0; color: #fff; font-size: 18px; }
+.header .headerInner .loginSign a { color: #fff; }
+.header .headerInner .loginSign a:hover { color: #ff4400; text-decoration: none; }
+
+.loginBox { width: 960px; margin: 0px auto; }
+.loginBox .bigimg { float: left; width: 534px; }
+.loginBox .loginForm { width: 375px; float: right; background-image: url("../images//loginSign/boxmiddle.jpg"); background-repeat: repeat-y; overflow: hidden; margin-top: 30px; padding-bottom: 22px; position: relative; }
+.loginBox .loginForm .borderTop { width: 375px; height: 12px; margin: 0px; background-image: url("../images//loginSign/boxtop.jpg"); background-repeat: no-repeat; overflow: hidden; position: relative; left: 1px; }
+.loginBox .loginForm .borderBottom { width: 375px; height: 22px; background-image: url("../images//loginSign/boxbottom.jpg"); background-repeat: no-repeat; overflow: hidden; position: absolute; bottom: 0px; left: 1px; }
+.loginBox .loginForm .formInner { padding: 0px 34px; clear: both; overflow: hidden; }
+.loginBox .loginForm .formTop { font-family: "microsoft yaihei"; clear: both; overflow: hidden; height: 40px; line-height: 40px; font-size: 18px; padding-bottom: 10px; }
+.loginBox .loginForm .formTop .forg { color: #ff5501; vertical-align: middle; font-weight: bold; }
+.loginBox .loginForm .formTop .flightColor { color: #d9e9ee; margin: 0px 10px; vertical-align: middle; }
+.loginBox .loginForm .formTop .fblue { color: #4394d7; font-size: 12px; vertical-align: middle; }
+.loginBox .loginForm .formTop .fblue:hover { color: #ff4400; }
+.loginBox .loginForm .errorInfo { font-size: 12px; color: #999; }
+.loginBox .loginForm .formItem { height: 39px; clear: both; margin-top: 10px; width: 278px; padding-left: 25px; position: relative; border: 2px solid #d3e3e6; border-radius: 5px; }
+.loginBox .loginForm .formItem .email { background-image: url("../images/loginSign/email.png"); width: 15px; height: 9px; display: block; overflow: hidden; position: absolute; top: 15px; left: 10px; }
+.loginBox .loginForm .formItem .clock { background-image: url("../images/loginSign/clock.png"); width: 15px; height: 15px; display: block; overflow: hidden; position: absolute; top: 12px; left: 10px; }
+.loginBox .loginForm .formItem input { font-size: 12px; line-height: 14px; height: 14px; padding: 12px 0px; margin-left: 25px; border: 0 none; width: 248px; }
+.loginBox .loginForm .btns { height: 43px; line-height: 43px; clear: both; overflow: hidden; margin-top: 28px; }
+.loginBox .loginForm .btns .forget { height: 16px; line-height: 16px; display: block; padding-left: 25px; background-image: url("../images//loginSign/info.png"); background-repeat: no-repeat; overflow: hidden; color: #f5741f; text-decoration: underline; float: left; margin-top: 16px; }
+.loginBox .loginForm .btns .submitBtn { display: block; float: right; width: 119px; height: 43px; background-image: url("../images//loginSign/signInBtn.jpg"); background-repeat: no-repeat; overflow: hidden; }
+.loginBox .loginForm .spide { height: 13px; width: 300px; background-repeat: no-repeat; overflow: hidden; clear: both; background-image: url("../images//loginSign/or.png"); margin-top: 20px; }
+.loginBox .loginForm .registBtn { clear: both; display: block; height: 44px; width: 304px; background-image: url("../images//loginSign/registBtn.jpg"); background-repeat: no-repeat; margin-top: 17px; margin-bottom: 10px; }
+
+.signTitle { width: 100%; min-width: 960px; height: 221px; background-image: url("../images//loginSign/signImg.jpg"); z-index: 1; zoom: 1; background-position: top center; margin-top: -10px; background-repeat: no-repeat; }
+
+.signBox { width: 960px; margin: 0px auto; margin-top: 30px; clear: both; overflow: hidden; }
+.signBox .signFormItem { clear: both; overflow: hidden; height: 61px; margin-bottom: 42px; }
+.signBox .signFormItem .signFormItemLeft { float: left; width: 410px; height: 57px; position: relative; margin-left: 30px; border: 2px solid #cbd1df; border-radius: 5px; }
+.signBox .signFormItem .signFormItemLeft input { font-size: 18px; color: #333333; width: 390px; margin: 0px 10px; height: 18px; line-height: 20px; padding: 19px 0px; position: relative; border: 0 none; _border: none; }
+.signBox .signFormItem .signFormItemRight { width: 320px; float: left; margin-left: 23px; font-size: 16px; line-height: 57px; color: #008adf; }
+.signBox .signFormItem .signFormItemRight.lineHeight28 { line-height: 28px; }
+.signBox .signFormItem .submitBtn { clear: both; display: block; height: 55px; width: 412px; background-image: url("../images//loginSign/registBtn.jpg"); background-repeat: no-repeat; margin: 0 auto; }
+.signBox .toLogin { clear: both; overflow: hidden; text-align: left; padding-left: 30px; font-size: 30px; font-family: "骞煎渾"; font-weight: bold; color: #000000; margin-bottom: 50px; }
+.signBox .toLogin a { text-decoration: underline; color: #0083ff; margin-left: 10px; }

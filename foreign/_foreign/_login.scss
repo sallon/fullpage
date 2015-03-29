@@ -1,0 +1,161 @@
+.loginBox{
+  width: $baseWidth;
+  margin: 0px auto;
+  .bigimg{
+    float: left;
+    width: 534px;
+  }
+  .loginForm{
+    $width: 375px;
+    width: $width;
+    float: right;
+    background-image: url("#{$img}/loginSign/boxmiddle.jpg");
+    background-repeat: repeat-y;
+    overflow: hidden;
+    margin-top: 30px;
+    padding-bottom: 22px;
+    position: relative;
+    .borderTop{
+      width: $width;
+      height: 12px;
+      margin: 0px;
+      background-image: url("#{$img}/loginSign/boxtop.jpg");
+      background-repeat: no-repeat;
+      overflow: hidden;
+      position: relative;
+      left: 1px;
+    }
+    .borderBottom{
+      width: $width;
+      height: 22px;
+      background-image: url("#{$img}/loginSign/boxbottom.jpg");
+      background-repeat: no-repeat;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0px;
+      left: 1px;
+    }
+    .formInner{
+      padding: 0px 34px;
+      clear: both;
+      overflow: hidden;
+    }
+    .formTop{
+      font-family:"microsoft yaihei";
+      clear: both;
+      overflow: hidden;
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+      padding-bottom: 10px;
+      .forg{
+        color: #ff5501;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+      .flightColor{
+        color: #d9e9ee;
+        margin: 0px 10px;
+        vertical-align: middle;
+      }
+      .fblue{
+        color: #4394d7;
+        font-size: 12px;
+        vertical-align: middle;
+        &:hover{
+          color: #ff4400;
+        }
+      }
+    }
+    .errorInfo{
+      font-size: 12px;color: #999;
+    }
+    .formItem{
+      height: 39px;
+      clear: both;
+      margin-top: 10px;
+      width: 303px - 25px;
+      padding-left: 25px;
+      position: relative;
+      border: 2px solid #d3e3e6;
+      border-radius: 5px;
+      .email{
+        background-image: url("#{$img}loginSign/email.png");
+        width: 15px;
+        height: 9px;
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+      }
+      .clock{
+        background-image: url("#{$img}loginSign/clock.png");
+        width: 15px;
+        height: 15px;
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top: 12px;
+        left: 10px;
+      }
+      input{
+        font-size: 12px;
+        line-height: 14px;
+        height: 14px;
+        padding: 12px 0px;
+        margin-left: 25px;
+        border: 0 none;
+        width: 303px - 55px;
+      }
+    }
+    .btns{
+      height: 43px;
+      line-height: 43px;
+      clear: both;
+      overflow: hidden;
+      margin-top: 28px;
+      .forget{
+        height: 16px;
+        line-height: 16px;
+        display: block;
+        padding-left: 25px;
+        background-image: url("#{$img}/loginSign/info.png");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        color: #f5741f;
+        text-decoration: underline;
+        float: left;
+        margin-top: 16px;
+      }
+      .submitBtn{
+        display: block;
+        float: right;
+        width: 119px;
+        height: 43px;
+        background-image: url("#{$img}/loginSign/signInBtn.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+    }
+    .spide{
+      height: 13px;
+      width: $width - 75px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      clear: both;
+      background-image: url("#{$img}/loginSign/or.png");
+      margin-top: 20px;
+    }
+    .registBtn{
+      clear: both;
+      display: block;
+      height: 44px;
+      width: 304px;
+      background-image: url("#{$img}/loginSign/registBtn.jpg");
+      background-repeat: no-repeat;
+      margin-top: 17px;
+      margin-bottom: 10px;
+    }
+  }
+}

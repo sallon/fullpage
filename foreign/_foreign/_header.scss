@@ -1,0 +1,44 @@
+.header{
+  width: 100%;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  z-index: 2;
+  zoom: 1;
+  height: 117px;
+  background-image: url("#{$img}/common/headerbg.png?v=#{$version}");
+  min-width: $baseWidth;
+  .headerInner{
+    width: $baseWidth;
+    margin: 0px auto;
+    height: 105px;
+    position: relative;
+    .logo{
+      margin-top: 34px;
+      width: 247px;
+      height: 67px;
+    }
+    .loginSign{
+      position: absolute;
+      height: 24px;
+      line-height: 24px;
+      width: 146px;
+      padding-left: 26px;
+      top: 12px;
+      right: 10px;
+      background-image: url("#{$img}/common/loginIcon.png?v=#{$version}");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      color: #fff;
+      font-size: 18px;
+      a{
+        color: #fff;
+        &:hover{
+          color: #ff4400;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
