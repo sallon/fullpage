@@ -74,8 +74,8 @@ input, textarea, select { background-color: #ffffff; }
 .signBox .toLogin a { text-decoration: underline; color: #0083ff; margin-left: 10px; }
 
 .container { min-width: 960px; margin-top: -10px; clear: both; }
-.container .menuInner { height: 36px; width: 100%; min-width: 960px; background-image: url("../images/menu/menubg.jpg?v=20150329"); line-height: 36px; background-repeat: repeat-x; }
-.container .menuInner .menuBox { width: 960px; margin: 0 auto; clear: both; }
+.container .menuInner { height: 36px; width: 100%; min-width: 960px; background-image: url("../images/menu/menubg.jpg?v=20150329"); line-height: 36px; background-repeat: repeat-x; position: relative; /*涓嬫媺鑿滃崟*/ }
+.container .menuInner .menuBox { width: 960px; margin: 0 auto; clear: both; position: relative; }
 .container .menuInner .menuBox ul { float: left; }
 .container .menuInner .menuBox ul li { float: left; text-align: center; border-left: 1px solid #a5a5a5; border-right: 1px solid #ffffff; }
 .container .menuInner .menuBox ul li.borderRight { border-right: 1px solid #a5a5a5; }
@@ -84,58 +84,39 @@ input, textarea, select { background-color: #ffffff; }
 .container .menuInner .menuBox ul li a .iconMoney { display: inline-block; width: 27px; height: 24px; background-image: url("../images//icons.png"); background-position: 0 0; background-repeat: no-repeat; overflow: hidden; position: relative; top: 7px; left: 4px; }
 .container .menuInner .menuBox ul li a .iconContact { display: inline-block; width: 24px; height: 24px; background-image: url("../images//icons.png"); background-position: -28px 0; background-repeat: no-repeat; overflow: hidden; position: relative; top: 6px; left: 4px; }
 .container .menuInner .menuBox .rightOnly { float: right; width: 234px; height: 35px; line-height: 35px; display: block; text-align: center; font-size: 14px; background-color: #ffffff; border-right: 1px solid #a5a5a5; text-decoration: none; }
+.container .menuInner .navbar { display: block; position: absolute; z-index: 10; width: 235px; top: 35px; right: 0px; background-color: #fff; border: 1px solid #8a8a8a; border-top: 0 none; height: 480px; }
+.container .menuInner .navbar ul { padding: 0px; margin: 0px; }
+.container .menuInner .navbar ul li { height: 37px; line-height: 37px; font-size: 14px; width: 233px; text-align: left; }
+.container .menuInner .navbar ul li.navTit { background-color: #f4f2f0; text-align: center; font-weight: bold; }
+.container .menuInner .navbar ul li.navTit a { display: inline; color: #056cdf; }
+.container .menuInner .navbar ul li.navTit a:hover { color: #f60; }
+.container .menuInner .navbar ul li .whiteBg { background-color: #ffffff; }
+.container .menuInner .navbar ul li .grayBg { background-color: #f4f2f0; }
+.container .menuInner .navbar ul li a { display: block; width: 196px; position: relative; padding-left: 36px; font-weight: normal; }
+.container .menuInner .navbar ul li a i { display: block; height: 21px; width: 21px; position: absolute; top: 6px; left: 8px; zoom: 1; }
+.container .menuInner .navbar ul li a i.icon-zhusu { background-image: url("../images/menu/icon1_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-chuisu { background-image: url("../images/menu/icon2_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-gunsu { background-image: url("../images/menu/icon3_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-jisu { background-image: url("../images/menu/icon4_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-vacu { background-image: url("../images/menu/icon5_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-yazhu { background-image: url("../images/menu/icon6_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-rongmozhu { background-image: url("../images/menu/icon7_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-chongya { background-image: url("../images/menu/icon8_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-lasheng { background-image: url("../images/menu/icon9_1.jpg"); }
+.container .menuInner .navbar ul li a i.icon-chongya { background-image: url("../images/menu/icon10_1.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-zhusu { background-image: url("../images/menu/icon1_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-chuisu { background-image: url("../images/menu/icon2_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-gunsu { background-image: url("../images/menu/icon3_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-jisu { background-image: url("../images/menu/icon4_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-vacu { background-image: url("../images/menu/icon5_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-yazhu { background-image: url("../images/menu/icon6_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-rongmozhu { background-image: url("../images/menu/icon7_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-chongya { background-image: url("../images/menu/icon8_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-lasheng { background-image: url("../images/menu/icon9_2.jpg"); }
+.container .menuInner .navbar ul li a:hover i.icon-chongya { background-image: url("../images/menu/icon10_2.jpg"); }
+.container .menuInner .navbar .navBottom { width: 100%; }
 
-.content { width: 1240px; margin: 0px auto; clear: both; /*鍙宠竟瀵艰埅*/ }
-.content .leftContent { width: 928px; float: left; }
-.content .leftContent .imgBox { width: 928px; height: 444px; overflow: hidden; }
-.content .leftContent .imgBox img { width: 100%; heigth: 100%; }
-.content .leftContent .description { clear: both; font-size: 18px; line-height: 26px; padding: 14px 30px; }
-.content .leftContent .description .mb10px { margin-bottom: 10px; }
-.content .leftContent .splite { height: 3px; background-image: url("../images//index/split.jpg"); }
-.content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 5px; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; }
-.content .leftContent .CollaborateTrackStatu li { display: block; overflow: hidden; float: left; width: 340px; margin-bottom: 40px; }
-.content .leftContent .CollaborateTrackStatu li .smimg { background-image: url("../images//index/imgbg.jpg"); padding: 4px 6px 13px 4px; background-repeat: no-repeat; overflow: hidden; float: left; }
-.content .leftContent .CollaborateTrackStatu li .smimg img { width: 130px; height: 115px; }
-.content .leftContent .CollaborateTrackStatu li .text { float: left; height: 137px; margin-left: 20px; width: 180px; }
-.content .leftContent .CollaborateTrackStatu li .text .itemTitle { font-size: 22px; color: #017eff; line-height: 24px; }
-.content .leftContent .CollaborateTrackStatu li .text .itemText { font-size: 18px; line-height: 20px; color: #000; }
-.content .leftContent .CollaborateTrackStatu li.spliteX { width: 1px; background-color: #c1c1c1; display: block; height: 137px; margin-right: 80px; margin-left: 55px; }
-.content .leftContent .productTable { border: 1px solid #5e5f68; }
-.content .leftContent .productTable table { width: 100%; }
-.content .leftContent .productTable table th { height: 68px; line-height: 68px; text-align: center; font-size: 24px; color: #ffffff; background-color: #019cde; }
-.content .leftContent .productTable table td { text-align: center; font-size: 24px; border-bottom: 1px solid #a4a5aa; }
-.content .leftContent .productTable .productImg { width: 164px; padding: 10px; }
-.content .leftContent .productTable .productImg img { width: 163px; height: 82px; }
-.content .leftContent .productTable .fblue { color: #019cde; display: block; }
-.content .leftContent .productTable .country { width: 80px; height: 52px; }
-.content .rightContent { width: 306px; float: right; }
-.content .rightContent .navbar { border-left: 1px solid #7a7a7b; border-right: 1px solid #7a7a7b; border-bottom: 1px solid #7a7a7b; }
-.content .rightContent li { height: 47px; line-height: 47px; position: relative; }
-.content .rightContent li.navTit { background-color: #e9e7e5; color: #000000; padding-left: 55px; font-size: 26px; }
-.content .rightContent li.navTit a { color: #2a7adf; font-size: 20px; display: inline; }
-.content .rightContent li.navTit a:hover { color: #ff4400; }
-.content .rightContent li a { display: block; width: 100%; height: 100%; font-size: 25px; }
-.content .rightContent li a .zhusu { background-image: url("../images//icons.png"); width: 31px; height: 19px; display: block; position: absolute; top: 15px; left: 7px; background-position: -53px 0px; }
-.content .rightContent li a:hover .zhusu { background-position: -85px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li a .chuisu { background-image: url("../images//icons.png"); width: 19px; height: 35px; display: block; position: absolute; top: 7px; left: 13px; background-position: -117px 0px; }
-.content .rightContent li a:hover .chuisu { background-position: -137px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li a .gunsu { background-image: url("../images//icons.png"); width: 25px; height: 35px; display: block; position: absolute; top: 7px; left: 11px; background-position: -157px 0px; }
-.content .rightContent li a:hover .gunsu { background-position: -183px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li a .jisu { background-image: url("../images//icons.png"); width: 19px; height: 35px; display: block; position: absolute; top: 7px; left: 13px; background-position: -209px 0px; }
-.content .rightContent li a:hover .jisu { background-position: -239px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li a .vacu { background-image: url("../images//icons.png"); width: 31px; height: 23px; display: block; position: absolute; top: 10px; left: 10px; background-position: -269px 0px; }
-.content .rightContent li a:hover .vacu { background-position: -301px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li a .yazhu { background-image: url("../images//icons.png"); width: 34px; height: 23px; display: block; position: absolute; top: 10px; left: 10px; background-position: -333px 0px; }
-.content .rightContent li a:hover .yazhu { background-position: -368px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li a .rongmozhu { background-image: url("../images//icons.png"); width: 27px; height: 32px; display: block; position: absolute; top: 6px; left: 10px; background-position: -403px 0px; }
-.content .rightContent li a:hover .rongmozhu { background-position: -431px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li a .chongya { background-image: url("../images//icons.png"); width: 23px; height: 35px; display: block; position: absolute; top: 6px; left: 10px; background-position: -459px 0px; }
-.content .rightContent li a:hover .chongya { background-position: -483px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li a .lasheng { background-image: url("../images//icons.png"); width: 34px; height: 27px; display: block; position: absolute; top: 6px; left: 10px; background-position: -507px 0px; }
-.content .rightContent li a:hover .lasheng { background-position: -542px 0px; animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
-.content .rightContent li .grayBg .navName { background-color: #e9e7e5; width: 250px; padding-left: 10px; display: block; float: right; height: 100%; }
-.content .rightContent li .whiteBg .navName { background-color: #ffffff; width: 250px; padding-left: 10px; display: block; float: right; height: 100%; }
-.content .rightContent .navBottom { width: 100%; vertical-align: middle; }
+.container .menuInner .navbar ul li a:hover i.icon-zhusu, .container .menuInner .navbar ul li a:hover i.icon-chuisu, .container .menuInner .navbar ul li a:hover i.icon-gunsu, .container .menuInner .navbar ul li a:hover i.icon-jisu, .container .menuInner .navbar ul li a:hover i.icon-vacu, .container .menuInner .navbar ul li a:hover i.icon-yazhu, .container .menuInner .navbar ul li a:hover i.icon-rongmozhu, .container .menuInner .navbar ul li a:hover i.icon-chongya, .container .menuInner .navbar ul li a:hover i.icon-lasheng { animation: rotate 1s; -moz-animation: rotate 1s; -webkit-animation: rotate 1s; -o-animation: rotate 1s; }
 
 @-webkit-keyframes rotate { from { transform: rotate(0deg); -ms-transform: rotate(0deg);
     /* IE 9 */
@@ -151,8 +132,35 @@ input, textarea, select { background-color: #ffffff; }
     -o-transform: rotate(360deg);
     /* Opera */
     -moz-transform: rotate(360deg); } }
-.contactUs { margin-top: 15px; clear: both; overflow: hidden; }
-.contactUs img { width: 306px; }
+.content { width: 960px; margin: 0px auto; clear: both; /*鍙宠竟瀵艰埅*/ }
+.content .leftContent { width: 715px; float: left; }
+.content .leftContent .imgBox { width: 715px; height: 340px; overflow: hidden; }
+.content .leftContent .imgBox img { width: 100%; heigth: 100%; }
+.content .leftContent .description { clear: both; font-size: 14px; line-height: 26px; padding: 14px 20px; }
+.content .leftContent .description .mb10px { margin-bottom: 10px; }
+.content .leftContent .splite { height: 3px; background-image: url("../images//index/split.jpg"); }
+.content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 5px; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; }
+.content .leftContent .CollaborateTrackStatu li { display: block; overflow: hidden; float: left; width: 290px; margin-bottom: 40px; }
+.content .leftContent .CollaborateTrackStatu li .smimg { background-image: url("../images/index/imgbg.jpg"); padding: 4px 6px 13px 4px; background-repeat: no-repeat; overflow: hidden; float: left; line-height: 88px; height: 88px; }
+.content .leftContent .CollaborateTrackStatu li .smimg img { width: 100px; height: auto; vertical-align: middle; }
+.content .leftContent .CollaborateTrackStatu li .text { float: left; height: 110px; margin-left: 10px; width: 125px; overflow: hidden; }
+.content .leftContent .CollaborateTrackStatu li .text .itemTitle { font-size: 18px; color: #017eff; line-height: 24px; }
+.content .leftContent .CollaborateTrackStatu li .text .itemText { font-size: 14px; line-height: 20px; color: #000; }
+.content .leftContent .CollaborateTrackStatu li.spliteX { width: 1px; background-color: #c1c1c1; display: block; height: 110px; margin-right: 25px; margin-left: 30px; }
+.content .leftContent .productTable { border: 1px solid #5e5f68; }
+.content .leftContent .productTable .productList { height: 522px; overflow-y: scroll; }
+.content .leftContent .productTable table { width: 100%; }
+.content .leftContent .productTable table th { height: 50px; line-height: 50px; text-align: center; font-size: 18px; font-weight: bold; color: #ffffff; background-color: #019cde; }
+.content .leftContent .productTable table td { text-align: center; font-size: 14px; border-bottom: 1px solid #a4a5aa; }
+.content .leftContent .productTable .productImg { width: 123px; padding: 10px; }
+.content .leftContent .productTable .productImg img { width: 123px; height: 82px; }
+.content .leftContent .productTable .fblue { color: #019cde; display: block; }
+.content .leftContent .productTable .country { width: 80px; height: 52px; }
+.content .rightContent { width: 234px; float: right; }
+.content .rightContent.pt494 { padding-top: 500px; }
+
+.contactUs { margin-top: 10px; clear: both; overflow: hidden; }
+.contactUs img { width: 100%; }
 
 /*user center*/
 .userInfo { clear: both; overflow: hidden; border: 1px solid #dddddd; border-radius: 2px; margin-top: 28px; padding: 12px 20px; clear: both; overflow: hidden; position: relative; }

@@ -21,10 +21,12 @@ $baseWidth:960px;
     background-image: url("#{$img}menu/menubg.jpg?v=#{$version}");
     line-height: 36px;
     background-repeat:repeat-x;
+    position: relative;
     .menuBox{
       width: $baseWidth;
       margin: 0 auto;
       clear: both;
+      position: relative;
       ul{
         float: left;
         li{
@@ -90,7 +92,168 @@ $baseWidth:960px;
         text-decoration: none;
       }
     }
+
+    /*下拉菜单*/
+    .navbar{
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 235px;
+      top: 35px;
+      right: 0px;
+      background-color: #fff;
+      border: 1px solid #8a8a8a;
+      border-top:0 none;
+      height: 480px;
+      ul{
+        padding: 0px;
+        margin: 0px;
+        li{
+          height: 37px;
+          line-height: 37px;
+          font-size: 14px;
+          width: 233px;
+          text-align: left;
+          &.navTit{
+            background-color: #f4f2f0;
+            text-align: center;
+            font-weight: bold;
+            a{
+              display: inline;
+              color: #056cdf;
+
+              &:hover{
+                color: #f60;
+              }
+            }
+          }
+          .whiteBg{
+            background-color: #ffffff;
+          }
+          .grayBg{
+            background-color:#f4f2f0 ;
+          }
+          a{
+            display: block;
+            width: 196px;
+            position: relative;
+            padding-left: 36px;
+            font-weight: normal;
+            i{
+              display: block;
+              height: 21px;
+              width: 21px;
+              position: absolute;
+              top: 6px;
+              left: 8px;
+              zoom: 1;
+              &.icon-zhusu{
+                background-image: url("#{$img}menu/icon1_1.jpg");
+              }
+              &.icon-chuisu{
+                background-image: url("#{$img}menu/icon2_1.jpg");
+              }
+              &.icon-gunsu{
+                background-image: url("#{$img}menu/icon3_1.jpg");
+              }
+              &.icon-jisu{
+                background-image: url("#{$img}menu/icon4_1.jpg");
+              }
+              &.icon-vacu{
+                background-image: url("#{$img}menu/icon5_1.jpg");
+              }
+              &.icon-yazhu{
+                background-image: url("#{$img}menu/icon6_1.jpg");
+              }
+              &.icon-rongmozhu{
+                background-image: url("#{$img}menu/icon7_1.jpg");
+              }
+              &.icon-chongya{
+                background-image: url("#{$img}menu/icon8_1.jpg");
+              }
+              &.icon-lasheng{
+                background-image: url("#{$img}menu/icon9_1.jpg");
+              }
+              &.icon-chongya{
+                background-image: url("#{$img}menu/icon10_1.jpg");
+              }
+            }
+            &:hover{
+              i{
+                &.icon-zhusu{
+                  background-image: url("#{$img}menu/icon1_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-chuisu{
+                  background-image: url("#{$img}menu/icon2_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-gunsu{
+                  background-image: url("#{$img}menu/icon3_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-jisu{
+                  background-image: url("#{$img}menu/icon4_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-vacu{
+                  background-image: url("#{$img}menu/icon5_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-yazhu{
+                  background-image: url("#{$img}menu/icon6_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-rongmozhu{
+                  background-image: url("#{$img}menu/icon7_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-chongya{
+                  background-image: url("#{$img}menu/icon8_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-lasheng{
+                  background-image: url("#{$img}menu/icon9_2.jpg");
+                  @extend %animation;
+                }
+                &.icon-chongya{
+                  background-image: url("#{$img}menu/icon10_2.jpg");
+                  @extend %animation;
+                }
+              }
+            }
+          }
+        }
+      }
+      .navBottom{
+        width: 100%;
+      }
+    }
+
   }
 
 }
+%animation{
+  animation: rotate 1s;
+  -moz-animation: rotate 1s;
+  -webkit-animation: rotate 1s;
+  -o-animation: rotate 1s;
+}
+@-webkit-keyframes rotate {
+  from {
+    transform:rotate(0deg);
+    -ms-transform: rotate(0deg);		/* IE 9 */
+    -webkit-transform: rotate(0deg);	/* Safari and Chrome */
+    -o-transform: rotate(0deg);		/* Opera */
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+    -ms-transform: rotate(360deg);		/* IE 9 */
+    -webkit-transform: rotate(360deg);	/* Safari and Chrome */
+    -o-transform: rotate(360deg);		/* Opera */
+    -moz-transform: rotate(360deg);
+  }
+}
+
 @import "index";
