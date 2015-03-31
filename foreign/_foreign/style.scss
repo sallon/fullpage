@@ -38,7 +38,6 @@ $baseWidth:960px;
             border-right: 1px solid #a5a5a5;
           }
           a{
-
             $menuheight: 33px;
             height: $menuheight;
             display: block;
@@ -52,29 +51,27 @@ $baseWidth:960px;
               text-decoration: none;
               color: #ff4400;
             }
-            .iconMoney{
+            .iconRight{
               display: inline-block;
-              width: 27px;
-              height: 24px;
-              background-image: url("#{$img}/icons.png");
+              width: 6px;
+              height: 11px;
+              background-image: url("#{$img}menu/menuIcon.png");
+              background-position: -19px 0;
+              background-repeat: no-repeat;
+              overflow: hidden;
+              margin-left: 5px;
+            }
+            .iconContact{
+              display: inline-block;
+              width: 18px;
+              height: 17px;
+              background-image: url("#{$img}menu/menuIcon.png");
               background-position: 0 0;
               background-repeat: no-repeat;
               overflow: hidden;
               position: relative;
-              top: 7px;
-              left: 4px;
-            }
-            .iconContact{
-              display: inline-block;
-              width: 24px;
-              height: 24px;
-              background-image: url("#{$img}/icons.png");
-              background-position: -28px 0;
-              background-repeat: no-repeat;
-              overflow: hidden;
-              position: relative;
-              top: 6px;
-              left: 4px;
+              margin-left: 5px;
+              top: 2px;
             }
           }
         }
@@ -90,6 +87,16 @@ $baseWidth:960px;
         background-color: #ffffff;
         border-right: 1px solid #a5a5a5;
         text-decoration: none;
+        .iconDown{
+          display: inline-block;
+          width: 11px;
+          height: 6px;
+          background-image: url("#{$img}menu/menuIcon.png");
+          background-position: -26px 0;
+          background-repeat: no-repeat;
+          overflow: hidden;
+          margin-left: 5px;
+        }
       }
     }
 
@@ -121,7 +128,6 @@ $baseWidth:960px;
             a{
               display: inline;
               color: #056cdf;
-
               &:hover{
                 color: #f60;
               }
