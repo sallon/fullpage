@@ -180,3 +180,34 @@ input, textarea, select { background-color: #ffffff; }
 .otherInfo .lineOther, .otherInfo .lineLast { color: #000; text-align: left; }
 .otherInfo .lineOther a, .otherInfo .lineLast a { text-decoration: none; }
 .otherInfo .lineLast { border-bottom: none; }
+
+.footer { margin-top: 102px; }
+.footer .logos { padding-bottom: 14px; clear: both; overflow: hidden; border-bottom: 2px solid #2ca9ff; }
+.footer .logos ul { margin: 0px auto; padding: 0px; width: 700px; overflow: hidden; }
+.footer .logos ul li { float: left; }
+.footer .links { clear: both; overflow: hidden; border-bottom: 1px solid #b8b8b8; }
+.footer .links .LinkContent { width: 960px; margin: 0px auto; height: 175px; margin-top: 10px; padding-bottom: 10px; }
+.footer .links .LinkContent .quickGuide { float: left; width: 140px; }
+.footer .links .LinkContent .instruction { float: left; width: 130px; }
+.footer .links .LinkContent .colsSplit { margin-right: 15px; width: 1px; height: 160px; position: relative; float: left; overflow: hidden; top: 16px; background-color: #b8b8b8; }
+.footer .links .LinkContent .title { font-size: 16px; line-height: 36px; font-weight: bold; }
+.footer .links .LinkContent .link { font-size: 12px; line-height: 28px; }
+.footer .links .LinkContent .facebookLogo { height: 110px; position: relative; }
+.footer .links .LinkContent .facebookLogo img { width: 28px; height: 28px; position: absolute; bottom: 0px; right: 62px; }
+.footer .links .LinkContent .rightLinks { float: left; width: 190px; }
+.footer .links .LinkContent .rightLinks .phone { clear: both; overflow: hidden; }
+.footer .links .LinkContent .rightLinks .phone .img { width: 38px; float: left; margin-right: 10px; position: relative; top: 20px; }
+.footer .links .LinkContent .rightLinks .phone .phoneRight { float: left; }
+.footer .links .LinkContent .rightLinks .phone .phoneRight .cusSer { display: block; font-size: 16px; font-weight: bold; }
+.footer .links .LinkContent .rightLinks .phone .phoneRight .number { font-size: 16px; font-weight: bold; color: #0085c8; }
+.footer .links .LinkContent .rightLinks .phone .phoneRight .callTime { font-size: 14px; color: #666; }
+.footer .links .LinkContent .rightLinks .phone .phoneRight .email { font-size: 14px; color: #666; }
+.footer .links .LinkContent .rightLinks .phone .chat { height: 33px; margin-top: 10px; }
+.footer .links .LinkContent .rightLinks .phone .chat .chattext { float: left; line-height: 33px; }
+.footer .links .LinkContent .rightLinks .phone .chat img { float: left; position: relative; top: 1px; margin-left: 10px; }
+.footer .links .LinkContent .rightLinks .phone .bjTime { font-size: 12px; color: #666666; }
+.footer .links .LinkContent .rightLinks .phone .bjTime .timeNum { display: inline-block; height: 15px; width: 15px; text-align: center; line-height: 15px; background-color: #666666; border: 1px solid #333; color: #ffffff; }
+.footer .links .LinkContent .rightLinks .phone .bjTime .timeNum.nobg { width: auto; background-color: #ffffff; color: #666666; border-color: #ffffff; }
+.footer .cards { min-width: 960px; height: 50px; line-height: 50px; border-bottom: 1px solid #b8b8b8; }
+.footer .cards img { height: 50px; margin: 0px auto; display: block; }
+.footer .copyRight { min-width: 960px; height: 80px; line-height: 80px; border-bottom: 2px solid #2ca9ff; margin-bottom: 100px; text-align: center; color: #999999; }

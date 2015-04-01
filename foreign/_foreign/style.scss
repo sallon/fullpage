@@ -263,3 +263,161 @@ $baseWidth:960px;
 }
 
 @import "index";
+.footer{
+  margin-top: 102px;
+  .logos{
+    padding-bottom: 14px;
+    clear: both;
+    overflow:hidden;
+    border-bottom: 2px solid #2ca9ff;
+    ul{
+      margin: 0px auto;
+      padding: 0px;
+      width: 700px;
+      overflow: hidden;
+      li{
+        float: left;
+      }
+    }
+  }
+  .links{
+    clear: both;
+    overflow: hidden;
+    border-bottom: 1px solid #b8b8b8;
+    .LinkContent{
+      width: $baseWidth;
+      margin: 0px auto;
+      height: 175px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      .quickGuide{
+        float: left;
+        width: 140px;
+      }
+      .instruction{
+        float: left;
+        width: 130px;
+      }
+      .colsSplit{
+        margin-right: 15px;
+        width: 1px;
+        height: 160px;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        top: 16px;
+        background-color: #b8b8b8;
+      }
+      .title{
+        font-size: 16px;
+        line-height: 36px;
+        font-weight: bold;
+      }
+      .link{
+        font-size: 12px;
+        line-height: 28px;
+      }
+      .facebookLogo{
+        height: 110px;
+        position: relative;
+        img{
+          width: 28px;
+          height: 28px;
+          position: absolute;
+          bottom: 0px;
+          right: 62px;
+        }
+      }
+      .rightLinks{
+        float: left;
+        width:190px ;
+        .phone{
+          clear: both;
+          overflow: hidden;
+          .img{
+            width: 38px;
+            float: left;
+            margin-right: 10px;
+            position: relative;
+            top: 20px;
+          }
+          .phoneRight{
+            float: left;
+            .cusSer{
+              display: block;
+              font-size: 16px;
+              font-weight: bold;
+            }
+            .number{
+              font-size: 16px;
+              font-weight: bold;
+              color: #0085c8;
+            }
+            .callTime{
+              font-size: 14px;
+              color: #666;
+            }
+            .email{
+              font-size: 14px;
+              color: #666;
+            }
+          }
+          .chat{
+            height: 33px;
+            margin-top: 10px;
+            .chattext{
+              float: left;
+              line-height: 33px;
+            }
+            img{
+              float: left;
+              position: relative;
+              top: 1px;
+              margin-left:10px;
+            }
+          }
+          .bjTime{
+            font-size: 12px;
+            color: #666666;
+            .timeNum{
+              display: inline-block;
+              height: 15px;
+              width: 15px;
+              text-align: center;
+              line-height: 15px;
+              background-color: #666666;
+              border: 1px solid #333;
+              color: #ffffff;
+              &.nobg{
+                width: auto;
+                background-color: #ffffff;
+                color: #666666;
+                border-color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cards{
+    min-width: $baseWidth;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #b8b8b8;
+    img{
+      height: 50px;
+      margin: 0px auto;
+      display: block;
+    }
+  }
+  .copyRight{
+    min-width: $baseWidth;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 2px solid #2ca9ff;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #999999;
+  }
+}
