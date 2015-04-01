@@ -167,7 +167,7 @@
     }
     a{
       color: #8e8e8e;
-      font-size: 22px;
+      font-size: 18px;
       &:hover{
         color: #ff4400;
         cursor: pointer;
@@ -178,15 +178,14 @@
     float: left;
     margin-left: 50px;
     font-size: 18px;
-    color: #2e2e2e;
-    font-weight: bold;
+    color: #000;
     line-height: 38px;
-    .item input{
-      padding: 3px 10px;
-      color: #008adf;
-      width: 95px;
-      border-radius: 3px;
-      border: 1px solid #e6e5e5;
+    .item {
+      .iteName{
+        display: inline-block;
+        width: 240px;
+      }
+      .text{color: #646464}
     }
   }
   .changeInfoBtn{
@@ -196,40 +195,53 @@
     height: 28px;
     top: 12px;
     right: 114px;
-    background-image: url("#{$img}/user/changeBtn.jpg");
+    background-image: url("#{$img}/user/changebtn.png");
   }
 }
-.otherInfo{
-  padding: 20px;
-  border: 1px solid #dddddd;
-  border-radius: 2px;
-  font-size: 24px;
-  margin-top: 24px;
-  .line1{
-    text-align: center;
-    color: #fe5e22;
-    font-weight: bold;
-    border-bottom: 1px solid #c6c6c6;
-    line-height: 48px;
-    height: 48px;
-    padding-bottom: 10px;
-    a{
-      color: #016adf;
-      text-decoration: underline;
-      &:hover{
-        color: #f40;
-        text-decoration: underline;
-      }
+.rfqs{
+  clear: both;
+  overflow: hidden;
+  .bigText{
+    font-size: 22px;
+    padding-left: 30px;
+    height: 110px;
+    line-height: 110px;
+    position: relative;
+    .rfqbtn{
+      position: absolute;
+      top: 12px;right: 65px;
     }
   }
-  .lineOther{
-    @extend .line1;
-    color: #000;
-    text-align: left;
-    a{text-decoration: none;}
+  .products{
+    width: 100%;
+    border: 2px solid #acabab;
+    border-radius: 3px;
+
+    th,td{
+      border: 1px solid #acabab;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+    }
+    th{
+      background-color: #d9f0fa;
+    }
   }
-  .lineLast{
-    @extend .lineOther;
-    border-bottom: none;
+  .tovewDetail{
+    height: 110px;
+    line-height: 110px;
+    padding-left: 30px;
+    position: relative;
+    a{
+      position: absolute;
+      top: 12px;right: 65px;
+    }
+  }
+  .other{
+    padding-left: 30px;
+    height: 110px;
+    line-height: 110px;
+    font-size: 18px;
   }
 }

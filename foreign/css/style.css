@@ -167,19 +167,22 @@ input, textarea, select { background-color: #ffffff; }
 .userInfo { clear: both; overflow: hidden; border: 1px solid #dddddd; border-radius: 2px; margin-top: 28px; padding: 12px 20px; clear: both; overflow: hidden; position: relative; }
 .userInfo .changePhoto { width: 115px; float: left; text-align: center; }
 .userInfo .changePhoto img { width: 115px; height: 115px; }
-.userInfo .changePhoto a { color: #8e8e8e; font-size: 22px; }
+.userInfo .changePhoto a { color: #8e8e8e; font-size: 18px; }
 .userInfo .changePhoto a:hover { color: #ff4400; cursor: pointer; }
-.userInfo .infoList { float: left; margin-left: 50px; font-size: 18px; color: #2e2e2e; font-weight: bold; line-height: 38px; }
-.userInfo .infoList .item input { padding: 3px 10px; color: #008adf; width: 95px; border-radius: 3px; border: 1px solid #e6e5e5; }
-.userInfo .changeInfoBtn { display: block; position: absolute; width: 87px; height: 28px; top: 12px; right: 114px; background-image: url("../images//user/changeBtn.jpg"); }
+.userInfo .infoList { float: left; margin-left: 50px; font-size: 18px; color: #000; line-height: 38px; }
+.userInfo .infoList .item .iteName { display: inline-block; width: 240px; }
+.userInfo .infoList .item .text { color: #646464; }
+.userInfo .changeInfoBtn { display: block; position: absolute; width: 87px; height: 28px; top: 12px; right: 114px; background-image: url("../images//user/changebtn.png"); }
 
-.otherInfo { padding: 20px; border: 1px solid #dddddd; border-radius: 2px; font-size: 24px; margin-top: 24px; }
-.otherInfo .line1, .otherInfo .lineOther, .otherInfo .lineLast { text-align: center; color: #fe5e22; font-weight: bold; border-bottom: 1px solid #c6c6c6; line-height: 48px; height: 48px; padding-bottom: 10px; }
-.otherInfo .line1 a, .otherInfo .lineOther a, .otherInfo .lineLast a { color: #016adf; text-decoration: underline; }
-.otherInfo .line1 a:hover, .otherInfo .lineOther a:hover, .otherInfo .lineLast a:hover { color: #f40; text-decoration: underline; }
-.otherInfo .lineOther, .otherInfo .lineLast { color: #000; text-align: left; }
-.otherInfo .lineOther a, .otherInfo .lineLast a { text-decoration: none; }
-.otherInfo .lineLast { border-bottom: none; }
+.rfqs { clear: both; overflow: hidden; }
+.rfqs .bigText { font-size: 22px; padding-left: 30px; height: 110px; line-height: 110px; position: relative; }
+.rfqs .bigText .rfqbtn { position: absolute; top: 12px; right: 65px; }
+.rfqs .products { width: 100%; border: 2px solid #acabab; border-radius: 3px; }
+.rfqs .products th, .rfqs .products td { border: 1px solid #acabab; text-align: center; height: 40px; line-height: 40px; font-size: 18px; }
+.rfqs .products th { background-color: #d9f0fa; }
+.rfqs .tovewDetail { height: 110px; line-height: 110px; padding-left: 30px; position: relative; }
+.rfqs .tovewDetail a { position: absolute; top: 12px; right: 65px; }
+.rfqs .other { padding-left: 30px; height: 110px; line-height: 110px; font-size: 18px; }
 
 .footer { margin-top: 102px; }
 .footer .logos { padding-bottom: 14px; clear: both; overflow: hidden; border-bottom: 2px solid #2ca9ff; }
