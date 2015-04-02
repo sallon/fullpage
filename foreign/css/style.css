@@ -65,8 +65,9 @@ input, textarea, select { background-color: #ffffff; }
 
 .signBox { width: 960px; margin: 0px auto; margin-top: 30px; clear: both; overflow: hidden; }
 .signBox .signFormItem { clear: both; overflow: hidden; height: 61px; margin-bottom: 42px; }
-.signBox .signFormItem .signFormItemLeft { float: left; width: 410px; height: 57px; position: relative; margin-left: 30px; border: 2px solid #cbd1df; border-radius: 5px; }
-.signBox .signFormItem .signFormItemLeft input { font-size: 18px; color: #333333; width: 390px; margin: 0px 10px; height: 18px; line-height: 20px; padding: 19px 0px; position: relative; border: 0 none; _border: none; }
+.signBox .signFormItem .signFormItemLeft { float: left; width: 410px; height: 57px; position: relative; overflow: hidden; margin-left: 30px; border: 2px solid #cbd1df; border-radius: 5px; }
+.signBox .signFormItem .signFormItemLeft input { font-size: 18px; color: #333333; height: 18px; width: 100%; line-height: 20px; padding: 19px 10px; position: relative; border: 0 none; _border: none; zoom: 1; *left: -20px; }
+.signBox .signFormItem .signFormItemLeft .placeholder { position: absolute; top: 16px; font-size: 18px; color: #999; left: 12px; zoom: 1; }
 .signBox .signFormItem .signFormItemRight { width: 320px; float: left; margin-left: 23px; font-size: 16px; line-height: 57px; color: #008adf; }
 .signBox .signFormItem .signFormItemRight.lineHeight28 { line-height: 28px; }
 .signBox .signFormItem .submitBtn { clear: both; display: block; height: 55px; width: 412px; background-image: url("../images//loginSign/registBtn.jpg"); background-repeat: no-repeat; margin: 0 auto; }
@@ -135,9 +136,12 @@ input, textarea, select { background-color: #ffffff; }
     -moz-transform: rotate(360deg); } }
 .content { width: 960px; margin: 0px auto; clear: both; /*鍙宠竟瀵艰埅*/ }
 .content .leftContent { width: 715px; float: left; }
-.content .leftContent .imgBox { width: 715px; height: 340px; overflow: hidden; }
-.content .leftContent .imgBox img { width: 100%; heigth: 100%; }
-.content .leftContent .description { clear: both; font-size: 14px; line-height: 26px; padding: 14px 20px; }
+.content .leftContent .imgBox { width: 715px; height: 340px; overflow: hidden; position: relative; }
+.content .leftContent .imgBox img { width: 100%; heigth: 100%; position: absolute; top: 0px; left: 0px; }
+.content .leftContent .description { clear: both; font-size: 14px; line-height: 26px; padding: 14px 20px; position: relative; }
+.content .leftContent .description .imgFocus { position: absolute; z-index: 10; top: 10px; right: 30px; height: 20px; width: 140px; zoom: 1; margin-right: -20px; overflow: hidden; }
+.content .leftContent .description .imgFocus .focus { display: block; width: 18px; height: 18px; float: left; margin-right: 10px; background-image: url("../images/index/focus.png"); background-repeat: no-repeat; }
+.content .leftContent .description .imgFocus .focus.cur { background-image: url("../images/index/focusCur.png"); }
 .content .leftContent .description .mb10px { margin-bottom: 10px; }
 .content .leftContent .splite { height: 3px; background-image: url("../images//index/split.jpg"); }
 .content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 5px; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; }

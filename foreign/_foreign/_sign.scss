@@ -25,20 +25,30 @@
       width: 410px;
       height: 57px;
       position: relative;
+      overflow: hidden;
       margin-left: 30px;
       border: 2px solid #cbd1df;
       border-radius: 5px;
       input{
         font-size: 18px;
         color: #333333;
-        width: 390px;
-        margin: 0px 10px;
         height: 18px;
+        width: 100%;
         line-height: 20px;
-        padding:19px 0px;
+        padding:19px 10px;
         position: relative;
         border: 0 none;
         _border: none;
+        zoom: 1;
+        *left: -20px;
+      }
+      .placeholder{
+        position: absolute;
+        top: 16px;
+        font-size: 18px;
+        color: #999;
+        left: 12px;
+        zoom: 1;
       }
     }
     .signFormItemRight{

@@ -25,7 +25,8 @@
 
     <div class="signFormItem">
         <div class="signFormItemLeft">
-            <input type="text" placeholder="The name of the company">
+            <input type="text">
+            <span class="placeholder">The name of the company</span>
         </div>
         <div class="signFormItemRight">
             (You can only enter English）
@@ -33,14 +34,16 @@
     </div>
     <div class="signFormItem">
         <div class="signFormItemLeft">
-            <input type="text" placeholder="Your name">
+            <input type="text">
+            <span class="placeholder">Your name</span>
         </div>
         <div class="signFormItemRight">
         </div>
     </div>
     <div class="signFormItem">
         <div class="signFormItemLeft">
-            <input type="text" placeholder="The mailbox">
+            <input type="text">
+            <span class="placeholder">The mailbox</span>
         </div>
         <div class="signFormItemRight lineHeight28">
             （Please use the correct mailbox, is used to
@@ -49,14 +52,16 @@
     </div>
     <div class="signFormItem">
         <div class="signFormItemLeft">
-            <input type="text" placeholder="The company Chinese namex">
+            <input type="text">
+            <span class="placeholder">The company Chinese namex</span>
         </div>
         <div class="signFormItemRight">
         </div>
     </div>
     <div class="signFormItem">
         <div class="signFormItemLeft">
-            <input type="text" placeholder="Contact telephone number">
+            <input type="text">
+            <span class="placeholder">Contact telephone number</span>
         </div>
         <div class="signFormItemRight">
         </div>
@@ -68,5 +73,21 @@
         If account please log in directly<a href="#">login in</a>
     </div>
 </div>
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".signFormItemLeft").click(function(){
+                $(this).find("input").focus();
+                console.log(1);
+                $(this).find(".placeholder").hide();
+            })
+            $("input").blur(function(){
+                if($(this).val() == "" || $(this).val() == null){
+                    $(this).parent().find(".placeholder").show();
+                }
+
+            });
+        })
+    </script>
 </body>
 </html>

@@ -10,9 +10,13 @@
       width: $leftWidth;
       height: 340px;
       overflow: hidden;
+      position: relative;
       img{
         width: 100%;
         heigth:100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
       }
     }
     .description{
@@ -20,6 +24,30 @@
       font-size: 14px;
       line-height: 26px;
       padding: 14px 20px;
+      position: relative;
+      .imgFocus{
+        position: absolute;
+        z-index: 10;
+        top: 10px;
+        right: 30px;
+        height: 20px;
+        width: 140px;
+        zoom: 1;
+        margin-right: -20px;
+        overflow: hidden;
+        .focus{
+          display: block;
+          width: 18px;
+          height: 18px;
+          float: left;
+          margin-right: 10px;
+          background-image: url("#{$img}index/focus.png");
+          background-repeat: no-repeat;
+          &.cur{
+            background-image: url("#{$img}index/focusCur.png");
+          }
+        }
+      }
       .mb10px{
         margin-bottom: 10px;
       }
