@@ -60,6 +60,9 @@ $baseWidth:960px;
               background-repeat: no-repeat;
               overflow: hidden;
               margin-left: 5px;
+              margin-top: 15px;
+              position: relative;
+              _top:-1px;
             }
             .iconContact{
               display: inline-block;
@@ -72,6 +75,8 @@ $baseWidth:960px;
               position: relative;
               margin-left: 5px;
               top: 2px;
+              _top:0px;
+              margin-top: 8px;
             }
           }
         }
@@ -87,8 +92,10 @@ $baseWidth:960px;
         background-color: #ffffff;
         border-right: 1px solid #a5a5a5;
         text-decoration: none;
+        zoom: 1;
         .iconDown{
           display: inline-block;
+          zoom: 1;
           width: 11px;
           height: 6px;
           background-image: url("#{$img}menu/menuIcon.png");
@@ -96,6 +103,9 @@ $baseWidth:960px;
           background-repeat: no-repeat;
           overflow: hidden;
           margin-left: 5px;
+          margin-top: 20px;
+          position: relative;
+          top: -3px;
         }
       }
     }
@@ -104,6 +114,7 @@ $baseWidth:960px;
     .navbar{
       display: block;
       position: absolute;
+      clear: both;
       z-index: 10;
       width: 235px;
       top: 35px;
@@ -112,6 +123,8 @@ $baseWidth:960px;
       border: 1px solid #8a8a8a;
       border-top:0 none;
       height: 480px;
+      overflow: hidden;
+      zoom: 1;
       ul{
         padding: 0px;
         margin: 0px;
