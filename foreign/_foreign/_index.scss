@@ -1,4 +1,6 @@
 .content{
+  z-index: 1;
+  zoom: 1;
   width: $baseWidth;
   margin: 0px auto;
   clear: both;
@@ -6,6 +8,8 @@
     $leftWidth:715px;
     width: $leftWidth;
     float: left;
+    overflow: hidden;
+    zoom: 1;
     .imgBox{
       width: $leftWidth;
       height: 340px;
@@ -56,6 +60,9 @@
     .splite{
       height: 3px;
       background-image: url("#{$img}/index/split.jpg");
+      background-repeat: repeat-x;
+      overflow: hidden;
+      clear: both;
     }
     .CollaborateTrackStatu{
       background-color: #efefef;
@@ -64,6 +71,11 @@
       padding-bottom: 0px;
       clear: both;
       overflow: hidden;
+      zoom: 1;
+      ul{
+        clear: both;
+        overflow: hidden;
+      }
       li{
         display: block;
         overflow: hidden;
@@ -117,7 +129,10 @@
       border: 1px solid #5e5f68;
       .productList{
         height: 522px;
+        overflow: hidden;
         overflow-y: scroll;
+        box-sizing: border-box;
+        width: 100%;
       }
       table{
 
@@ -161,6 +176,8 @@
   .rightContent{
     width: 234px;
     float: right;
+    overflow: hidden;
+    zoom: 1;
     &.pt494{
       padding-top: 500px;
     }
@@ -182,9 +199,9 @@
   border: 1px solid #dddddd;
   border-radius: 2px;
   margin-top: 28px;
+  box-sizing: border-box;
   padding: 12px 20px;
-  clear: both;
-  overflow: hidden;
+  width: 920px;
   position: relative;
   .changePhoto{
     width: 115px;

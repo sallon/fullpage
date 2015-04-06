@@ -98,11 +98,11 @@ input, textarea, select { background-color: #ffffff; }
 .container .menuInner .menuBox ul li.borderRight { border-right: 1px solid #a5a5a5; }
 .container .menuInner .menuBox ul li a { height: 33px; display: block; width: 143px; line-height: 33px; font-size: 14px; font-weight: bold; position: relative; }
 .container .menuInner .menuBox ul li a.active, .container .menuInner .menuBox ul li a:hover { background-color: #ffffff; text-decoration: none; color: #ff4400; }
-.container .menuInner .menuBox ul li a .iconRight { display: inline-block; width: 6px; height: 11px; background-image: url("../images/menu/menuIcon.png"); background-position: -19px 0; background-repeat: no-repeat; overflow: hidden; margin-left: 5px; }
-.container .menuInner .menuBox ul li a .iconContact { display: inline-block; width: 18px; height: 17px; background-image: url("../images/menu/menuIcon.png"); background-position: 0 0; background-repeat: no-repeat; overflow: hidden; position: relative; margin-left: 5px; top: 2px; }
-.container .menuInner .menuBox .rightOnly { float: right; width: 234px; height: 35px; line-height: 35px; display: block; text-align: center; font-size: 14px; background-color: #ffffff; border-right: 1px solid #a5a5a5; text-decoration: none; }
-.container .menuInner .menuBox .rightOnly .iconDown { display: inline-block; width: 11px; height: 6px; background-image: url("../images/menu/menuIcon.png"); background-position: -26px 0; background-repeat: no-repeat; overflow: hidden; margin-left: 5px; }
-.container .menuInner .navbar { display: block; position: absolute; z-index: 10; width: 235px; top: 35px; right: 0px; background-color: #fff; border: 1px solid #8a8a8a; border-top: 0 none; height: 480px; }
+.container .menuInner .menuBox ul li a .iconRight { display: inline-block; width: 6px; height: 11px; background-image: url("../images/menu/menuIcon.png"); background-position: -19px 0; background-repeat: no-repeat; overflow: hidden; margin-left: 5px; margin-top: 15px; position: relative; _top: -1px; }
+.container .menuInner .menuBox ul li a .iconContact { display: inline-block; width: 18px; height: 17px; background-image: url("../images/menu/menuIcon.png"); background-position: 0 0; background-repeat: no-repeat; overflow: hidden; position: relative; margin-left: 5px; top: 2px; _top: 0px; margin-top: 8px; }
+.container .menuInner .menuBox .rightOnly { float: right; width: 234px; height: 35px; line-height: 35px; display: block; text-align: center; font-size: 14px; background-color: #ffffff; border-right: 1px solid #a5a5a5; text-decoration: none; zoom: 1; }
+.container .menuInner .menuBox .rightOnly .iconDown { display: inline-block; zoom: 1; width: 11px; height: 6px; background-image: url("../images/menu/menuIcon.png"); background-position: -26px 0; background-repeat: no-repeat; overflow: hidden; margin-left: 5px; margin-top: 20px; position: relative; top: -3px; }
+.container .menuInner .navbar { display: block; position: absolute; clear: both; z-index: 10; width: 235px; top: 35px; right: 0px; background-color: #fff; border: 1px solid #8a8a8a; border-top: 0 none; height: 480px; overflow: hidden; zoom: 1; }
 .container .menuInner .navbar ul { padding: 0px; margin: 0px; }
 .container .menuInner .navbar ul li { height: 37px; line-height: 37px; font-size: 14px; width: 233px; text-align: left; }
 .container .menuInner .navbar ul li.navTit { background-color: #f4f2f0; text-align: center; font-weight: bold; }
@@ -150,8 +150,8 @@ input, textarea, select { background-color: #ffffff; }
     -o-transform: rotate(360deg);
     /* Opera */
     -moz-transform: rotate(360deg); } }
-.content { width: 960px; margin: 0px auto; clear: both; /*鍙宠竟瀵艰埅*/ }
-.content .leftContent { width: 715px; float: left; }
+.content { z-index: 1; zoom: 1; width: 960px; margin: 0px auto; clear: both; /*鍙宠竟瀵艰埅*/ }
+.content .leftContent { width: 715px; float: left; overflow: hidden; zoom: 1; }
 .content .leftContent .imgBox { width: 715px; height: 340px; overflow: hidden; position: relative; }
 .content .leftContent .imgBox img { width: 100%; heigth: 100%; position: absolute; top: 0px; left: 0px; }
 .content .leftContent .description { clear: both; font-size: 14px; line-height: 26px; padding: 14px 20px; position: relative; }
@@ -159,8 +159,14 @@ input, textarea, select { background-color: #ffffff; }
 .content .leftContent .description .slidesjs-pagination .slidesjs-pagination-item a { line-height: 1000; display: block; width: 18px; height: 18px; float: left; margin-right: 10px; background-image: url("../images/index/focus.png"); background-repeat: no-repeat; }
 .content .leftContent .description .slidesjs-pagination .slidesjs-pagination-item a.active { background-image: url("../images/index/focusCur.png"); }
 .content .leftContent .description .mb10px { margin-bottom: 10px; }
+<<<<<<< HEAD
 .content .leftContent .splite { height: 3px; background-image: url("../images//index/split.jpg"); }
 .content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 0; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; }
+=======
+.content .leftContent .splite { height: 3px; background-image: url("../images//index/split.jpg"); background-repeat: repeat-x; overflow: hidden; clear: both; }
+.content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 5px; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; zoom: 1; }
+.content .leftContent .CollaborateTrackStatu ul { clear: both; overflow: hidden; }
+>>>>>>> d241ef78d05c4af3eb4eca7c9b2e318bf5fc632d
 .content .leftContent .CollaborateTrackStatu li { display: block; overflow: hidden; float: left; width: 290px; margin-bottom: 40px; }
 .content .leftContent .CollaborateTrackStatu li .smimg { background-image: url("../images/index/imgbg.jpg"); padding: 4px 6px 13px 4px; background-repeat: no-repeat; overflow: hidden; float: left; line-height: 88px; height: 88px; }
 .content .leftContent .CollaborateTrackStatu li .smimg img { width: 100px; height: auto; vertical-align: middle; }
@@ -169,7 +175,7 @@ input, textarea, select { background-color: #ffffff; }
 .content .leftContent .CollaborateTrackStatu li .text .itemText { font-size: 14px; line-height: 20px; color: #000; }
 .content .leftContent .CollaborateTrackStatu li.spliteX { width: 1px; background-color: #c1c1c1; display: block; height: 110px; margin-right: 25px; margin-left: 30px; }
 .content .leftContent .productTable { border: 1px solid #5e5f68; }
-.content .leftContent .productTable .productList { height: 522px; overflow-y: scroll; }
+.content .leftContent .productTable .productList { height: 522px; overflow: hidden; overflow-y: scroll; box-sizing: border-box; width: 100%; }
 .content .leftContent .productTable table { width: 100%; }
 .content .leftContent .productTable table th { height: 50px; line-height: 50px; text-align: center; font-size: 18px; font-weight: bold; color: #ffffff; background-color: #019cde; }
 .content .leftContent .productTable table td { text-align: center; font-size: 14px; border-bottom: 1px solid #a4a5aa; }
@@ -177,14 +183,14 @@ input, textarea, select { background-color: #ffffff; }
 .content .leftContent .productTable .productImg img { width: 123px; height: 82px; }
 .content .leftContent .productTable .fblue { color: #019cde; display: block; }
 .content .leftContent .productTable .country { width: 80px; height: 52px; }
-.content .rightContent { width: 234px; float: right; }
+.content .rightContent { width: 234px; float: right; overflow: hidden; zoom: 1; }
 .content .rightContent.pt494 { padding-top: 500px; }
 
 .contactUs { margin-top: 10px; clear: both; overflow: hidden; }
 .contactUs img { width: 100%; }
 
 /*user center*/
-.userInfo { clear: both; overflow: hidden; border: 1px solid #dddddd; border-radius: 2px; margin-top: 28px; padding: 12px 20px; clear: both; overflow: hidden; position: relative; }
+.userInfo { clear: both; overflow: hidden; border: 1px solid #dddddd; border-radius: 2px; margin-top: 28px; box-sizing: border-box; padding: 12px 20px; width: 920px; position: relative; }
 .userInfo .changePhoto { width: 115px; float: left; text-align: center; }
 .userInfo .changePhoto img { width: 115px; height: 115px; }
 .userInfo .changePhoto a { color: #8e8e8e; font-size: 18px; }
