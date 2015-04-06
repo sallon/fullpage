@@ -61,18 +61,34 @@ input, textarea, select { background-color: #ffffff; }
 .loginBox .loginForm .spide { height: 13px; width: 300px; background-repeat: no-repeat; overflow: hidden; clear: both; background-image: url("../images//loginSign/or.png"); margin-top: 20px; }
 .loginBox .loginForm .registBtn { clear: both; display: block; height: 44px; width: 304px; background-image: url("../images//loginSign/registBtn.jpg"); background-repeat: no-repeat; margin-top: 17px; margin-bottom: 10px; }
 
-.signTitle { width: 100%; min-width: 960px; height: 221px; background-image: url("../images//loginSign/signImg.jpg"); z-index: 1; zoom: 1; background-position: top center; margin-top: -10px; background-repeat: no-repeat; }
+.signTitle { width: 960px; margin: 0px auto; height: 136px; line-height: 136px; position: relative; z-index: 5; zoom: 1; background-position: top center; background-repeat: no-repeat; font-size: 36px; color: #ffffff; font-weight: bold; }
+.signTitle .whiteBB { width: 126px; height: 4px; position: absolute; display: block; background-color: #ffffff; bottom: 35px; left: 0px; z-index: 10; }
 
-.signBox { width: 960px; margin: 0px auto; margin-top: 30px; clear: both; overflow: hidden; }
+.signBg { background-image: url("../images/loginSign/signbg.jpg"); background-repeat: no-repeat; background-position: top center; margin-top: -10px; z-index: 2; overflow: hidden; }
+
+.signBox { width: 960px; margin: 0px auto; clear: both; overflow: hidden; }
 .signBox .signFormItem { clear: both; overflow: hidden; height: 61px; margin-bottom: 42px; }
-.signBox .signFormItem .signFormItemLeft { float: left; width: 410px; height: 57px; position: relative; overflow: hidden; margin-left: 30px; border: 2px solid #cbd1df; border-radius: 5px; }
-.signBox .signFormItem .signFormItemLeft input { font-size: 18px; color: #333333; height: 18px; width: 100%; line-height: 20px; padding: 19px 10px; position: relative; border: 0 none; _border: none; zoom: 1; *left: -20px; }
-.signBox .signFormItem .signFormItemLeft .placeholder { position: absolute; top: 16px; font-size: 18px; color: #999; left: 12px; zoom: 1; }
-.signBox .signFormItem .signFormItemRight { width: 320px; float: left; margin-left: 23px; font-size: 16px; line-height: 57px; color: #008adf; }
+.signBox .signFormItem .signFormItemLabel { color: #ffffff; height: 52px; line-height: 52px; font-size: 22px; font-weight: bold; text-align: left; float: left; width: 205px; }
+.signBox .signFormItem .signFormItemLeft { float: left; width: 410px; height: 50px; position: relative; overflow: hidden; border: 1px solid #cbd1df; border-radius: 5px; }
+.signBox .signFormItem .signFormItemLeft input { font-size: 18px; color: #333333; height: 18px; width: 390px; line-height: 20px; padding: 16px 10px; position: relative; border: 0 none; _border: none; zoom: 1; }
+.signBox .signFormItem .signFormItemLeft .placeholder { position: absolute; top: 13px; font-size: 18px; color: #999; left: 12px; zoom: 1; }
+.signBox .signFormItem .signFormItemLeft .iconCompanyName, .signBox .signFormItem .signFormItemLeft .iconYourName, .signBox .signFormItem .signFormItemLeft .iconEmail, .signBox .signFormItem .signFormItemLeft .iconChineseName, .signBox .signFormItem .signFormItemLeft .iconTel { width: 19px; height: 21px; background-image: url("../images/loginSign/signIcon.jpg"); display: block; position: absolute; top: 13px; right: 10px; }
+.signBox .signFormItem .signFormItemLeft .inIcon.iconCompanyName, .signBox .signFormItem .signFormItemLeft .inIcon.iconYourName, .signBox .signFormItem .signFormItemLeft .inIcon.iconEmail, .signBox .signFormItem .signFormItemLeft .inIcon.iconChineseName, .signBox .signFormItem .signFormItemLeft .inIcon.iconTel { background-position: 0 0; }
+.signBox .signFormItem .signFormItemLeft .iconCompanyName { background-position: 0 -21px; }
+.signBox .signFormItem .signFormItemLeft .iconYourName { background-position: -20px -21px; }
+.signBox .signFormItem .signFormItemLeft .iconYourName.inIcon { background-position: -20px 0; }
+.signBox .signFormItem .signFormItemLeft .iconEmail { width: 22px; background-position: -39px -21px; }
+.signBox .signFormItem .signFormItemLeft .iconEmail.inIcon { background-position: -39px 0; }
+.signBox .signFormItem .signFormItemLeft .iconChineseName { width: 22px; background-position: -62px -21px; }
+.signBox .signFormItem .signFormItemLeft .iconChineseName.inIcon { background-position: -62px 0; }
+.signBox .signFormItem .signFormItemLeft .iconTel { background-position: -85px -21px; }
+.signBox .signFormItem .signFormItemLeft .iconTel.inIcon { background-position: -85px 0; }
+.signBox .signFormItem .signFormItemRight { width: 320px; float: left; margin-left: 23px; font-size: 16px; line-height: 57px; color: #ffffff; }
 .signBox .signFormItem .signFormItemRight.lineHeight28 { line-height: 28px; }
 .signBox .signFormItem .submitBtn { clear: both; display: block; height: 55px; width: 412px; background-image: url("../images//loginSign/registBtn.jpg"); background-repeat: no-repeat; margin: 0 auto; }
-.signBox .toLogin { clear: both; overflow: hidden; text-align: left; padding-left: 30px; font-size: 30px; font-weight: bold; color: #000000; margin-bottom: 50px; }
-.signBox .toLogin a { text-decoration: underline; color: #0083ff; margin-left: 10px; }
+.signBox .signFormItem .signSubmit { width: 380px; height: 50px; background-color: #2581c7; line-height: 50px; text-align: center; color: #ffffff; display: block; margin-left: 205px; border-radius: 3px; font-size: 18px; text-decoration: none; }
+.signBox .toLogin { clear: both; overflow: hidden; text-align: left; padding-left: 30px; font-size: 30px; font-weight: bold; color: #ffffff; margin-bottom: 50px; }
+.signBox .toLogin a { text-decoration: underline; color: #f60; margin-left: 10px; }
 
 .container { min-width: 960px; margin-top: -10px; clear: both; }
 .container .menuInner { height: 36px; width: 100%; min-width: 960px; background-image: url("../images/menu/menubg.jpg?v=20150329"); line-height: 36px; background-repeat: repeat-x; position: relative; /*涓嬫媺鑿滃崟*/ }
@@ -139,12 +155,12 @@ input, textarea, select { background-color: #ffffff; }
 .content .leftContent .imgBox { width: 715px; height: 340px; overflow: hidden; position: relative; }
 .content .leftContent .imgBox img { width: 100%; heigth: 100%; position: absolute; top: 0px; left: 0px; }
 .content .leftContent .description { clear: both; font-size: 14px; line-height: 26px; padding: 14px 20px; position: relative; }
-.content .leftContent .description .imgFocus { position: absolute; z-index: 10; top: 10px; right: 30px; height: 20px; width: 140px; zoom: 1; margin-right: -20px; overflow: hidden; }
-.content .leftContent .description .imgFocus .focus { display: block; width: 18px; height: 18px; float: left; margin-right: 10px; background-image: url("../images/index/focus.png"); background-repeat: no-repeat; }
-.content .leftContent .description .imgFocus .focus.cur { background-image: url("../images/index/focusCur.png"); }
+.content .leftContent .description .slidesjs-pagination { position: absolute; z-index: 10; top: 10px; right: 30px; height: 20px; width: 140px; zoom: 1; margin-right: -20px; overflow: hidden; }
+.content .leftContent .description .slidesjs-pagination .slidesjs-pagination-item a { line-height: 1000; display: block; width: 18px; height: 18px; float: left; margin-right: 10px; background-image: url("../images/index/focus.png"); background-repeat: no-repeat; }
+.content .leftContent .description .slidesjs-pagination .slidesjs-pagination-item a.active { background-image: url("../images/index/focusCur.png"); }
 .content .leftContent .description .mb10px { margin-bottom: 10px; }
 .content .leftContent .splite { height: 3px; background-image: url("../images//index/split.jpg"); }
-.content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 5px; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; }
+.content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 0; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; }
 .content .leftContent .CollaborateTrackStatu li { display: block; overflow: hidden; float: left; width: 290px; margin-bottom: 40px; }
 .content .leftContent .CollaborateTrackStatu li .smimg { background-image: url("../images/index/imgbg.jpg"); padding: 4px 6px 13px 4px; background-repeat: no-repeat; overflow: hidden; float: left; line-height: 88px; height: 88px; }
 .content .leftContent .CollaborateTrackStatu li .smimg img { width: 100px; height: auto; vertical-align: middle; }

@@ -25,7 +25,7 @@
       line-height: 26px;
       padding: 14px 20px;
       position: relative;
-      .imgFocus{
+      .slidesjs-pagination{
         position: absolute;
         z-index: 10;
         top: 10px;
@@ -35,7 +35,8 @@
         zoom: 1;
         margin-right: -20px;
         overflow: hidden;
-        .focus{
+        .slidesjs-pagination-item a{
+          line-height: 1000;
           display: block;
           width: 18px;
           height: 18px;
@@ -43,7 +44,7 @@
           margin-right: 10px;
           background-image: url("#{$img}index/focus.png");
           background-repeat: no-repeat;
-          &.cur{
+          &.active{
             background-image: url("#{$img}index/focusCur.png");
           }
         }
@@ -58,7 +59,7 @@
     }
     .CollaborateTrackStatu{
       background-color: #efefef;
-      margin: 10px 5px;
+      margin: 10px 0;
       padding: 40px 34px;
       padding-bottom: 0px;
       clear: both;

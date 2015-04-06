@@ -1,18 +1,38 @@
 .signTitle{
-  width: 100%;
-  min-width: $baseWidth;
-  height: 221px;
-  background-image: url("#{$img}/loginSign/signImg.jpg");
-  z-index: 1;
+  width: $baseWidth;
+  margin: 0px auto;
+  height: 136px;
+  line-height: 136px;
+  position: relative;
+  z-index: 5;
   zoom: 1;
   background-position: top center;
-  margin-top: -10px;
   background-repeat: no-repeat;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  .whiteBB{
+    width: 126px;
+    height: 4px;
+    position: absolute;
+    display: block;
+    background-color: #ffffff;
+    bottom: 35px;
+    left: 0px;
+    z-index: 10;
+  }
+}
+.signBg{
+  background-image: url("#{$img}loginSign/signbg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: -10px;
+  z-index: 2;
+  overflow: hidden;
 }
 .signBox{
   width: $baseWidth;
   margin: 0px auto;
-  margin-top: 30px;
   clear: both;
   overflow: hidden;
   .signFormItem{
@@ -20,35 +40,90 @@
     overflow: hidden;
     height: 61px;
     margin-bottom: 42px;
+    $ht:52px;
+    .signFormItemLabel{
+      color: #ffffff;
+      height: $ht;
+      line-height: $ht;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: left;
+      float: left;
+      width: 205px;
+    }
     .signFormItemLeft{
       float: left;
       width: 410px;
-      height: 57px;
+      height: $ht - 2px;
       position: relative;
       overflow: hidden;
-      margin-left: 30px;
-      border: 2px solid #cbd1df;
+      border: 1px solid #cbd1df;
       border-radius: 5px;
       input{
         font-size: 18px;
         color: #333333;
         height: 18px;
-        width: 100%;
+        width: 390px;
         line-height: 20px;
-        padding:19px 10px;
+        padding:16px 10px;
         position: relative;
         border: 0 none;
         _border: none;
         zoom: 1;
-        *left: -20px;
       }
       .placeholder{
         position: absolute;
-        top: 16px;
+        top: 13px;
         font-size: 18px;
         color: #999;
         left: 12px;
         zoom: 1;
+      }
+      %icon{
+        width: 19px;
+        height: 21px;
+        background-image: url("#{$img}loginSign/signIcon.jpg");
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        &.inIcon{
+          background-position: 0 0;
+        }
+      }
+      .iconCompanyName{
+        @extend %icon;
+        background-position: 0 -21px;
+      }
+      .iconYourName{
+        @extend %icon;
+        background-position: -20px -21px;
+        &.inIcon{
+          background-position: -20px 0;
+        }
+      }
+      .iconEmail{
+        @extend %icon;
+        width: 22px;
+        background-position: -39px -21px;
+        &.inIcon{
+          background-position: -39px 0;
+        }
+      }
+      .iconChineseName{
+        @extend %icon;
+        width: 22px;
+        background-position: -62px -21px;
+        &.inIcon{
+          background-position: -62px 0;
+        }
+      }
+      .iconTel{
+        @extend %icon;
+        background-position: -85px -21px;
+        &.inIcon{
+          background-position: -85px 0;
+        }
       }
     }
     .signFormItemRight{
@@ -57,7 +132,7 @@
       margin-left: 23px;
       font-size: 16px;
       line-height: 57px;
-      color: #008adf;
+      color: #ffffff;
       &.lineHeight28{
         line-height: 28px;
       }
@@ -71,6 +146,19 @@
       background-repeat: no-repeat;
       margin: 0 auto;
     }
+    .signSubmit{
+      width: 380px;
+      height: 50px;
+      background-color: #2581c7;
+      line-height: 50px;
+      text-align: center;
+      color: #ffffff;
+      display: block;
+      margin-left: 205px;
+      border-radius: 3px;
+      font-size: 18px;
+      text-decoration: none;
+    }
   }
   .toLogin{
     clear: both;
@@ -79,11 +167,11 @@
     padding-left: 30px;
     font-size: 30px;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 50px;
     a{
       text-decoration:underline;
-      color: #0083ff;
+      color: #f60;
       margin-left: 10px;
     }
   }
