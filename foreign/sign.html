@@ -33,7 +33,7 @@
             <div class="signFormItemLeft">
                 <input type="text">
                 <span class="placeholder">The name of the company</span>
-                <i class="iconCompanyName"></i>
+                <i class="iconCompanyName" data-icon = "company"></i>
             </div>
             <div class="signFormItemRight">
                 (You can only enter English）
@@ -46,7 +46,7 @@
             <div class="signFormItemLeft">
                 <input type="text">
                 <span class="placeholder">Your name</span>
-                <i class="iconYourName"></i>
+                <i class="iconYourName" data-icon = "yourName"></i>
             </div>
             <div class="signFormItemRight">
             </div>
@@ -58,7 +58,7 @@
             <div class="signFormItemLeft">
                 <input type="text">
                 <span class="placeholder">The mailbox</span>
-                <i class="iconEmail"></i>
+                <i class="iconEmail" data-icon = "email"></i>
             </div>
             <div class="signFormItemRight lineHeight28">
                 （Please use the correct mailbox, is used to
@@ -72,7 +72,7 @@
             <div class="signFormItemLeft">
                 <input type="text">
                 <span class="placeholder">The company Chinese namex</span>
-                <i class="iconChineseName"></i>
+                <i class="iconChineseName" data-icon = "chinese"></i>
             </div>
             <div class="signFormItemRight">
             </div>
@@ -84,7 +84,7 @@
             <div class="signFormItemLeft">
                 <input type="text">
                 <span class="placeholder">Contact telephone number</span>
-                <i class="iconTel"></i>
+                <i class="iconTel" data-icon = "tel"></i>
             </div>
             <div class="signFormItemRight">
             </div>
@@ -182,15 +182,17 @@
         $(function(){
             $(".signFormItemLeft").click(function(){
                 $(this).find("input").focus();
-                $(this).find("i").addClass("inIcon");
+                var dataIcon= $(this).find("i").attr("data-icon");
+                $(this).find("i").addClass("inIcon-"+dataIcon);
+
                 $(this).find(".placeholder").hide();
             })
             $("input").blur(function(){
                 if($(this).val() == "" || $(this).val() == null){
                     $(this).parent().find(".placeholder").show();
-                    $(this).parent().find("i").removeClass("inIcon");
+                    var dataIcon= $(this).parent().find("i").attr("data-icon");
+                    $(this).parent().find("i").removeClass("inIcon-"+dataIcon);
                 }
-
             });
         })
     </script>

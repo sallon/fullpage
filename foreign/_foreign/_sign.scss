@@ -20,6 +20,7 @@
     bottom: 35px;
     left: 0px;
     z-index: 10;
+    overflow: hidden;
   }
 }
 .signBg{
@@ -29,6 +30,7 @@
   margin-top: -10px;
   z-index: 2;
   overflow: hidden;
+  zoom: 1;
 }
 .signBox{
   width: $baseWidth;
@@ -87,18 +89,18 @@
         position: absolute;
         top: 13px;
         right: 10px;
-        &.inIcon{
-          background-position: 0 0;
-        }
       }
       .iconCompanyName{
         @extend %icon;
         background-position: 0 -21px;
+        &.inIcon-company{
+          background-position: 0 0;
+        }
       }
       .iconYourName{
         @extend %icon;
         background-position: -20px -21px;
-        &.inIcon{
+        &.inIcon-yourName{
           background-position: -20px 0;
         }
       }
@@ -106,7 +108,7 @@
         @extend %icon;
         width: 22px;
         background-position: -39px -21px;
-        &.inIcon{
+        &.inIcon-email{
           background-position: -39px 0;
         }
       }
@@ -114,14 +116,14 @@
         @extend %icon;
         width: 22px;
         background-position: -62px -21px;
-        &.inIcon{
+        &.inIcon-chinese{
           background-position: -62px 0;
         }
       }
       .iconTel{
         @extend %icon;
         background-position: -85px -21px;
-        &.inIcon{
+        &.inIcon-tel{
           background-position: -85px 0;
         }
       }

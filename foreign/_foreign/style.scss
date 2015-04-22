@@ -60,7 +60,7 @@ $baseWidth:960px;
               background-repeat: no-repeat;
               overflow: hidden;
               margin-left: 5px;
-              margin-top: 15px;
+              margin-top: 11px;
               position: relative;
               _top:-1px;
             }
@@ -76,7 +76,7 @@ $baseWidth:960px;
               margin-left: 5px;
               top: 2px;
               _top:0px;
-              margin-top: 8px;
+              margin-top: 4px;
             }
           }
         }
@@ -103,7 +103,7 @@ $baseWidth:960px;
           background-repeat: no-repeat;
           overflow: hidden;
           margin-left: 5px;
-          margin-top: 20px;
+          margin-top: 16px;
           position: relative;
           top: -3px;
         }
@@ -142,15 +142,23 @@ $baseWidth:960px;
               display: inline;
               color: #056cdf;
               &:hover{
-                color: #f60;
+                background-color: transparent;
+                text-decoration: none;
+                color: #ff4400;
               }
             }
           }
           .whiteBg{
             background-color: #ffffff;
+            &:hover{
+              background-color: #FFFFFF;
+            }
           }
           .grayBg{
             background-color:#f4f2f0 ;
+            &:hover{
+              background-color: #f4f2f0;
+            }
           }
           a{
             display: block;
@@ -198,6 +206,8 @@ $baseWidth:960px;
               }
             }
             &:hover{
+              text-decoration: none;
+              color: #ff4400;
               i{
                 &.icon-zhusu{
                   background-image: url("#{$img}menu/icon1_2.jpg");
