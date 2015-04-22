@@ -1,0 +1,56 @@
+.list{
+  margin-top: 10px;
+}
+.listTit{
+  height: 52px;
+  line-height: 52px;
+  .itemName{
+    color: #f29f19;
+    font-size: 18px;
+    float: left;
+  }
+  .more{
+    font-size: 12px;
+    float: right;
+    color: #666666;
+    &:hover{
+      color: #f60;
+    }
+  }
+}
+.listBox{
+  margin-right: -20px;
+  overflow: hidden;
+  li{
+    float: left;
+    margin-right: 20px;
+    a{
+      background-color: #ffffff;
+      padding: 6px 7px;
+      width: 220px;
+      height: 304px -6px;
+      display: block;
+      text-decoration: none;
+      .listItemName{
+        font-size: 14px;
+        color: #333333;
+        font-weight: bold;
+      }
+      .listItemOldPrice{
+        font-size: 12px;
+        color: #999;
+      }
+      .listItemNewPrice{
+        font-size: 12px;
+        color: #666;
+        .specPrice{
+          color: #f30;
+          font-size: 20px;
+          em{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

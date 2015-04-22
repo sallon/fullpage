@@ -1,0 +1,105 @@
+.headerTopBg{
+  background-color: #f4f4f4;
+  height: 36px;
+  line-height: 36px;
+  .headerTop{
+    width: $baseWidth;
+    margin: 0 auto;
+    color: #666666;
+    .welcome{
+      float: left;
+      font-size: 12px;
+    }
+    .topHeaderList{
+      float: right;
+      li{
+        float: left;
+        a{
+          color: #666666;
+        }
+      }
+    }
+  }
+}
+.logo{
+  float: left;
+  width: 197px;
+  height: 90px;
+  img{
+    width: 100%;
+  }
+}
+.searchBox{
+  width: 650px - 95px;
+  float: left;
+  height: 90px - 33px - 27px;
+  padding-left: 95px;
+  padding-top:33px;
+  padding-bottom: 27px;
+  .searchCon{
+    height: 30px;
+    width: 399px;
+    background-color: #333333;
+    float: left;
+    overflow: hidden;
+    input{
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      padding: 6px 10px;
+      background-color: #666666;
+      color: #ffffff;
+    }
+  }
+  .searchBtn{
+    display: block;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    width: 79px;
+    background-color: #f4a11a;
+    color: #ffffff;
+  }
+}
+.telNum{
+  float: left;
+  padding-top: 12px;
+  height: 90px - 12px;
+  .p1{
+    color: #868686;
+    font-size: 18px;
+    text-align: right;
+  }
+  .p2{
+    color:#6c6c6c;
+    font-size: 20px;
+  }
+}
+.menuBg{
+  height: 50px;
+  background-color: #f4ecdc;
+  line-height: 50px;
+  ul{
+    li{
+      float: left;
+      a{
+        padding: 0px 28px;
+        display: block;
+        height: 100%;
+        color: #666666;
+        font-weight: bold;
+        &:hover{
+          color: #ffffff;
+          background-color: #d5b87b;
+          text-decoration: none;
+        }
+      }
+      .cur{
+        color: #ffffff;
+        background-color: #d5b87b;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../libs/scss/pc/global";
+@include global_reset("12px/1.5 microsoft yaihei,Arial,SimSun,Tahoma",#333333,#fbf8f4,#000000,#ff4400);
+$img:"../images/";
+$version:"20150420";
+$baseWidth:1000px;
+.warp{
+  width: 100%;
+  min-width: $baseWidth;
+  .container{
+    width: $baseWidth;
+    margin: 0 auto;
+  }
+}
+.icon{
+  display: inline-block;
+  background-image: url("#{$img}base.png");
+}
+.iconXinShou{
+  width: 28px;
+  height: 25px;
+  background-position: 0 0;
+}
+.iconFuKuan{
+  width: 21px;
+  height: 25px;
+  background-position: -29px 0px;
+}
+.iconPeiSong{
+  width: 29px;
+  height: 25px;
+  background-position: -51px 0px;
+}
+.iconShouHou{
+  width: 18px;
+  height: 25px;
+  background-position: -81px 0px;
+}
+@import "base/header";
+@import "base/footer";
+
+
+

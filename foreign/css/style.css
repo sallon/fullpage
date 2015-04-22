@@ -159,14 +159,9 @@ input, textarea, select { background-color: #ffffff; }
 .content .leftContent .description .slidesjs-pagination .slidesjs-pagination-item a { line-height: 1000; display: block; width: 18px; height: 18px; float: left; margin-right: 10px; background-image: url("../images/index/focus.png"); background-repeat: no-repeat; }
 .content .leftContent .description .slidesjs-pagination .slidesjs-pagination-item a.active { background-image: url("../images/index/focusCur.png"); }
 .content .leftContent .description .mb10px { margin-bottom: 10px; }
-<<<<<<< HEAD
-.content .leftContent .splite { height: 3px; background-image: url("../images//index/split.jpg"); }
-.content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 0; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; }
-=======
 .content .leftContent .splite { height: 3px; background-image: url("../images//index/split.jpg"); background-repeat: repeat-x; overflow: hidden; clear: both; }
-.content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 5px; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; zoom: 1; }
+.content .leftContent .CollaborateTrackStatu { background-color: #efefef; margin: 10px 0; padding: 40px 34px; padding-bottom: 0px; clear: both; overflow: hidden; zoom: 1; }
 .content .leftContent .CollaborateTrackStatu ul { clear: both; overflow: hidden; }
->>>>>>> d241ef78d05c4af3eb4eca7c9b2e318bf5fc632d
 .content .leftContent .CollaborateTrackStatu li { display: block; overflow: hidden; float: left; width: 290px; margin-bottom: 40px; }
 .content .leftContent .CollaborateTrackStatu li .smimg { background-image: url("../images/index/imgbg.jpg"); padding: 4px 6px 13px 4px; background-repeat: no-repeat; overflow: hidden; float: left; line-height: 88px; height: 88px; }
 .content .leftContent .CollaborateTrackStatu li .smimg img { width: 100px; height: auto; vertical-align: middle; }

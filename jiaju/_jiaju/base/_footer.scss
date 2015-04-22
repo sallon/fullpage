@@ -1,0 +1,44 @@
+.footer{
+  margin-top: 80px;
+  background-color: #efefef;
+  padding-top: 35px;
+  overflow: hidden;
+  margin-right: -80px;
+  width: 100%;
+  overflow: hidden;
+  .footerItem{
+    float: left;
+    margin-right: 80px;
+    .iconBox{
+      float: left;
+      margin-right: 10px;
+    }
+    ul{
+      float: left;
+      .footTit a{
+        font-size: 16px;
+        font-weight: bold;
+        color: #727272;
+        padding-top: 3px;
+        &:hover{
+          color: #f30;
+          text-decoration: none;
+        }
+      }
+      .footItem a{
+        font-size: 14px;
+        line-height: 28px;
+        color: #727272;
+        &:hover{
+          color: #f30;
+          text-decoration: none;
+        }
+      }
+    }
+    .contact{
+      font-size: 16px;
+      font-weight: bold;
+      color: #727272;
+    }
+  }
+}
