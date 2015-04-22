@@ -188,7 +188,7 @@ input, textarea, select { background-color: #ffffff; }
 .contactUs img { width: 100%; }
 
 /*user center*/
-.userInfo { clear: both; overflow: hidden; border: 1px solid #dddddd; border-radius: 2px; margin-top: 28px; box-sizing: border-box; padding: 12px 20px; width: 920px; position: relative; }
+.userInfo { clear: both; overflow: hidden; border: 1px solid #dddddd; border-radius: 2px; margin-top: 28px; box-sizing: border-box; padding: 12px 20px; position: relative; }
 .userInfo .changePhoto { width: 115px; float: left; text-align: center; }
 .userInfo .changePhoto img { width: 115px; height: 115px; }
 .userInfo .changePhoto a { color: #8e8e8e; font-size: 18px; }

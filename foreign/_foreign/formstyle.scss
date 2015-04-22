@@ -1,0 +1,99 @@
+$img:"../images/";
+$version:"20150329";
+$baseWidth:960px;
+
+.fm_item{
+  margin-bottom: 25px;
+}
+.formTitle{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #ff7110;
+  font-size: 24px;
+}
+.checkBox{
+  width: 27px;
+  height: 27px;
+  background-position: -28px 0px;
+  background-image: url("#{$img}common/checkBox.png?v=#{$version}");
+  float: left;
+  cursor: pointer;
+  input{
+    opacity: 0;
+  }
+}
+.checked{
+  background-position: 0 0;
+}
+.context{
+  float: left;
+  line-height: 27px;
+  font-size: 18px;
+  color: #000000;
+  margin-left: 10px;
+  width: $baseWidth - 37px;
+}
+.inputText{
+  line-height: 27px;
+  font-size: 18px;
+  color: #000000;
+  input{
+    width: 240px;
+    font-size: 14px;
+    padding: 6px 10px;
+    border: 1px solid #dbdada;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+}
+.textArea{
+  p{
+    line-height: 27px;
+    font-size: 18px;
+    color: #000000;
+  }
+  textarea{
+    width: $baseWidth - 20px;
+    padding: 10px;
+    height: 222px;
+    border: 1px solid #dbdada;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    overflow-y: scroll;
+  }
+}
+.savebtn{
+  width: 240px;
+  height: 44px;
+  background-image: url("#{$img}common/saveBtn.png");
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0px auto;
+}
+.fm_half{
+  width: 50%;
+  float: left;
+  p{
+    font-size: 18px;
+    color: #000000;
+  }
+  .selectBox{
+    border: 1px solid #dbdada;
+    height: 49px;
+    border-radius: 7px;
+    width: 415px;
+    position: relative;
+  }
+}
+.selectDown{
+  width: 48px;
+  height: 49px;
+  background-image: url("#{$img}common/selectright.png");
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-position: -49px 0px;
+}
