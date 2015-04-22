@@ -65,7 +65,7 @@ input, textarea, select { background-color: #ffffff; }
 .menuBg ul li a:hover { color: #ffffff; background-color: #d5b87b; text-decoration: none; }
 .menuBg ul li .cur { color: #ffffff; background-color: #d5b87b; text-decoration: none; }
 
-.footer { margin-top: 80px; background-color: #efefef; padding-top: 35px; overflow: hidden; margin-right: -80px; width: 100%; overflow: hidden; }
+.footer { margin-top: 80px; background-color: #efefef; padding: 35px 0px; overflow: hidden; margin-right: -80px; width: 100%; overflow: hidden; }
 .footer .footerItem { float: left; margin-right: 80px; }
 .footer .footerItem .iconBox { float: left; margin-right: 10px; }
 .footer .footerItem ul { float: left; }
@@ -74,3 +74,9 @@ input, textarea, select { background-color: #ffffff; }
 .footer .footerItem ul .footItem a { font-size: 14px; line-height: 28px; color: #727272; }
 .footer .footerItem ul .footItem a:hover { color: #f30; text-decoration: none; }
 .footer .footerItem .contact { font-size: 16px; font-weight: bold; color: #727272; }
+.footer .footerItem .specName { font-size: 14px; line-height: 28px; color: #727272; }
+.footer .footerItem .specTelNum { font-size: 18px; line-height: 32px; color: #c50d0b; }
+.footer .footerItem .specEnter { font-size: 14px; font-weight: bold; color: #c50d0b; display: block; }
+.footer .footerItem .specEnter:hover { text-decoration: none; }
+
+.banquan { height: 50px; line-height: 50px; text-align: center; }
