@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>创建价表</title>
+    <title>工厂-员工管理-修改用户</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formstyle.css">
 </head>
@@ -110,128 +110,84 @@
 
 <div class="content">
     <!--main content start-->
-    <div class="fm_item clearfix mt30">
-        <div class="fm_half">
-            <p>Process</p>
-            <div class="selectBox">
-                <em class="selectDown"></em>
-                <input type="text">
-            </div>
-        </div>
-        <div class="fm_half">
-            <p>Delivery time</p>
-            <div class="selectBox">
-                <em class="selectDown open"></em>
-                <input type="text">
-            </div>
-        </div>
-    </div>
-
-    <div class="fm_item clearfix mt30">
-        <div class="fm_half">
-            <p>Product Name</p>
-            <div class="inputBox">
-                <input type="text">
-            </div>
-        </div>
-        <div class="fm_half">
-            <p>Production Quantity</p>
-            <div class="inputBox">
-                <input type="text">
-            </div>
-        </div>
-    </div>
-    <div class="fm_item clearfix mt30">
-        <label for="checkbox">
-            <div class="checkBox ml480">
-                <input id="checkbox" type="checkbox">
-            </div>
-            <div class="leftTextContent">
-                <a href="#">Just need the mold</a>
-            </div>
-        </label>
-    </div>
-
-    <div class="fm_item clearfix mt30">
-        <div class="fm_tit">
-            Upload Drawing
-        </div>
-        <div class="uploadImg">
-            <img src="images/common/defaultimg.png">
-            <div class="rightTextBtn">
-                <p>
-                    (If you have mutilple files, please
-                    zip them into one archive, or email
-                    us later)
-                </p>
-                <a href="#" class="addMoreFiles" title="addMoreFiles">
-                    <!--addMoreFiles-->
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="fm_item clearfix mt30">
-        <p class="fm_tit_name">Factory Preferrence</p>
-    </div>
-
-    <div class="fm_item clearfix mt30">
-        <p class="fm_tit">Product experience <i class="moreIcon"></i></p>
-    </div>
-
-    <div class="fm_item clearfix mt30">
-        <p class="fm_tit orgBorder">Product experience <i class="moreIcon"></i></p>
-        <div class="checkBoxList">
-            <label for="checkbox1">
-                <div class="checkBox">
-                    <input id="checkbox1" type="checkbox">
-                </div>
-                <div class="leftTextCon">PVC</div>
-            </label>
-            <label for="checkbox2">
-                <div class="checkBox">
-                    <input id="checkbox2" type="checkbox">
-                </div>
-                <div class="leftTextCon">PP</div>
-            </label>
-            <label for="checkbox3">
-                <div class="checkBox">
-                    <input id="checkbox3" type="checkbox">
-                </div>
-                <div class="leftTextCon">PE</div>
-            </label>
-            <label for="checkbox4">
-                <div class="checkBox">
-                    <input id="checkbox4" type="checkbox">
-                </div>
-                <div class="leftTextCon">HDPE</div>
-            </label>
-            <label for="checkbox5">
-                <div class="checkBox">
-                    <input id="checkbox5" type="checkbox">
-                </div>
-                <div class="leftTextCon">Biodegradable</div>
-            </label>
-            <label for="checkbox6">
-                <div class="checkBox">
-                    <input id="checkbox6" type="checkbox">
-                </div>
-                <div class="leftTextCon">PC</div>
-            </label>
-            <label for="checkbox7">
-                <div class="checkBox">
-                    <input id="checkbox7" type="checkbox">
-                </div>
-                <div class="leftTextCon">Nylon</div>
-            </label>
-        </div>
-    </div>
-    <div class="fm_item clearfix mt30">
-        <p class="fm_tit">Certification <i class="moreIcon"></i></p>
-    </div>
+    <div class="formTitle">Edit user information </div>
     <div class="fm_item clearfix">
-        <a href="#" class="savebtn" title="save"><!--save btn --></a>
+        <div class="leftName">User ID :</div>
+        <div class="rightInput">
+            <input type="text">
+        </div>
     </div>
+
+    <div class="fm_item clearfix mt30">
+        <div class="leftName">User account :</div>
+        <div class="rightInput">
+            <input type="text">
+        </div>
+    </div>
+    <div class="fm_item clearfix mt30">
+        <div class="leftName">Password :</div>
+        <div class="rightInput">
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="fm_item clearfix mt30">
+        <div class="leftName">Password :</div>
+        <div class="rightRadio">
+            <label for="radio1">
+                <div class="radioBox">
+                    <input id="radio1" type="radio">
+                </div>
+                <div class="radioTextLong">
+                    Boss
+                </div>
+            </label>
+            <label for="radio2">
+                <div class="radioBox">
+                    <input id="radio2" type="radio">
+                </div>
+                <div class="radioTextLong">
+                    Can add or delete employee
+                </div>
+            </label>
+            <label for="radio3">
+                <div class="radioBox">
+                    <input id="radio3" type="radio">
+                </div>
+                <div class="radioTextLong">
+                    Can edit project team members
+                </div>
+            </label>
+            <label for="radio4">
+                <div class="radioBox">
+                    <input id="radio4" type="radio">
+                </div>
+                <div class="radioTextLong">
+                    Normal
+                </div>
+            </label>
+            <label for="radio5">
+                <div class="radioBox">
+                    <input id="radio5" type="radio">
+                </div>
+                <div class="radioTextLong">
+                    Sales
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="fm_item clearfix mt30">
+        <div class="fm_half">
+            <a href="#" class="leftSaveBtn" title="save"></a>
+        </div>
+        <div class="fm_half">
+            <a href="#" class="rightDeleteBtn" title="delete"></a>
+        </div>
+    </div>
+
+
+
     <!--main content end-->
 </div>
 </body>

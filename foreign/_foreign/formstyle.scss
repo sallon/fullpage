@@ -85,7 +85,24 @@ $baseWidth:960px;
     border-radius: 7px;
     width: 415px;
     position: relative;
+    z-index: 1;
+    input{
+      font-size: 18px;
+      padding: 12px 10px;
+      width: 344px;
+      border: none;
+      border-radius: 8px;
+    }
   }
+  .inputBox{
+    @extend .selectBox;
+    input{
+      width: 390px;
+    }
+  }
+}
+.mt30{
+  margin-top: 30px;
 }
 .selectDown{
   width: 48px;
@@ -97,3 +114,380 @@ $baseWidth:960px;
   right: 0px;
   background-position: -49px 0px;
 }
+.open{
+  background-position: 0 0;
+}
+.leftTextContent{
+  height: 27px;
+  line-height: 27px;
+  float: left;
+  margin-left: 10px;
+}
+.ml480{
+  margin-left: 480px;
+}
+.fm_tit{
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  border-bottom: 1px solid #aaaaaa;
+}
+.orgBorder{
+  border-color: #ff7110;
+  color: #ff7110;
+}
+.uploadImg{
+  margin-top: 10px;
+  background-color: #343434;
+  padding: 24px 32px;
+  overflow:hidden;
+  img{
+    width: 458px;
+    height: 303px;
+    float: left;
+  }
+  .rightTextBtn{
+    float: left;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 311px;
+    p{
+      margin-top: 80px;
+    }
+    .addMoreFiles{
+      width: 144px;
+      height: 34px;
+      display: block;
+      overflow:hidden;
+      background-image: url("#{$img}common/addMore.png");
+      background-repeat: no-repeat;
+      margin-left: 80px;
+      margin-top: 40px;
+    }
+    .submitBtns{
+      width: 144px;
+      height: 34px;
+      display: block;
+      overflow:hidden;
+      background-image: url("#{$img}common/submitBlackBtn.png");
+      background-repeat: no-repeat;
+      margin-left: 80px;
+      margin-top: 40px;
+    }
+
+  }
+}
+.fm_tit_name{
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+}
+.moreIcon{
+  background-image: url("#{$img}common/moreInfo.png");
+  background-repeat: no-repeat;
+  overflow:hidden;
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  background-position: 0 0;
+}
+.orgBorder{
+  .moreIcon{
+    width: 14px;
+    height: 14px;
+    background-position: -8px 0px;
+  }
+}
+.checkBoxList{
+  padding: 20px;
+  border: 1px solid #ffc095;
+  overflow:hidden;
+  label{
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+  }
+  .leftTextCon{
+    height: 27px;
+    line-height: 27px;
+    font-size: 18px;
+    margin-left: 10px;
+    float: left;
+    width: 140px;
+  }
+}
+.leftName{
+  float: left;
+  width: 170px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+.rightInput{
+  float: left;
+  width: 240px;
+  height: 30px;
+  border: 1px solid #d5d4d4;
+  border-radius: 5px;
+  input{
+    width: 220px;
+    font-size: 16px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+.rightSelect{
+  float: left;
+  width: 240px;
+  height: 29px;
+  border: 1px solid #d5d4d4;
+  border-radius: 5px;
+  position: relative;
+  input{
+    font-size: 16px;
+    padding: 4px 10px;
+    width: 193px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+.selectTrangle{
+  background-image: url("#{$img}common/selectrightsm.png");
+  width: 26px;
+  height: 29px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.textAreaBorder{
+  border: 1px solid #d5d4d4;
+  resize: none;
+  width: 940px;
+  height: 180px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.remarkbtn{
+  display: block;
+  width: 240px;
+  height: 45px;
+  background-image: url("#{$img}common/remark.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.fileUpload{
+  border: 1px solid #c3c2c2;
+  height: 34px;
+  border-radius: 5px;
+  position: relative;
+  overflow:hidden;
+  background-color: #f0f0f0;
+  input{
+    font-size: 16px;
+    width: 728px;
+    border: none;
+    padding: 8px 10px;
+    background-color: #f0f0f0;
+  }
+}
+.browseBtn{
+  position: absolute;
+  width: 164px;
+  height: 34px;
+  background-image: url("#{$img}common/fileUploadBtn.png");
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+}
+.submitBtnN{
+  width: 144px;
+  height: 34px;
+  background-image: url("#{$img}common/submitBtn.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  margin: 30px auto;
+}
+.radiolist{
+  span{
+    float: left;
+    margin-right: 50px;
+  }
+  label{
+    float: left;
+    margin-top: 13px;
+  }
+}
+.radioBox{
+  width: 22px;
+  height: 22px;
+  float: left;
+  background-image: url("#{$img}common/radio.png");
+  cursor: pointer;
+  input{
+    opacity: 0;
+  }
+}
+.openRadio{
+  background-position: -22px 0px;
+}
+.radioText{
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  width: 80px;
+  margin-left: 10px;
+  font-weight: normal;
+}
+.rightRadio,.rightCheckbox{
+  float: left;
+  width: 790px;
+  label{
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+  }
+}
+.radioTextLong,.checkBoxTextLong{
+  @extend .radioText;
+  width: 225px;
+  font-size: 16px;
+}
+.checkBoxTextLong{
+  @extend .radioText;
+  width: auto;
+  margin-right: 20px;
+  height: 27px;
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.leftSaveBtn{
+  width: 240px;
+  height: 45px;
+  margin: 0px auto;
+  display: block;
+  overflow: hidden;
+  background-image: url("#{$img}common/saveBtns.png");
+  background-repeat: no-repeat;
+}
+.rightDeleteBtn{
+  @extend .leftSaveBtn;
+  background-image: url("#{$img}common/deleteBtn.png");
+}
+.tableInfo{
+  border: 1px solid #acabab;
+  margin-top: 10px;
+  overflow: hidden;
+  table{
+    width: 100%;
+    th{
+      height: 50px;
+      text-align: center;
+      border: 1px solid #b3c6ce;
+      width: 10%;
+      background-color: #d9f0fa;
+      font-size: 18px;
+    }
+    td{
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      border: 1px solid #b3c6ce;
+      a{
+        color: #019cde;
+        text-decoration: underline;
+        &:hover{
+          color: #f60;
+        }
+      }
+    }
+  }
+}
+.f18{
+  font-size: 18px;
+}
+.submitBigBtn{
+  width: 144px;
+  height: 34px;
+  display: block;
+  margin: 0px auto;
+  background-image: url("#{$img}common/submitbigBtn.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.factoryInfo{
+  border: 2px solid #e6e6e6;
+  padding: 25px;
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  overflow: hidden;
+  .factoryPhoto{
+    width: 140px;
+    text-align: center;
+    float: left;
+    .factoryPhotoImg{
+      width: 128px;
+      height: 128px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 36px;
+      height: 36px;
+      color: #019cde;
+    }
+  }
+  .factoryInfoEdit{
+    float: left;
+    margin-left: 20px;
+  }
+  .fi_item{
+    height: 32px;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .fi_left,.fi_center,.fi_right{
+      height: 32px;
+      float: left;
+    }
+    .fi_left{
+      width: 215px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .fi_center input{
+      font-size: 18px;
+      padding: 3px 10px;
+      border-radius: 3px;
+      border: 2px solid #ebeaea;
+    }
+    .fi_right{
+      margin-left: 10px;
+      line-height: 32px;
+      font-size: 16px;
+      color: #019cde;
+    }
+  }
+}
+.fi_radioItem{
+  margin-top: 20px;
+  font-size: 18px;
+  label{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+}
+.browseingBtn{
+  width: 144px;
+  height: 34px;
+  background-image: url("#{$img}common/browseingbtn.png");
+  display: block;
+  overflow: hidden;
+  margin: 80px auto;
+}
+.tcenter{text-align: center}
