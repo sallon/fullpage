@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>工厂-员工管理-修改用户</title>
+    <title>工厂-查看项目</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formstyle.css">
 </head>
@@ -110,56 +110,41 @@
 
 <div class="content">
     <!--main content start-->
-    <div class="formTitle">Stuff Management </div>
-    <div class="userTable">
-        <table>
-            <thead>
-                <tr>
-                    <th>Factory Name</th>
-                    <th>Sign in Email</th>
-                    <th>Password</th>
-                    <th>Position</th>
-                    <th>View Edit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>xxxxx</td>
-                    <td>123456@126.com</td>
-                    <td>xxxxxx</td>
-                    <td>xxxxxx</td>
-                    <td><a href="#">Edit</a></td>
-                </tr>
-                <tr>
-                    <td>xxxxx</td>
-                    <td>123456@126.com</td>
-                    <td>xxxxxx</td>
-                    <td>xxxxxx</td>
-                    <td><a href="#">Edit</a></td>
-                </tr>
-                <tr>
-                    <td>xxxxx</td>
-                    <td>123456@126.com</td>
-                    <td>xxxxxx</td>
-                    <td>xxxxxx</td>
-                    <td><a href="#">Edit</a></td>
-                </tr>
-                <tr>
-                    <td>xxxxx</td>
-                    <td>123456@126.com</td>
-                    <td>xxxxxx</td>
-                    <td>xxxxxx</td>
-                    <td><a href="#">Edit</a></td>
-                </tr>
-            </tbody>
-        </table>
-
+    <div class="formTitle">Edit Company Information</div>
+    <div class="fm_item clearfix">
+        <div class="leftName">Delivery Date :</div>
+        <div class="rightSelect">
+            <em class="selectTrangle"></em>
+            <input type="text">
+        </div>
     </div>
 
-    <div class="fm_item clearfix mt30">
-        <a href="#" class="addCustomer" title="save"><!--save btn --></a>
+    <div class="fm_item clearfix">
+        <p class="fm_tit_name f18">Company Introduction</p>
+        <textarea class="textAreaBorder"></textarea>
     </div>
 
+    <div class="fm_item clearfix">
+        <p class="fm_tit_name f18 clearfix">Phone :</p>
+        <div class="rightInput">
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="fm_item clearfix">
+        <p class="fm_tit_name f18 clearfix">Fax :</p>
+        <div class="rightInput">
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="fm_item clearfix">
+        <p class="fm_tit_name f18">Address</p>
+        <textarea class="textAreaBorder" style="height: 128px;"></textarea>
+    </div>
+    <div class="fm_item clearfix">
+        <a href="#" class="submitBigBtn" title="submit"><!--submit btn --></a>
+    </div>
     <!--main content end-->
 </div>
 </body>

@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>工厂-员工管理-修改用户</title>
+    <title>用户-查看详情</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formstyle.css">
 </head>
@@ -110,56 +110,90 @@
 
 <div class="content">
     <!--main content start-->
-    <div class="formTitle">Stuff Management </div>
-    <div class="userTable">
-        <table>
-            <thead>
-                <tr>
-                    <th>Factory Name</th>
-                    <th>Sign in Email</th>
-                    <th>Password</th>
-                    <th>Position</th>
-                    <th>View Edit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>xxxxx</td>
-                    <td>123456@126.com</td>
-                    <td>xxxxxx</td>
-                    <td>xxxxxx</td>
-                    <td><a href="#">Edit</a></td>
-                </tr>
-                <tr>
-                    <td>xxxxx</td>
-                    <td>123456@126.com</td>
-                    <td>xxxxxx</td>
-                    <td>xxxxxx</td>
-                    <td><a href="#">Edit</a></td>
-                </tr>
-                <tr>
-                    <td>xxxxx</td>
-                    <td>123456@126.com</td>
-                    <td>xxxxxx</td>
-                    <td>xxxxxx</td>
-                    <td><a href="#">Edit</a></td>
-                </tr>
-                <tr>
-                    <td>xxxxx</td>
-                    <td>123456@126.com</td>
-                    <td>xxxxxx</td>
-                    <td>xxxxxx</td>
-                    <td><a href="#">Edit</a></td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="formTitle">Inquiry Details</div>
+    <div class="fm_item clearfix">
+        <div class="inquiryDetails">
+            <div class="fm_half">
+                <div class="hf_item">
+                    <div class="hf_left">Product Name : </div>
+                    <div class="hf_right">
+                        <input type="text" class="textInput" value="cr">
+                    </div>
+                </div>
+                <div class="hf_item">
+                    <div class="hf_left">Just need the mold :</div>
+                    <div class="hf_right">
+                        <input type="text" class="textInput" value="cr">
+                    </div>
+                </div>
+                <div class="hf_item">
+                    <div class="hf_left">Drawings : </div>
+                    <div class="hf_right">
+                        <input type="text" class="textInput" value="cr">
+                    </div>
+                </div>
+            </div>
+            <div class="fm_half">
+                <div class="hf_item">
+                    <div class="hf_left">Quantity : </div>
+                    <div class="hf_right">
+                        <input type="text" class="textInput" value="cr">
+                    </div>
+                </div>
+                <div class="hf_item">
+                    <div class="hf_left">Process :  </div>
+                    <div class="hf_right">
+                        <input type="text" class="textInput" value="Injection Molding">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="fm_item clearfix">
+        <p class="info_tit">Company Introduction</p>
+        <div class="detailDiv ddline">
+            <div class="ddItem">
+                <div class="ddleft">What product experience:</div>
+                <div class="ddright">Enclosure</div>
+            </div>
+            <div class="ddItem">
+                <div class="ddleft">What material or process experience:</div>
+                <div class="ddright">PVC</div>
+            </div>
+            <div class="ddItem">
+                <div class="ddleft">What certification:</div>
+                <div class="ddright">ISO 9001</div>
+            </div>
+        </div>
+        <div class="detailDiv">
+            <div class="ddItem">
+                Need Fast Delivery (Typical mold lead time is 30 days,we might be able to expedite it to 1- bays)
+                Try to combine different small parts in one mold to save money (might loose production flexibility)
+            </div>
+            <div class="ddItem mt30">
+                <div class="ddleft">Mold Cavity:  </div>
+                <div class="ddright">1</div>
+            </div>
+            <div class="ddItem">
+                <div class="ddleft">Mold Life:</div>
+                <div class="ddright">2000</div>
+            </div>
+            <div class="ddItem">
+                <div class="ddleft">More comments:</div>
+                <div class="ddright"></div>
+            </div>
+        </div>
     </div>
 
     <div class="fm_item clearfix mt30">
-        <a href="#" class="addCustomer" title="save"><!--save btn --></a>
+        <div class="fm_half">
+            <a href="#" class="leftUpdatebtn" title="update"></a>
+        </div>
+        <div class="fm_half">
+            <a href="#" class="rightDeleteRfqBtn" title="delete RFQ"></a>
+        </div>
     </div>
-
     <!--main content end-->
 </div>
 </body>

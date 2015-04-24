@@ -92,7 +92,7 @@
 
 .checkBoxTextLong { width: auto; margin-right: 20px; height: 27px; line-height: 27px; font-size: 18px; }
 
-.leftSaveBtn, .rightDeleteBtn { width: 240px; height: 45px; margin: 0px auto; display: block; overflow: hidden; background-image: url("../images/common/saveBtns.png"); background-repeat: no-repeat; }
+.leftSaveBtn, .rightDeleteBtn, .rightDeleteRfqBtn { width: 240px; height: 45px; margin: 0px auto; display: block; overflow: hidden; background-image: url("../images/common/saveBtns.png"); background-repeat: no-repeat; }
 
 .rightDeleteBtn { background-image: url("../images/common/deleteBtn.png"); }
 
@@ -124,3 +124,58 @@
 .browseingBtn { width: 144px; height: 34px; background-image: url("../images/common/browseingbtn.png"); display: block; overflow: hidden; margin: 80px auto; }
 
 .tcenter { text-align: center; }
+
+.userTable { border: 1px solid #acabab; margin-top: 10px; overflow: hidden; }
+.userTable table { width: 100%; }
+.userTable table th { height: 55px; line-height: 55px; text-align: center; font-size: 18px; border: 1px solid #d2d2d2; background-color: #d9f0fa; }
+.userTable table td { border: 1px solid #d2d2d2; font-size: 18px; height: 40px; line-height: 40px; text-align: center; }
+.userTable table td a { color: #019cde; text-decoration: underline; }
+.userTable table td a:hover { color: #f60; }
+
+.addCustomer { width: 240px; height: 45px; display: block; overflow: hidden; background-image: url("../images/common/addCustomer.png"); background-repeat: no-repeat; margin: 0 auto; }
+
+.offeringList { border: 1px solid #acabab; margin-top: 10px; overflow: hidden; }
+.offeringList table { width: 100%; }
+.offeringList table th { height: 55px; text-align: center; font-size: 18px; border: 1px solid #d2d2d2; background-color: #d9f0fa; }
+.offeringList table td { border: 1px solid #d2d2d2; font-size: 18px; height: 40px; text-align: center; }
+.offeringList table td a { color: #019cde; text-decoration: underline; }
+.offeringList table td a:hover { color: #f60; }
+
+.newrfqsBtn, .settingBtn { width: 240px; height: 45px; display: block; overflow: hidden; background-image: url("../images/common/newfoq.png"); background-repeat: no-repeat; margin: 0 auto; }
+
+.settingBtn { background-image: url("../images/common/setting.png"); }
+
+.inquiryDetails { border: 2px solid #e6e6e6; border-radius: 3px; padding: 25px; overflow: hidden; background-color: #f9f9f9; }
+
+.hf_item { clear: both; overflow: hidden; margin-bottom: 20px; }
+.hf_item .hf_left { height: 32px; line-height: 32px; font-size: 18px; width: 170px; float: left; }
+.hf_item .hf_right { height: 32px; line-height: 32px; font-size: 18px; float: left; }
+.hf_item .hf_right .textInput { width: 220px; border: 1px solid #ebeaea; font-size: 16px; padding: 5px 10px; border-radius: 3px; color: #8b8b8b; }
+
+.info_tit { font-size: 22px; height: 40px; line-height: 40px; padding-left: 25px; border-bottom: 2px solid #6a6a6a; }
+
+.detailDiv { padding: 25px; }
+
+.ddItem { clear: both; overflow: hidden; font-size: 20px; }
+.ddItem .ddleft { float: left; width: 350px; height: 30px; line-height: 30px; }
+.ddItem .ddright { float: left; height: 30px; line-height: 30px; }
+
+.ddline { border-bottom: 2px solid #cbcbcb; }
+
+.leftUpdatebtn { width: 240px; height: 45px; margin: 0px auto; display: block; overflow: hidden; background-image: url("../images/common/updateBtn.png"); background-repeat: no-repeat; }
+
+.rightDeleteRfqBtn { background-image: url("../images/common/deleterfq.png"); }
+
+/*user center modify */
+.imageTextBox { border: 2px solid #e6e6e6; border-radius: 3px; padding: 25px; overflow: hidden; background-color: #f9f9f9; }
+
+.leftImgBox { width: 130px; text-align: center; float: left; }
+.leftImgBox image { width: 130px; }
+.leftImgBox a { display: block; height: 30px; line-height: 30px; font-size: 16px; color: #019cde; }
+.leftImgBox a:hover { color: #f60; }
+
+.rightInfoEdit { float: left; margin-left: 35px; }
+.rightInfoEdit .textEditItem { clear: both; overflow: hidden; margin-bottom: 20px; }
+.rightInfoEdit .textEditItem .textEditLeft { float: left; width: 150px; font-size: 18px; height: 32px; line-height: 32px; }
+.rightInfoEdit .textEditItem .textEditRight { float: left; }
+.rightInfoEdit .textEditItem .textEditRight .textInput { width: 220px; border: 1px solid #d5d4d4; font-size: 16px; padding: 5px 10px; border-radius: 3px; }
