@@ -649,6 +649,14 @@ $baseWidth:960px;
   @extend .leftSaveBtn;
   background-image: url("#{$img}common/deleterfq.png");
 }
+.bigSubmitBtn{
+  @extend .leftUpdatebtn;
+  background-image: url("#{$img}common/bigsubmit.png");
+}
+.sendbtn{
+  @extend .leftUpdatebtn;
+  background-image: url("#{$img}common/sendbtn.png");
+}
 /*user center modify */
 .imageTextBox{
   border: 2px solid #e6e6e6;
@@ -656,6 +664,7 @@ $baseWidth:960px;
   padding: 25px;
   overflow: hidden;
   background-color: #f9f9f9;
+  position: relative;
 }
 .leftImgBox{
   width: 130px;
@@ -700,4 +709,34 @@ $baseWidth:960px;
       }
     }
   }
+}
+.rightTopBox{
+  width: 265px;
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  top: 25px;
+  right: 25px;
+  .deleteBtnGray{
+    float: right;
+    overflow: hidden;
+    display: block;
+    width: 87px;
+    height: 28px;
+    background-image: url("#{$img}common/grayDeleteBtn.png");
+    background-repeat: no-repeat;
+  }
+}
+.addFilesBtn{
+  display: block;
+  overflow: hidden;
+  width: 145px;
+  height: 35px;
+  position: absolute;
+  zoom: 1;
+  right: 25px;
+  bottom: 25px;
+  background-image: url("#{$img}common/addfile.png");
+  background-repeat: no-repeat;
 }
