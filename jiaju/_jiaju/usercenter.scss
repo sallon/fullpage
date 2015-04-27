@@ -22,6 +22,13 @@ $img:"../images/";
     line-height: 50px;
     padding-left: 75px;
     border-bottom: 1px solid #e6e6e6;
+    text-decoration: none;
+    &:hover{
+      color: #f60;
+    }
+  }
+  .current{
+    color: #f60;
   }
 }
 .rightContainer{
@@ -165,3 +172,19 @@ $img:"../images/";
     margin: 30px auto 20px;
   }
 }
+.htList{
+  margin-left: 10px;
+  margin-right: -10px;
+  ul{
+    margin-right: -10px;
+    li{
+      margin-right: 5px;
+      margin-bottom: 10px;
+      a{border: 1px solid #dedede}
+    }
+  }
+}
+.pageBottomBox{
+  margin-right: 10px;
+}
+.rightContainer .pl7{padding-left: 7px;}

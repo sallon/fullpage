@@ -1,6 +1,8 @@
 .leftContainer { width: 260px; overflow: hidden; float: left; margin: 20px 0; border: 1px solid #e6e6e6; border-bottom: 0 none; }
 .leftContainer .navTit { padding-left: 55px; height: 50px; background-color: #d5b87b; color: #fff; line-height: 50px; font-size: 16px; }
-.leftContainer .navItem { display: block; overflow: hidden; clear: both; height: 50px; line-height: 50px; padding-left: 75px; border-bottom: 1px solid #e6e6e6; }
+.leftContainer .navItem { display: block; overflow: hidden; clear: both; height: 50px; line-height: 50px; padding-left: 75px; border-bottom: 1px solid #e6e6e6; text-decoration: none; }
+.leftContainer .navItem:hover { color: #f60; }
+.leftContainer .current { color: #f60; }
 
 .rightContainer { width: 736px; float: left; border: 1px solid #e6e6e6; background-color: #fff; margin: 20px 0; }
 .rightContainer .fromTitle { height: 50px; line-height: 50px; text-align: left; border-bottom: 1px solid #e6e6e6; padding-left: 20px; font-size: 16px; }
@@ -25,3 +27,12 @@
 .rightContainer .formItem .inError .rw { display: block; background-position: -17px 0px; }
 .rightContainer .formItem .inError .errorMsg { display: block; font-size: 12px; float: left; color: #f00; margin-left: 10px; height: 30px; line-height: 30px; }
 .rightContainer .nextBtn { width: 140px; height: 40px; display: block; overflow: hidden; background-color: #f4a11a; color: #fff; font-size: 16px; font-weight: bold; text-align: center; line-height: 40px; text-decoration: none; margin: 30px auto 20px; }
+
+.htList { margin-left: 10px; margin-right: -10px; }
+.htList ul { margin-right: -10px; }
+.htList ul li { margin-right: 5px; margin-bottom: 10px; }
+.htList ul li a { border: 1px solid #dedede; }
+
+.pageBottomBox { margin-right: 10px; }
+
+.rightContainer .pl7 { padding-left: 7px; }
