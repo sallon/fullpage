@@ -1,6 +1,6 @@
 .signUpBox { border-top: 2px solid #f4ecdc; padding: 18px 0px; overflow: hidden; }
 .signUpBox .signImg { float: left; border: 1px solid #999999; width: 600px; height: 450px; }
-.signUpBox .signBox { padding: 0px 38px; border: 1px solid #ebebeb; float: right; }
+.signUpBox .signBox { padding: 0px 38px; border: 1px solid #ebebeb; float: right; height: 450px; }
 .signUpBox .signBox .signFormTop { width: 260px; padding: 0px 10px; padding-top: 16px; margin-bottom: 20px; height: 30px; line-height: 30px; }
 .signUpBox .signBox .signFormTop .signName { font-size: 16px; color: #000; margin-right: 20px; float: left; }
 .signUpBox .signBox .signFormTop label { margin-left: 10px; float: left; font-size: 12px; }
@@ -16,6 +16,12 @@
 .signUpBox .signBox .formItem .ico_name { width: 16px; background-position: 0 0; }
 .signUpBox .signBox .formItem .ico_eamil { width: 17px; background-position: -17px 0px; }
 .signUpBox .signBox .formItem .ico_pwd { width: 12px; background-position: -35px 0px; }
+.signUpBox .signBox .formItem .errorMsg { position: absolute; color: #f30; top: 40px; left: 10px; }
 .signUpBox .signBox .formSubmit { text-align: center; margin-top: -10px; }
 .signUpBox .signBox .formSubmit .readOrg { font-size: 12px; display: block; text-decoration: underline; color: #666; }
 .signUpBox .signBox .formSubmit .signBtn { width: 280px; height: 35px; margin: 0 auto; display: block; text-align: center; line-height: 35px; border-radius: 5px; background-color: #f4a11a; color: #fff; font-size: 16px; margin-bottom: 10px; }
+.signUpBox .signBox .formSubmit .rememberPwd { clear: both; overflow: hidden; height: 30px; line-height: 30px; }
+.signUpBox .signBox .formSubmit .rememberPwd label { float: left; }
+.signUpBox .signBox .formSubmit .rememberPwd label input { margin-right: 5px; position: relative; top: 3px; }
+.signUpBox .signBox .formSubmit .rememberPwd a { float: right; color: #0099FF; }
+.signUpBox .signBox .formSubmit .gotoSign { height: 30px; line-height: 30px; text-align: right; color: #f60; display: block; }

@@ -13,6 +13,7 @@ $img:"../images/";
     padding: 0px 38px;
     border: 1px solid #ebebeb;
     float: right;
+    height: 450px;
     .signFormTop{
       width: 260px;
       padding: 0px 10px;
@@ -90,6 +91,12 @@ $img:"../images/";
         width: 12px;
         background-position: -35px 0px;
       }
+      .errorMsg{
+        position: absolute;
+        color: #f30;
+        top: 40px;
+        left: 10px;
+      }
     }
     .formSubmit{
       text-align: center;
@@ -112,6 +119,31 @@ $img:"../images/";
         color: #fff;
         font-size: 16px;
         margin-bottom: 10px;
+      }
+      .rememberPwd{
+        clear: both;
+        overflow: hidden;
+        height: 30px;
+        line-height: 30px;
+        label{
+          float: left;
+          input{
+            margin-right: 5px;
+            position: relative;
+            top: 3px;
+          }
+        }
+        a{
+          float: right;
+          color: #0099FF;
+        }
+      }
+      .gotoSign{
+        height: 30px;
+        line-height: 30px;
+        text-align: right;
+        color: #f60;
+        display: block;
       }
     }
   }
