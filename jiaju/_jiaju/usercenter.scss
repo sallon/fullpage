@@ -34,6 +34,7 @@ $img:"../images/";
 .rightContainer{
   width: 736px;
   float: left;
+  min-height: 456px;
   border: 1px solid #e6e6e6;
   background-color: #fff;
   margin: 20px 0;
@@ -75,6 +76,7 @@ $img:"../images/";
     }
     .fm_right{
       margin-left: 10px;
+
       .wd{
         font-size: 12px;
         padding: 7px 10px;
@@ -180,11 +182,23 @@ $img:"../images/";
     li{
       margin-right: 5px;
       margin-bottom: 10px;
-      a{border: 1px solid #dedede}
+      a{
+        border: 1px solid #dedede;
+      }
     }
   }
 }
 .pageBottomBox{
   margin-right: 10px;
 }
-.rightContainer .pl7{padding-left: 7px;}
+.rightContainer .pl7{
+  padding-left: 7px;
+}
+.tips{
+  width: 680px;
+  padding: 3px 10px ;
+  border: 1px solid #EFE68B;
+  background-color: #FEFFE5;
+  margin: 10px auto;
+  color: #666666;
+}
