@@ -3,7 +3,7 @@
 .formTitle { height: 100px; line-height: 100px; text-align: center; color: #ff7110; font-size: 24px; }
 
 .checkBox { width: 27px; height: 27px; background-position: -28px 0px; background-image: url("../images/common/checkBox.png?v=20150329"); float: left; cursor: pointer; }
-.checkBox input { opacity: 0; }
+.checkBox input { opacity: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; }
 
 .checked { background-position: 0 0; }
 
@@ -79,7 +79,7 @@
 .radiolist label { float: left; margin-top: 13px; }
 
 .radioBox { width: 22px; height: 22px; float: left; background-image: url("../images/common/radio.png"); cursor: pointer; }
-.radioBox input { opacity: 0; }
+.radioBox input { opacity: 0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; }
 
 .openRadio { background-position: -22px 0px; }
 
