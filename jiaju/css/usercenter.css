@@ -16,7 +16,11 @@
 .rightContainer .formItem .fm_right .wd1 { width: 120px; }
 .rightContainer .formItem .fm_right .wd2 { width: 60px; }
 .rightContainer .formItem .fm_right .wd3 { width: 220px; }
+.rightContainer .formItem .fm_right .wd4 { width: 350px; }
 .rightContainer .formItem .fm_right .textArea { width: 280px; height: 100px; resize: none; overflow-y: scroll; padding: 10px; border: 1px solid #e4e4e4; }
+.rightContainer .formItem .fm_right .shoppost { width: 400px; height: 200px; border: 1px solid #F4A11A; }
+.rightContainer .formItem .fm_right .uploadImg { width: 80px; height: 30px; line-height: 30px; text-align: center; background-color: #F4A11A; color: #fff; display: block; margin: 10px 0 20px; text-decoration: none; }
+.rightContainer .formItem .fm_right .bigTextarea { width: 560px; height: 318px; resize: none; }
 .rightContainer .formItem .inRight .wd { border-color: #b4e069; }
 .rightContainer .formItem .inError .wd { border-color: #ff0000; }
 .rightContainer .formItem .getCodeBtn { height: 30px; line-height: 30px; margin-left: 10px; display: block; float: left; padding: 0px 15px; background-color: #f4a11a; color: #fff; text-decoration: none; }
