@@ -7,7 +7,7 @@
 
 .listBox { margin-right: -20px; overflow: hidden; }
 .listBox li { float: left; margin-right: 20px; }
-.listBox li a { background-color: #ffffff; padding: 6px 7px; width: 220px; height: 304px -6px; display: block; text-decoration: none; }
+.listBox li a { background-color: #ffffff; padding: 6px 7px; width: 220px; height: 298px; display: block; text-decoration: none; }
 .listBox li a .listItemName { font-size: 14px; color: #333333; font-weight: bold; }
 .listBox li a .listItemOldPrice { font-size: 12px; color: #999; }
 .listBox li a .listItemNewPrice { font-size: 12px; color: #666; }

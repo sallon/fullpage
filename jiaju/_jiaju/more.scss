@@ -1,0 +1,156 @@
+$img:"../images/";
+.crumb{
+  height: 31px;
+  line-height: 31px;
+  a{
+    font-size: 12px;
+    color: #999;
+    &:hover{
+      color: #f30;
+    }
+  }
+}
+.pagesTopBar{
+  padding: 5px 0px;
+  background-color: #F5F5F5;
+  height: 24px;
+  overflow: hidden;
+  .paiXu{
+    float: left;
+    margin-left: 10px;
+    li{
+      float: left;
+      a{
+        display: block;
+        height: 22px;
+        line-height: 22px;
+        border: 1px solid #CCCCCC;
+        padding: 0px 15px;
+        background-color: #fff;
+        position: relative;
+        padding-right: 30px;
+        text-decoration: none;
+        .JT{
+          background-image: url("#{$img}jt.png");
+          width: 7px;
+          height: 8px;
+          display: block;
+          position: absolute;
+          top: 7px;
+          right: 15px;
+          background-position: -8px 0px;
+        }
+      }
+      .cur{
+        background-color: #f0efec;
+        color: #f60;
+        .JT{
+          background-position: 0 0;
+        }
+      }
+    }
+  }
+  .pageCut{
+    float: right;
+    padding: 2px 10px;
+    background-color: #faf9f9;
+    margin-right: 10px;
+    span{
+      float: left;
+    }
+    .smBtn{
+      width: 19px;
+      height: 18px;
+      text-align: center;
+      line-height: 18px;
+      background-color: #fff;
+      border: 1px solid #999;
+      display: block;
+      float: left;
+      margin-left: 10px;
+      color: #666666;
+      text-decoration: none;
+    }
+    .cant{
+      background-color: #efefef;
+    }
+  }
+}
+.itemListBox{
+  width: 1000px;
+  overflow: hidden;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 2px solid #333333;
+  ul{
+    margin-right: -20px;
+  }
+  li{
+    margin-bottom: 10px;
+  }
+}
+.pageBottomBox{
+  height: 30px;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  .pageDetail,.cutPagebtn{
+    float: right;
+  }
+  .cutPagebtn{
+    li{
+      float: left;
+      margin-right: 10px;
+      a{
+        height: 28px;
+        padding: 0px 10px;
+        line-height: 28px;
+        display: block;
+        border: 1px solid #cccccc;
+        background-color: #fff;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      .cant{
+        background-color: #f3f3f3;
+        color: #999999;
+      }
+      .diandiandian{
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+  .pageDetail{
+    height: 30px;
+    line-height: 30px;
+    .countPage{
+      font-size: 12px;
+      color: #666666;
+      margin: 0px 10px;
+    }
+    .toSomePage{
+      input{
+        width: 10px;
+        text-align: center;
+        padding: 0px 10px;
+      }
+    }
+    .makeSureBtn{
+      display: block;
+      float: right;
+      width: 40px;
+      height: 18px;
+      line-height: 18px;
+      border: 1px solid #343434;
+      color: #343434;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 10px;
+      margin-left: 10px;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
