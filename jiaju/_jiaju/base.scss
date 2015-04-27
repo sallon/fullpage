@@ -1,5 +1,5 @@
 @import "../../libs/scss/pc/global";
-@include global_reset("12px/1.5 microsoft yaihei,Arial,SimSun,Tahoma",#333333,#fbf8f4,#000000,#ff4400);
+@include global_reset("12px/1.5 microsoft yaihei,Arial,Tahoma",#333333,#fbf8f4,#000000,#ff4400);
 $img:"../images/";
 $version:"20150420";
 $baseWidth:1000px;
@@ -34,6 +34,28 @@ $baseWidth:1000px;
   width: 18px;
   height: 25px;
   background-position: -81px 0px;
+}
+.iconBuyCar{
+  height: 13px;
+  width: 12px;
+  background-position: 0px -25px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+.iconShopCenter{
+  height: 13px;
+  width: 12px;
+  background-position: -11px -25px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+}
+.downIcon{
+  width: 10px;
+  height: 6px;
+  background-position: -23px -26px ;
+  margin-left: 5px;
 }
 @import "base/header";
 @import "base/footer";

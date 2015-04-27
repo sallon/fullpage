@@ -37,18 +37,19 @@
   padding-top:33px;
   padding-bottom: 27px;
   .searchCon{
-    height: 30px;
+    height: 28px;
     width: 399px;
-    background-color: #333333;
+    background-color: #fff;
     float: left;
     overflow: hidden;
+    border: 1px solid #f4a11a;
     input{
       border: none;
       width: 100%;
       font-size: 16px;
-      padding: 6px 10px;
-      background-color: #666666;
-      color: #ffffff;
+      padding: 5px 10px;
+      background-color: #fff;
+      color: #333;
     }
   }
   .searchBtn{
@@ -102,4 +103,103 @@
       }
     }
   }
+}
+.buyCarMenu{
+  margin-left: 25px;
+}
+.sallerCenter{
+  margin-left: 12px;
+}
+.buyCarDropBox{
+  position: absolute;
+  z-index: 10;
+  zoom: 1;
+  width: 348px;
+  height: 278px;
+  padding: 10px;
+  border: 1px solid #F6B347;
+  background-color: #fff;
+  margin-left: -290px;
+  .dropItem{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #CCCCCC;
+    height: 60px;
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    .goodsImg{
+      width: 60px;
+      height: 60px;
+      float: left;
+    }
+    .goodsNameAndMoney{
+      width: 255px;
+      float: left;
+      margin-left: 10px;
+      .name{
+        font-size: 12px;
+        line-height: 15px;
+        a{
+          color: #666666;
+          &:hover{
+            color: #f60;
+          }
+        }
+      }
+      .price{
+        font-size: 15px;
+        color: #ff3300;
+        em{
+          color: #666666;
+          font-size: 12px;
+        }
+      }
+    }
+    .closebtn{
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 15px;
+      height: 15px;
+      background-image: url("#{$img}closeBtn.png");
+      background-position: -16px 0px;
+      &:hover{
+        background-position: 0px 0px;
+      }
+    }
+  }
+  .buyCarCount{
+    height: 34px;
+    padding: 10px 0px;
+    border-top: 1px solid #F6B347;
+    margin: -11px -10px 0px;
+    span{
+      float: left;
+      font-size: 12px;
+      margin-left: 10px;
+      em{
+        color: #f30;
+      }
+      i{
+        font-size: 14px;
+        color: #f30;
+      }
+    }
+  }
+}
+.headerTopBg .headerTop .topHeaderList li .goToPay{
+  float: right;
+  display: block;
+  width: 126px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  color: #fff;
+  background-color: #F4A11A;
+  margin-right: 10px;
+  font-size: 14px;
+  text-decoration: none;
 }

@@ -1,0 +1,21 @@
+.signUpBox { border-top: 2px solid #f4ecdc; padding: 18px 0px; overflow: hidden; }
+.signUpBox .signImg { float: left; border: 1px solid #999999; width: 600px; height: 450px; }
+.signUpBox .signBox { padding: 0px 38px; border: 1px solid #ebebeb; float: right; }
+.signUpBox .signBox .signFormTop { width: 260px; padding: 0px 10px; padding-top: 16px; margin-bottom: 20px; height: 30px; line-height: 30px; }
+.signUpBox .signBox .signFormTop .signName { font-size: 16px; color: #000; margin-right: 20px; float: left; }
+.signUpBox .signBox .signFormTop label { margin-left: 10px; float: left; font-size: 12px; }
+.signUpBox .signBox .signFormTop label input { position: relative; top: 3px; margin-right: 5px; }
+.signUpBox .signBox .signFormTop .toLogin { float: right; font-size: 12px; color: #f60; }
+.signUpBox .signBox .formItem { margin-bottom: 30px; position: relative; }
+.signUpBox .signBox .formItem input { padding: 9px 10px; width: 260px; border: 1px solid #ebebeb; border-radius: 5px; }
+.signUpBox .signBox .formItem .yanzheng { width: 120px; float: left; }
+.signUpBox .signBox .formItem .yanzhengImg { float: right; margin-right: 20px; }
+.signUpBox .signBox .formItem .yanzhengImg img { height: 35px; }
+.signUpBox .signBox .formItem .placeholder { font-size: 12px; color: #666666; position: absolute; top: 9px; left: 10px; }
+.signUpBox .signBox .formItem .ico { background-image: url("../images/sign/ico.png"); display: block; background-repeat: no-repeat; overflow: hidden; position: absolute; top: 9px; right: 10px; height: 16px; }
+.signUpBox .signBox .formItem .ico_name { width: 16px; background-position: 0 0; }
+.signUpBox .signBox .formItem .ico_eamil { width: 17px; background-position: -17px 0px; }
+.signUpBox .signBox .formItem .ico_pwd { width: 12px; background-position: -35px 0px; }
+.signUpBox .signBox .formSubmit { text-align: center; margin-top: -10px; }
+.signUpBox .signBox .formSubmit .readOrg { font-size: 12px; display: block; text-decoration: underline; color: #666; }
+.signUpBox .signBox .formSubmit .signBtn { width: 280px; height: 35px; margin: 0 auto; display: block; text-align: center; line-height: 35px; border-radius: 5px; background-color: #f4a11a; color: #fff; font-size: 16px; margin-bottom: 10px; }
