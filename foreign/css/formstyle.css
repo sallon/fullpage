@@ -64,6 +64,8 @@
 
 .selectTrangle { background-image: url("../images/common/selectrightsm.png"); width: 26px; height: 29px; position: absolute; top: 0px; right: 0px; }
 
+.selectOpen { background-position: -27px 0px; }
+
 .textAreaBorder { border: 1px solid #d5d4d4; resize: none; width: 940px; height: 180px; padding: 10px; border-radius: 5px; }
 
 .remarkbtn { display: block; width: 240px; height: 45px; background-image: url("../images/common/remark.png"); background-repeat: no-repeat; margin: 0 auto; }

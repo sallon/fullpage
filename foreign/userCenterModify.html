@@ -132,17 +132,17 @@
                 <div class="textEditLeft">Annual Turnover : </div>
                 <div class="textEditRight">
                     <div class="rightSelect" onclick="showDropBox(this,'dropBox1')">
-                        <em class="selectTrangle "></em>
-                        <input type="text" value="5mi">
+                        <em class="selectTrangle"></em>
+                        <input type="text" value="5mi" onblur="hideDropBox(this,'dropBox1')">
                     </div>
                 </div>
             </div>
             <div class="textEditItem">
                 <div class="textEditLeft">Country :  </div>
                 <div class="textEditRight">
-                    <div class="rightSelect">
+                    <div class="rightSelect" onclick="showDropBox(this,'dropBox2')">
                         <em class="selectTrangle"></em>
-                        <input type="text" value="China">
+                        <input type="text" value="China" onblur="hideDropBox(this,'dropBox2')">
                     </div>
                 </div>
             </div>
@@ -161,10 +161,16 @@
 
             <!--第一个下拉框内容 start-->
             <div class="dropBox" id="dropBox1" style="top: 159px;left: 340px;">
-                <a href="#" class="dbItem">weight@120.com</a>
-                <a href="#" class="dbItem">weight@120.com</a>
-                <a href="#" class="dbItem">weight@120.com</a>
-                <a href="#" class="dbItem">weight@120.com</a>
+                <a href="javacript:;" class="dbItem">we1ight@120.com</a>
+                <a href="javascript:;" class="dbItem">we2ight@120.com</a>
+                <a href="javascript:;" class="dbItem">we3ight@120.com</a>
+                <a href="javascript:;" class="dbItem">w4eight@120.com</a>
+            </div>
+            <div class="dropBox" id="dropBox2" style="top: 210px;left: 340px;">
+                <a href="javascript:;" class="dbItem">we2ight@120.com</a>
+                <a href="javascript:;" class="dbItem">wei3ght@120.com</a>
+                <a href="javascript:;" class="dbItem">wei4ght@120.com</a>
+                <a href="javascript:;" class="dbItem">wei5ght@120.com</a>
             </div>
             <!--第一个下拉框内容 end-->
         </div>
@@ -190,10 +196,15 @@
     </div>
     <!--main content end-->
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/Selector.js"></script>
     <script type="text/javascript">
-        var showDropBox =  function(id){
-
+        var showDropBox = function(_this,id){
+            $(_this).find("em").addClass("selectOpen");
             $("#"+id).show();
+        }
+        var hideDropBox = function(_this,id){
+            $(_this).parent().find("em").removeClass("selectOpen");
+            $("#"+id).hide();
         }
     </script>
 </div>
