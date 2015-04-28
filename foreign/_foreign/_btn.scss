@@ -1,0 +1,47 @@
+$img:"../images/";
+%pubBtn{
+  width: 240px;
+  height: 45px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: arial;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background-image: url("#{$img}common/btns.png");
+  background-repeat: no-repeat;
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.pubBtn_a{
+  @extend %pubBtn;
+  background-position: 0 -303px;
+  &:hover{
+    background-position: 0 -254px;
+  }
+}
+.pubBtn_b{
+  @extend %pubBtn;
+  width: 146px;
+  height: 35px;
+  font-size: 16px;
+  background-position: 0 -35px;
+  &:hover{
+    background-position: 0 0;
+  }
+}
+.pubBtn_c{
+  @extend %pubBtn;
+  width: 88px;
+  height: 28px;
+  font-size: 16px;
+  background-position: 0 -99px;
+  line-height: 28px;
+  &:hover{
+    background-position: 0 -70px;
+  }
+}

@@ -161,12 +161,6 @@ $baseWidth:960px;
       margin-top: 80px;
     }
     .addMoreFiles{
-      width: 144px;
-      height: 34px;
-      display: block;
-      overflow:hidden;
-      background-image: url("#{$img}common/addMore.png");
-      background-repeat: no-repeat;
       margin-left: 80px;
       margin-top: 40px;
     }
@@ -310,12 +304,6 @@ $baseWidth:960px;
   right: 0px;
 }
 .submitBtnN{
-  width: 144px;
-  height: 34px;
-  background-image: url("#{$img}common/submitBtn.png");
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: block;
   margin: 30px auto;
 }
 .radiolist{
@@ -494,11 +482,6 @@ $baseWidth:960px;
   }
 }
 .browseingBtn{
-  width: 144px;
-  height: 34px;
-  background-image: url("#{$img}common/browseingbtn.png");
-  display: block;
-  overflow: hidden;
   margin: 80px auto;
 }
 .tcenter{
@@ -731,25 +714,15 @@ $baseWidth:960px;
   right: 25px;
   .deleteBtnGray{
     float: right;
-    overflow: hidden;
-    display: block;
-    width: 87px;
-    height: 28px;
-    background-image: url("#{$img}common/grayDeleteBtn.png");
-    background-repeat: no-repeat;
   }
 }
 .addFilesBtn{
-  display: block;
-  overflow: hidden;
   width: 145px;
   height: 35px;
   position: absolute;
   zoom: 1;
   right: 25px;
   bottom: 25px;
-  background-image: url("#{$img}common/addfile.png");
-  background-repeat: no-repeat;
 }
 .dropBox{
   position: absolute;

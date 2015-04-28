@@ -41,7 +41,7 @@
 .uploadImg img { width: 458px; height: 303px; float: left; }
 .uploadImg .rightTextBtn { float: left; margin-left: 50px; color: #fff; font-size: 18px; font-weight: bold; width: 311px; }
 .uploadImg .rightTextBtn p { margin-top: 80px; }
-.uploadImg .rightTextBtn .addMoreFiles { width: 144px; height: 34px; display: block; overflow: hidden; background-image: url("../images/common/addMore.png"); background-repeat: no-repeat; margin-left: 80px; margin-top: 40px; }
+.uploadImg .rightTextBtn .addMoreFiles { margin-left: 80px; margin-top: 40px; }
 .uploadImg .rightTextBtn .submitBtns { width: 144px; height: 34px; display: block; overflow: hidden; background-image: url("../images/common/submitBlackBtn.png"); background-repeat: no-repeat; margin-left: 80px; margin-top: 40px; }
 
 .fm_tit_name { font-size: 24px; line-height: 48px; height: 48px; }
@@ -75,7 +75,7 @@
 
 .browseBtn { position: absolute; width: 164px; height: 34px; background-image: url("../images/common/fileUploadBtn.png"); background-repeat: no-repeat; top: 0px; right: 0px; }
 
-.submitBtnN { width: 144px; height: 34px; background-image: url("../images/common/submitBtn.png"); background-repeat: no-repeat; overflow: hidden; display: block; margin: 30px auto; }
+.submitBtnN { margin: 30px auto; }
 
 .radiolist span { float: left; margin-right: 50px; }
 .radiolist label { float: left; margin-top: 13px; }
@@ -123,7 +123,7 @@
 .fi_radioItem { margin-top: 20px; font-size: 18px; }
 .fi_radioItem label { display: block; overflow: hidden; margin-bottom: 20px; }
 
-.browseingBtn { width: 144px; height: 34px; background-image: url("../images/common/browseingbtn.png"); display: block; overflow: hidden; margin: 80px auto; }
+.browseingBtn { margin: 80px auto; }
 
 .tcenter { text-align: center; }
 
@@ -187,9 +187,9 @@
 .rightInfoEdit .textEditItem .textEditRight .textInput { width: 220px; border: 1px solid #d5d4d4; font-size: 16px; padding: 5px 10px; border-radius: 3px; }
 
 .rightTopBox { width: 265px; position: absolute; height: 30px; line-height: 30px; font-size: 16px; top: 25px; right: 25px; }
-.rightTopBox .deleteBtnGray { float: right; overflow: hidden; display: block; width: 87px; height: 28px; background-image: url("../images/common/grayDeleteBtn.png"); background-repeat: no-repeat; }
+.rightTopBox .deleteBtnGray { float: right; }
 
-.addFilesBtn { display: block; overflow: hidden; width: 145px; height: 35px; position: absolute; zoom: 1; right: 25px; bottom: 25px; background-image: url("../images/common/addfile.png"); background-repeat: no-repeat; }
+.addFilesBtn { width: 145px; height: 35px; position: absolute; zoom: 1; right: 25px; bottom: 25px; }
 
 .dropBox { position: absolute; width: 240px; border: 1px solid #d5d4d4; background-color: #fff; display: none; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
 .dropBox .dbItem { height: 30px; line-height: 30px; padding: 0px 10px; display: block; border-bottom: 1px solid #d5d4d4; text-decoration: none; }
