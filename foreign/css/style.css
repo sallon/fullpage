@@ -39,7 +39,7 @@ input, textarea, select { background-color: #ffffff; }
 .header .headerInner .loginSign a { color: #fff; }
 .header .headerInner .loginSign a:hover { color: #ff4400; text-decoration: none; }
 
-.pubBtn_a, .pubBtn_b, .pubBtn_c { width: 240px; height: 45px; display: block; overflow: hidden; margin: 0 auto; font-size: 24px; font-family: arial; text-align: center; line-height: 40px; color: #fff; background-image: url("../images/common/btns.png"); background-repeat: no-repeat; }
+.pubBtn_a, .pubBtn_b, .pubBtn_c { width: 240px; height: 45px; display: block; overflow: hidden; margin: 0 auto; font-size: 24px; font-family: arial; text-align: center; line-height: 40px; color: #fff; background-image: url("../images/common/btns.png"); _background-image: url("../images/common/btnspng8.png"); background-repeat: no-repeat; }
 .pubBtn_a:hover, .pubBtn_b:hover, .pubBtn_c:hover { color: #fff; text-decoration: none; }
 
 .pubBtn_a { background-position: 0 -303px; }

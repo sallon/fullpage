@@ -11,6 +11,7 @@ $img:"../images/";
   line-height: 40px;
   color: #fff;
   background-image: url("#{$img}common/btns.png");
+  _background-image: url("#{$img}common/btnspng8.png");
   background-repeat: no-repeat;
   &:hover{
     color: #fff;
