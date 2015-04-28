@@ -188,3 +188,7 @@
 .rightTopBox .deleteBtnGray { float: right; overflow: hidden; display: block; width: 87px; height: 28px; background-image: url("../images/common/grayDeleteBtn.png"); background-repeat: no-repeat; }
 
 .addFilesBtn { display: block; overflow: hidden; width: 145px; height: 35px; position: absolute; zoom: 1; right: 25px; bottom: 25px; background-image: url("../images/common/addfile.png"); background-repeat: no-repeat; }
+
+.dropBox { position: absolute; width: 240px; border: 1px solid #d5d4d4; background-color: #fff; display: none; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.dropBox .dbItem { height: 30px; line-height: 30px; padding: 0px 10px; display: block; border-bottom: 1px solid #d5d4d4; text-decoration: none; }
+.dropBox .dbItem:hover { background-color: #019cde; color: #fff; }

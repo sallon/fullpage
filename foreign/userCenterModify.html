@@ -131,8 +131,8 @@
             <div class="textEditItem">
                 <div class="textEditLeft">Annual Turnover : </div>
                 <div class="textEditRight">
-                    <div class="rightSelect">
-                        <em class="selectTrangle"></em>
+                    <div class="rightSelect" onclick="showDropBox(this,'dropBox1')">
+                        <em class="selectTrangle "></em>
                         <input type="text" value="5mi">
                     </div>
                 </div>
@@ -158,6 +158,15 @@
                     <input type="text" class="textInput" value="hhl">
                 </div>
             </div>
+
+            <!--第一个下拉框内容 start-->
+            <div class="dropBox" id="dropBox1" style="top: 159px;left: 340px;">
+                <a href="#" class="dbItem">weight@120.com</a>
+                <a href="#" class="dbItem">weight@120.com</a>
+                <a href="#" class="dbItem">weight@120.com</a>
+                <a href="#" class="dbItem">weight@120.com</a>
+            </div>
+            <!--第一个下拉框内容 end-->
         </div>
     </div>
 
@@ -180,6 +189,13 @@
         </div>
     </div>
     <!--main content end-->
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        var showDropBox =  function(id){
+
+            $("#"+id).show();
+        }
+    </script>
 </div>
 </body>
 </html>

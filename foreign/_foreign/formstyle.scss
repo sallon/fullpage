@@ -748,3 +748,24 @@ $baseWidth:960px;
   background-image: url("#{$img}common/addfile.png");
   background-repeat: no-repeat;
 }
+.dropBox{
+  position: absolute;
+  width: 240px;
+  border: 1px solid #d5d4d4;
+  background-color: #fff;
+  display: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  .dbItem{
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 10px;
+    display: block;
+    border-bottom: 1px solid #d5d4d4;
+    text-decoration: none;
+    &:hover{
+      background-color: #019cde;
+      color: #fff;
+    }
+  }
+}
