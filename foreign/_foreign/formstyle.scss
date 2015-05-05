@@ -135,6 +135,14 @@ $baseWidth:960px;
   line-height: 48px;
   height: 48px;
   border-bottom: 1px solid #aaaaaa;
+  display: block;
+  overflow: hidden;
+}
+.canPoint{
+  &:hover{
+    text-decoration: none;
+    color: #ff7110;
+  }
 }
 .orgBorder{
   border-color: #ff7110;
@@ -218,7 +226,7 @@ $baseWidth:960px;
 }
 .leftName{
   float: left;
-  width: 170px;
+  width: 180px;
   height: 30px;
   line-height: 30px;
   font-size: 18px;
@@ -343,7 +351,7 @@ $baseWidth:960px;
 }
 .rightRadio,.rightCheckbox{
   float: left;
-  width: 790px;
+  width: 770px;
   label{
     display: block;
     float: left;
@@ -352,7 +360,7 @@ $baseWidth:960px;
 }
 .radioTextLong,.checkBoxTextLong{
   @extend .radioText;
-  width: 225px;
+  width: 280px;
   font-size: 16px;
 }
 .checkBoxTextLong{
@@ -362,6 +370,13 @@ $baseWidth:960px;
   height: 27px;
   line-height: 27px;
   font-size: 18px;
+}
+.justNeed{
+  font-size: 16px;
+  color: #019cde;
+  &:hover{
+    color: #ff7110;
+  }
 }
 
 .leftSaveBtn{
@@ -732,6 +747,29 @@ $baseWidth:960px;
   display: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  z-index: 10;
+  .dbItem{
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 10px;
+    display: block;
+    border-bottom: 1px solid #d5d4d4;
+    text-decoration: none;
+    &:hover{
+      background-color: #019cde;
+      color: #fff;
+    }
+  }
+}
+.dropBoxBig{
+  position: absolute;
+  width: 415px;
+  border: 1px solid #d5d4d4;
+  background-color: #fff;
+  display: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 10;
   .dbItem{
     height: 30px;
     line-height: 30px;

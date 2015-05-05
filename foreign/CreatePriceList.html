@@ -110,46 +110,61 @@
 
 <div class="content">
     <!--main content start-->
-    <div class="fm_item clearfix mt30">
-        <div class="fm_half">
-            <p>Process</p>
-            <div class="selectBox">
-                <em class="selectDown"></em>
-                <input type="text">
+    <div style="position: relative;zoom: 1;z-index: 1;">
+        <div class="fm_item clearfix mt30">
+            <div class="fm_half">
+                <p>Process</p>
+                <div class="selectBox">
+                    <em class="selectDown"></em>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="fm_half">
+                <p>Delivery time</p>
+                <div class="selectBox">
+                    <em class="selectDown open"></em>
+                    <input type="text">
+                </div>
             </div>
         </div>
-        <div class="fm_half">
-            <p>Delivery time</p>
-            <div class="selectBox">
-                <em class="selectDown open"></em>
-                <input type="text">
-            </div>
-        </div>
-    </div>
 
-    <div class="fm_item clearfix mt30">
-        <div class="fm_half">
-            <p>Product Name</p>
-            <div class="inputBox">
-                <input type="text">
+        <div class="fm_item clearfix mt30">
+            <div class="fm_half">
+                <p>Product Name</p>
+                <div class="inputBox">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="fm_half">
+                <p>Production Quantity</p>
+                <div class="inputBox">
+                    <input type="text">
+                </div>
             </div>
         </div>
-        <div class="fm_half">
-            <p>Production Quantity</p>
-            <div class="inputBox">
-                <input type="text">
-            </div>
+
+        <div class="fm_item clearfix mt30">
+            <label for="checkbox">
+                <div class="checkBox ml480">
+                    <input id="checkbox" type="checkbox">
+                </div>
+                <div class="leftTextContent">
+                    <a href="#" class="justNeed">Just need the mold</a>
+                </div>
+            </label>
         </div>
-    </div>
-    <div class="fm_item clearfix mt30">
-        <label for="checkbox">
-            <div class="checkBox ml480">
-                <input id="checkbox" type="checkbox">
-            </div>
-            <div class="leftTextContent">
-                <a href="#">Just need the mold</a>
-            </div>
-        </label>
+        <div class="dropBoxBig" id="dropBox1" style="top: 77px;left: 0px;display: block">
+            <a href="javacript:;" class="dbItem">we1ight@120.com</a>
+            <a href="javascript:;" class="dbItem">we2ight@120.com</a>
+            <a href="javascript:;" class="dbItem">we3ight@120.com</a>
+            <a href="javascript:;" class="dbItem">w4eight@120.com</a>
+        </div>
+        <div class="dropBoxBig" id="dropBox2" style="top: 77px;left: 480px;display: block">
+            <a href="javacript:;" class="dbItem">we1ight@120.com</a>
+            <a href="javascript:;" class="dbItem">we2ight@120.com</a>
+            <a href="javascript:;" class="dbItem">we3ight@120.com</a>
+            <a href="javascript:;" class="dbItem">w4eight@120.com</a>
+        </div>
     </div>
 
     <div class="fm_item clearfix mt30">
@@ -177,12 +192,12 @@
     </div>
 
     <div class="fm_item clearfix mt30">
-        <p class="fm_tit">Product experience <i class="moreIcon"></i></p>
+        <p class="fm_tit canPoint">Product experience <i class="moreIcon"></i></p>
     </div>
 
     <div class="fm_item clearfix mt30">
-        <p class="fm_tit orgBorder">Product experience <i class="moreIcon"></i></p>
-        <div class="checkBoxList">
+        <p class="fm_tit canPoint orgBorder" onclick="trag(this,'ct1')">Product experience <i class="moreIcon"></i></p>
+        <div class="checkBoxList" id="ct1">
             <label for="checkbox1">
                 <div class="checkBox">
                     <input id="checkbox1" type="checkbox">
@@ -236,6 +251,17 @@
     <!--main content end-->
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/check.js"></script>
+    <script type="text/javascript">
+        var trag= function(_this,id){
+            if($(_this).hasClass("orgBorder")){
+                $(_this).removeClass("orgBorder")
+                $("#"+id).css("display","none");
+            }else{
+                $(_this).addClass("orgBorder")
+                $("#"+id).css("display","block");
+            }
+        }
+    </script>
 </div>
 </body>
 </html>

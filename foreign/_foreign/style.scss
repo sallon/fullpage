@@ -89,7 +89,6 @@ $baseWidth:960px;
         display: block;
         text-align: center;
         font-size: 14px;
-        background-color: #ffffff;
         border-right: 1px solid #a5a5a5;
         text-decoration: none;
         zoom: 1;
@@ -106,6 +105,11 @@ $baseWidth:960px;
           margin-top: 16px;
           position: relative;
           top: -3px;
+        }
+        &.active,&:hover{
+          background-color: #ffffff;
+          text-decoration: none;
+          color: #ff4400;
         }
       }
     }

@@ -33,7 +33,9 @@
 
 .ml480 { margin-left: 480px; }
 
-.fm_tit { font-size: 24px; line-height: 48px; height: 48px; border-bottom: 1px solid #aaaaaa; }
+.fm_tit { font-size: 24px; line-height: 48px; height: 48px; border-bottom: 1px solid #aaaaaa; display: block; overflow: hidden; }
+
+.canPoint:hover { text-decoration: none; color: #ff7110; }
 
 .orgBorder { border-color: #ff7110; color: #ff7110; }
 
@@ -54,7 +56,7 @@
 .checkBoxList label { display: block; float: left; margin-bottom: 20px; }
 .checkBoxList .leftTextCon { height: 27px; line-height: 27px; font-size: 18px; margin-left: 10px; float: left; width: 140px; }
 
-.leftName { float: left; width: 170px; height: 30px; line-height: 30px; font-size: 18px; }
+.leftName { float: left; width: 180px; height: 30px; line-height: 30px; font-size: 18px; }
 
 .rightInput { float: left; width: 240px; height: 30px; border: 1px solid #d5d4d4; border-radius: 5px; }
 .rightInput input { width: 220px; font-size: 16px; padding: 4px 10px; border: none; border-radius: 5px; }
@@ -87,12 +89,15 @@
 
 .radioText, .radioTextLong, .checkBoxTextLong { float: left; height: 22px; line-height: 22px; width: 80px; margin-left: 10px; font-weight: normal; }
 
-.rightRadio, .rightCheckbox { float: left; width: 790px; }
+.rightRadio, .rightCheckbox { float: left; width: 770px; }
 .rightRadio label, .rightCheckbox label { display: block; float: left; margin-bottom: 10px; }
 
-.radioTextLong, .checkBoxTextLong { width: 225px; font-size: 16px; }
+.radioTextLong, .checkBoxTextLong { width: 280px; font-size: 16px; }
 
 .checkBoxTextLong { width: auto; margin-right: 20px; height: 27px; line-height: 27px; font-size: 18px; }
+
+.justNeed { font-size: 16px; color: #019cde; }
+.justNeed:hover { color: #ff7110; }
 
 .leftSaveBtn, .rightDeleteBtn, .rightDeleteRfqBtn { width: 240px; height: 45px; margin: 0px auto; display: block; overflow: hidden; background-image: url("../images/common/saveBtns.png"); background-repeat: no-repeat; }
 
@@ -191,6 +196,10 @@
 
 .addFilesBtn { width: 145px; height: 35px; position: absolute; zoom: 1; right: 25px; bottom: 25px; }
 
-.dropBox { position: absolute; width: 240px; border: 1px solid #d5d4d4; background-color: #fff; display: none; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.dropBox { position: absolute; width: 240px; border: 1px solid #d5d4d4; background-color: #fff; display: none; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; z-index: 10; }
 .dropBox .dbItem { height: 30px; line-height: 30px; padding: 0px 10px; display: block; border-bottom: 1px solid #d5d4d4; text-decoration: none; }
 .dropBox .dbItem:hover { background-color: #019cde; color: #fff; }
+
+.dropBoxBig { position: absolute; width: 415px; border: 1px solid #d5d4d4; background-color: #fff; display: none; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; z-index: 10; }
+.dropBoxBig .dbItem { height: 30px; line-height: 30px; padding: 0px 10px; display: block; border-bottom: 1px solid #d5d4d4; text-decoration: none; }
+.dropBoxBig .dbItem:hover { background-color: #019cde; color: #fff; }
