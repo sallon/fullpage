@@ -46,11 +46,6 @@ $baseWidth:960px;
             font-size: 14px;
             font-weight: bold;
             position: relative;
-            &.active,&:hover{
-              background-color: #ffffff;
-              text-decoration: none;
-              color: #ff4400;
-            }
             .iconRight{
               display: inline-block;
               width: 6px;
@@ -78,6 +73,17 @@ $baseWidth:960px;
               _top:0px;
               margin-top: 4px;
             }
+            &.active,&:hover{
+              background-color: #ffffff;
+              text-decoration: none;
+              color: #ff4400;
+              .iconRight{
+                background-position: -19px -12px;
+              }
+              .iconContact{
+                background-position: 0 -17px;
+              }
+            }
           }
         }
       }
@@ -92,6 +98,7 @@ $baseWidth:960px;
         border-right: 1px solid #a5a5a5;
         text-decoration: none;
         zoom: 1;
+        font-weight: bold;
         .iconDown{
           display: inline-block;
           zoom: 1;
@@ -110,6 +117,9 @@ $baseWidth:960px;
           background-color: #ffffff;
           text-decoration: none;
           color: #ff4400;
+          .iconDown{
+            background-position: -26px -7px;
+          }
         }
       }
     }
