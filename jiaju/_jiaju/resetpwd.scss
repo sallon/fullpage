@@ -1,0 +1,138 @@
+$img:"../images/restpwd/";
+.stemp{
+  background-image: url("#{$img}stemp.png");
+  display: block;
+  width: 1000px;
+  height: 46px;
+  clear: both;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.stemp-1{
+  background-position: 0px -1px;
+}
+.stemp-2{
+  background-position: 0px -50px;
+}
+.stemp-3{
+  background-position: 0px -98px;
+}
+.stemp-4{
+  background-position: 0px -145px;
+}
+.formItem{
+  clear: both;
+  overflow: hidden;
+  div{
+    width: 33%;
+    float: left;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .formLeft{
+    text-align: right;
+    font-size: 20px;
+    line-height: 34px;
+    height: 32px;
+  }
+  .formCenter{
+    text-align: left;
+    font-size: 20px;
+    input{
+      height: 20px;
+      padding: 4px 10px;
+      border: 1px solid #eee;
+      width: 300px;
+    }
+  }
+  .formRight{
+    height: 32px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #999999;
+  }
+  .changeOne{
+    font-size: 14px;
+    color: #019cde;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    height: 30px;
+    line-height: 33px;
+    &:hover{
+      color: #ff7110;
+    }
+  }
+}
+.nextBtn{
+  display: block;
+  overflow: hidden;
+  height: 40px;
+  width: 140px;
+  background-color: #ff7110;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  &:hover{
+    background-color: #f60;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.getCodeBtn{
+  @extend .nextBtn;
+  width: 82px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  font-size: 14px;
+  margin: 0px;
+  margin-left: 20px;
+}
+.graybg{
+  background-color: #999999;
+  color: #fff;
+  &:hover{
+    background-color: #999999;
+    color: #fff;
+  }
+}
+.tcenter{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff7110;
+}
+.formItem{
+  .errorMsg{
+    color: #f30;
+  }
+}
+.isover{
+  width: 50%;
+  margin-left: 40%;
+  text-align: left;
+  color: #ff7110;
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+  margin-top: 20px;
+  padding-left: 40px;
+  background-image: url("#{$img}over.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  .loginNow{
+    font-size: 14px;
+    color: #999999;
+    a{
+      color: #019cde;
+      &:hover{
+        color: #ff7110;
+      }
+    }
+  }
+}

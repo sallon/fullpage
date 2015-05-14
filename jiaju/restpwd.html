@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/resetpwd.css">
+</head>
+<body>
+<!--#include file="public_header_login_out.html" -->
+<!--#include file="searchBar.html" -->
+<!--#include file="publicMenu.html" -->
+<div class="warp">
+    <div class="container">
+        <div class="stempBox">
+            <div class="stemp stemp-1"></div>
+            <div class="username">
+                <div class="formItem">
+                    <div class="formLeft">姓名：</div>
+                    <div class="formCenter"><input type="text"></div>
+                    <div class="formRight">请输入您的姓名！</div>
+                </div>
+                <div class="formItem">
+                    <div class="formLeft">身份证后四位：</div>
+                    <div class="formCenter"><input type="text"></div>
+                    <div class="formRight">请输入您的身份证后四位号码！</div>
+                </div>
+                <div class="formItem">
+                    <div class="formLeft">验证码：</div>
+                    <div class="formCenter">
+                        <input type="text" style="width: 40%;float: left">
+                        <img src="images/restpwd/code.png" style="height: 30px;float: left;margin-left: 30px;">
+                        <a href="#" class="changeOne">换一张</a>
+                    </div>
+                </div>
+                <div class="formItem">
+                    <a href="#" class="nextBtn">下一步</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="stempBox">
+            <div class="stemp stemp-2"></div>
+            <div class="username">
+                <div class="formItem">
+                    <div class="formLeft">手机号：</div>
+                    <div class="formCenter">
+                        <input type="text" style="width: 160px;float: left" value="131****321">
+                        <a href="#" class="getCodeBtn">获取验证码</a>
+                    </div>
+                    <div class="formRight">如需更换手机号，请联系wzs200712@163.com！</div>
+                </div>
+                <div class="formItem">
+                    <div class="formLeft">手机号：</div>
+                    <div class="formCenter">
+                        <input type="text" style="width: 160px;float: left" value="131****321">
+                        <a href="#" class="getCodeBtn graybg">30秒后重试</a>
+                    </div>
+                    <div class="formRight">如需更换手机号，请联系wzs200712@163.com！</div>
+                </div>
+                <div class="formItem">
+                    <div class="formLeft">手机验证码：</div>
+                    <div class="formCenter" style="width: 150px;">
+                        <input type="text" style="width: 110px;float: left">
+                    </div>
+                    <div class="formRight">请输入正确的手机验证码。</div>
+                </div>
+                <div class="formItem">
+                    <a href="#" class="nextBtn">下一步</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="stempBox">
+            <div class="stemp stemp-3"></div>
+            <div class="username">
+                <div class="formItem tcenter">
+                    Hi,angle
+                </div>
+                <div class="formItem">
+                    <div class="formLeft">设置新密码：</div>
+                    <div class="formCenter"><input type="text"></div>
+                    <div class="formRight">密码长度8-20位，数字，字母，字符至少包含两种！</div>
+                </div>
+                <div class="formItem">
+                    <div class="formLeft">确认新密码：</div>
+                    <div class="formCenter"><input type="text"></div>
+                    <div class="formRight errorMsg">两次密码不一致，请重新输入！</div>
+                </div>
+                <div class="formItem">
+                    <a href="#" class="nextBtn">下一步</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="stempBox">
+            <div class="stemp stemp-4"></div>
+            <div class="username">
+                <div class="isover">
+                    恭喜您，Angle<br>
+                    新密码设置成功！
+                    <p class="loginNow">请牢记您的密码，<a href="#">立即登录</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--#include file="public_footer.html" -->
+</body>
+</html>
