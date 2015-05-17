@@ -203,3 +203,5 @@
 .dropBoxBig { position: absolute; width: 415px; border: 1px solid #d5d4d4; background-color: #fff; display: none; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; z-index: 10; }
 .dropBoxBig .dbItem { height: 30px; line-height: 30px; padding: 0px 10px; display: block; border-bottom: 1px solid #d5d4d4; text-decoration: none; }
 .dropBoxBig .dbItem:hover { background-color: #019cde; color: #fff; }
+
+.fblue { color: #019cde; }
