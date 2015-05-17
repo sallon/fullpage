@@ -149,10 +149,10 @@
 
 
     <div class="fm_item clearfix mt30">
-        <a class="fm_tit fblue" href="javascript:;" onclick="javascript:showOfferingList();">
+        <a class="fm_tit fblue" href="javascript:;" onclick="javascript:showFactoryTab();">
             XXXXXXXXXXX +
         </a>
-        <div class="factoryTab">
+        <div class="factoryTab" id="factoryTab" style="display: none">
             <div class="fm_item clearfix">
                 <p class="fm_tit_name">Factory Capadility : </p>
 
@@ -247,6 +247,15 @@
     <!--main content end-->
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/check.js"></script>
+    <script type="text/javascript">
+        var showFactoryTab = function(){
+            if($("#factoryTab").is(":hidden")){
+                $("#factoryTab").show();
+            }else{
+                $("#factoryTab").hide();
+            }
+        }
+    </script>
 </div>
 </body>
 </html>
