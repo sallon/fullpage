@@ -205,3 +205,9 @@
 .dropBoxBig .dbItem:hover { background-color: #019cde; color: #fff; }
 
 .fblue { color: #019cde; }
+
+.factoryTab { border: 1px solid #d5d4d4; background-color: #f9f9f9; padding-top: 30px; padding-left: 10px; padding-right: 10px; padding-bottom: 20px; overflow: hidden; }
+.factoryTab .fi_radioItem { width: 916px; overflow: hidden; border: 1px solid #817e7e; padding: 10px; background-color: #fff; }
+.factoryTab .fi_radioItem label { float: left; margin-right: 30px; }
+.factoryTab .fi_radioItem label .radioText, .factoryTab .fi_radioItem label .radioTextLong, .factoryTab .fi_radioItem label .checkBoxTextLong { width: 170px; }
+.factoryTab .textAreaBorder { width: 916px; }

@@ -786,3 +786,30 @@ $baseWidth:960px;
 .fblue{
   color: #019cde;
 }
+.factoryTab{
+  border: 1px solid #d5d4d4;
+  background-color: #f9f9f9;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  .fi_radioItem{
+    width: 936px - 20px;
+    overflow: hidden;
+    border: 1px solid #817e7e;
+    padding: 10px;
+    background-color: #fff;
+    label{
+      float: left;
+      margin-right: 30px;
+      .radioText{
+        width: 170px;
+      }
+    }
+
+  }
+  .textAreaBorder{
+    width: 916px;
+  }
+}
