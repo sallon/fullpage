@@ -1,0 +1,228 @@
+*{
+  font-family: "microsoft yaihei";
+}
+.pagetit{
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #333333;
+}
+.orderBox{
+  padding: 10px;
+  overflow: hidden;
+  clear: both;
+  border: 1px solid #EEEEEE;
+}
+.innerTit{
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 10px;
+  position: relative;
+  a{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 12px;
+    color:#0085c8;
+    &:hover{
+      color: #ff7110;
+    }
+  }
+}
+.userDress{
+  clear: both;
+  overflow: hidden;
+}
+.defaultBtn{
+  position: relative;
+  overflow: hidden;
+  height: 30px;
+  width: 120px;
+  border: 1px solid #dddddd;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  float: left;
+  margin-right: 20px;
+  color: #666666;
+  &:hover{
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    border: 2px solid #D5B87B;
+    color: #D5B87B;
+    text-decoration: none;
+  }
+}
+.checkedIcon{
+  display: none;
+  overflow: hidden;
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  z-index: 2;
+  zoom: 1;
+  bottom: -2px;
+  right: -2px;
+  background-image: url("../images/checked.jpg");
+  background-repeat: no-repeat;
+}
+.checked{
+  width: 118px;
+  height: 28px;
+  line-height: 28px;
+  border: 2px solid #D5B87B;
+  color: #D5B87B;
+  text-decoration: none;
+  .checkedIcon{
+    display: block;
+  }
+}
+.dress{
+  height: 30px;
+  line-height: 30px;
+  float: left;
+}
+.moreDress{
+  line-height: 30px;
+  color: #0085c8;
+  &:hover{
+    color: #ff7110;
+  }
+}
+.splitBar{
+  height: 1px;
+  overflow: hidden;
+  clear: both;
+  background-color: #CCCCCC;
+  margin: 20px 0px;
+}
+.orderItems{
+  display: block;
+  overflow: hidden;
+  clear: both;
+  .orderItem{
+    padding: 10px;
+    overflow: hidden;
+    clear: both;
+  }
+  .orderLeft{
+    float: left;
+    background-color: #F0F0E1;
+    height: 130px;
+    padding: 10px;
+    width: 618px;
+    overflow: hidden;
+    .orderItemImg{
+      height: 130px;
+      width: 130px;
+      float: left;
+    }
+    .orderInfo{
+      float: left;
+      margin-left: 10px;
+      width: 476px;
+      .itemName{
+        width: 200px;
+        font-size: 14px;
+        color: #666666;
+        display: block;
+        font-weight: bold;
+        float: left;
+        &:hover{
+          color: #ff7110;
+          text-decoration: none;
+        }
+      }
+      .itemPrice{
+        width: 150px;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        em{
+          color: #f30;
+        }
+      }
+      .itemCount{
+        float: left;
+        width: 120px;
+        position: relative;
+        top: 5px;
+        a{
+          display: block;
+          width: 18px;
+          height: 18px;
+          line-height: 18px;
+          text-align: center;
+          border: 1px solid #a4a5aa;
+          background-color: #fff;
+          float: left;
+          margin-left: 10px;
+          &:hover{
+            background-color: #ff7110;
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+        input{
+          width: 20px;
+          height: 16px;
+          text-align: center;
+          float: left;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .orderRight{
+    float: right;
+    width: 300px;
+    padding: 10px;
+    height: 130px;
+    background-color: #DFDFD0;
+    .toTime{
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      color: #666;
+    }
+    .setTime{
+      color: #0085c8;
+      font-size: 12px;
+      float: right;
+      &:hover{
+        color: #ff7110;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.bgWhite{
+  background-color: #FFFFFF;
+}
+.nextBtn{
+  width: 140px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  background-color: #f4a11a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  float: right;
+  margin: 30px 0;
+  margin-right: 10px;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7110;
+  }
+}
